@@ -6,7 +6,7 @@ This is the story of finding three distinct bugs hidden behind that error, each 
 
 ## What We Were Building
 
-I have two .NET MAUI projects — [RepWizard](https://github.com/mcarthey/RepWizard) (workout tracker) and [CrewTrack](https://github.com/mcarthey/CrewTrack) (crew management). Both need the same CI pattern: build and test on Ubuntu, compile-check MAUI on macOS, post test summaries on PRs.
+I have two .NET MAUI projects — a workout tracker and a crew management app. Both need the same CI pattern: build and test on Ubuntu, compile-check MAUI on macOS, post test summaries on PRs.
 
 Instead of maintaining two copies of the same 200-line workflow, I extracted it into a [reusable workflow](https://docs.github.com/en/actions/using-workflows/reusing-workflows). The caller is clean:
 
@@ -15,8 +15,8 @@ jobs:
   ci:
     uses: ./.github/workflows/dotnet-ci-reusable.yml
     with:
-      solution-filter: "RepWizard.CI.slnf"
-      maui-project: "RepWizard.App/RepWizard.App.csproj"
+      solution-filter: "MyApp.CI.slnf"
+      maui-project: "MyApp.App/MyApp.App.csproj"
       smoke-test-url: "http://localhost:5099/health"
     secrets: inherit
 ```
@@ -85,7 +85,7 @@ jobs:
       pull-requests: write
       checks: write
     with:
-      solution-filter: "RepWizard.CI.slnf"
+      solution-filter: "MyApp.CI.slnf"
 ```
 
 This is counterintuitive. You'd expect job-level permissions in the reusable workflow to be self-contained. They're not. The caller's permissions are the ceiling, and the reusable workflow operates within that ceiling.
@@ -132,15 +132,15 @@ error NETSDK1005: Assets file doesn't have a target for 'net9.0'.
 The MAUI project multi-targets: Android, iOS, macCatalyst, and Windows. Building on macOS with all targets fails because the Windows SDK isn't available. The common advice is to scope the restore:
 
 ```yaml
-dotnet restore RepWizard.UI.csproj -p:TargetFramework=net9.0-android
-dotnet build RepWizard.UI.csproj --no-restore -f net9.0-android
+dotnet restore MyApp.UI.csproj -p:TargetFramework=net9.0-android
+dotnet build MyApp.UI.csproj --no-restore -f net9.0-android
 ```
 
 Looks right. Restore for Android only, build for Android only.
 
 Except **`-p:TargetFramework` is a global MSBuild property.** When you pass it on the command line, it overrides `TargetFramework` for *every project in the dependency graph* — not just the one you're restoring.
 
-`RepWizard.UI` depends on `RepWizard.Application`, which depends on `RepWizard.Core`. Those are plain `net9.0` libraries. They don't multi-target. When `-p:TargetFramework=net9.0-android` hits them, their `assets.json` files get written for the wrong framework. Then the build step tries to compile them as `net9.0` and finds assets for `net9.0-android`.
+`MyApp.UI` depends on `MyApp.Application`, which depends on `MyApp.Core`. Those are plain `net9.0` libraries. They don't multi-target. When `-p:TargetFramework=net9.0-android` hits them, their `assets.json` files get written for the wrong framework. Then the build step tries to compile them as `net9.0` and finds assets for `net9.0-android`.
 
 The `-f` flag on `dotnet build` doesn't have this problem — it only scopes to the top-level project. But `dotnet build`'s implicit restore *does* resolve all targets, which brings back the Windows error on macOS.
 
@@ -148,10 +148,10 @@ The fix is a two-step approach:
 
 ```yaml
 # Restore all TFMs — suppress Windows error on macOS
-dotnet restore RepWizard.UI.csproj -p:EnableWindowsTargeting=true
+dotnet restore MyApp.UI.csproj -p:EnableWindowsTargeting=true
 
 # Build only the target we want, skip restore
-dotnet build RepWizard.UI.csproj --no-restore -c Release -f net9.0-android
+dotnet build MyApp.UI.csproj --no-restore -c Release -f net9.0-android
 ```
 
 `EnableWindowsTargeting=true` tells NuGet it's OK to resolve Windows frameworks on non-Windows systems. The restore creates valid assets for all targets including the transitive `net9.0` dependencies. Then `-f` builds only Android and `--no-restore` skips the implicit restore entirely.
@@ -195,4 +195,4 @@ In the meantime, if you're building reusable workflows, bookmark this post. You'
 
 ---
 
-*This is a follow-up to [What Your CI Workflow Actually Does](/Blog/Post/anatomy-of-a-ci-workflow), which walks through a complete GitHub Actions workflow line by line. The reusable workflow template discussed here lives at [mcarthey/shared-workflows](https://github.com/mcarthey/shared-workflows).*
+*This is a follow-up to [What Your CI Workflow Actually Does](/Blog/Post/anatomy-of-a-ci-workflow), which walks through a complete GitHub Actions workflow line by line.*
