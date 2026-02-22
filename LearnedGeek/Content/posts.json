@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "slug": "ai-keeps-guessing-wrong",
+      "title": "Why Your AI Assistant Keeps Guessing Wrong (And How We Fixed It)",
+      "description": "Three fixes. Three confident explanations. Zero progress. After a failed client demo and two weeks of pain, I learned that the problem isn't the AI—it's that nobody gave it the evidence it needed.",
+      "category": "tech",
+      "tags": ["ai", "debugging", "claude", "api", "testing", "api-combat"],
+      "date": "2027-04-06T00:00:00",
+      "featured": true,
+      "image": "/img/posts/ai-keeps-guessing-wrong.svg",
+      "linkedInHook": "Three fixes. Three confident explanations. Zero progress. The demo ended awkwardly.\n\nThe AI wasn't wrong. It was pattern-matching without evidence. I call it the \"confident guess spiral\"—each answer sounds reasonable, but without actual status codes, response bodies, and request details, it's just sophisticated coin-flipping.\n\nAfter two weeks and 50+ commits hardening API Combat, I distilled it to three questions that kill the spiral:\n\n1. What's the status code?\n2. What's in the response body?\n3. Does the request match the spec?\n\nSame AI. Same model. Completely different outcome when you give it evidence instead of symptoms."
+    },
+    {
       "slug": "soft-delete-pii-anonymization",
       "title": "Soft Delete + PII Anonymization: Account Deletion That Actually Deletes",
       "description": "GDPR says users can request erasure. Most apps flip IsDeleted. We soft delete for referential integrity, then anonymize every piece of PII. The account is gone. The game history survives.",

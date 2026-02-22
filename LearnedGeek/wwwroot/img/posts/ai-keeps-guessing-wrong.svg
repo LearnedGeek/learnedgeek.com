@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="failGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#991b1b"/>
+    </linearGradient>
+    <linearGradient id="successGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#15803d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#8b5cf6" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="400" y1="40" x2="400" y2="360" stroke="#4b5563" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"/>
+
+  <!-- LEFT: The Guess Spiral -->
+  <text x="200" y="35" font-family="sans-serif" font-size="13" fill="#f87171" text-anchor="middle" font-weight="bold">The Confident Guess Spiral</text>
+
+  <!-- User prompt bubble -->
+  <g transform="translate(40, 55)">
+    <rect x="0" y="0" width="280" height="30" rx="6" fill="#1f2937" stroke="#6b7280" stroke-width="1"/>
+    <text x="15" y="20" font-family="monospace" font-size="9" fill="#d1d5db">"The API isn't syncing data."</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M180 90 L180 105" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="180,110 175,103 185,103" fill="#6b7280"/>
+
+  <!-- Guess 1 -->
+  <g transform="translate(55, 115)">
+    <rect x="0" y="0" width="250" height="38" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="15" y="16" font-family="sans-serif" font-size="9" fill="#fca5a5">AI: "Probably a wrong route"</text>
+    <text x="195" y="32" font-family="monospace" font-size="8" fill="#ef4444">NOPE</text>
+    <!-- X mark -->
+    <line x1="225" y1="22" x2="237" y2="34" stroke="#ef4444" stroke-width="2"/>
+    <line x1="237" y1="22" x2="225" y2="34" stroke="#ef4444" stroke-width="2"/>
+  </g>
+
+  <!-- Curved arrow to next guess -->
+  <path d="M180 158 Q210 170 180 180" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="180,183 175,176 185,176" fill="#ef4444" opacity="0.5"/>
+
+  <!-- Guess 2 -->
+  <g transform="translate(55, 186)">
+    <rect x="0" y="0" width="250" height="38" rx="6" fill="#1f2937" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="15" y="16" font-family="sans-serif" font-size="9" fill="#fcd34d">AI: "Likely an auth issue"</text>
+    <text x="195" y="32" font-family="monospace" font-size="8" fill="#f59e0b">NOPE</text>
+    <line x1="225" y1="22" x2="237" y2="34" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="237" y1="22" x2="225" y2="34" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+
+  <!-- Curved arrow to next guess -->
+  <path d="M180 229 Q210 241 180 251" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polygon points="180,254 175,247 185,247" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- Guess 3 -->
+  <g transform="translate(55, 257)">
+    <rect x="0" y="0" width="250" height="38" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="15" y="16" font-family="sans-serif" font-size="9" fill="#fca5a5">AI: "Serialization mismatch?"</text>
+    <text x="195" y="32" font-family="monospace" font-size="8" fill="#ef4444">NOPE</text>
+    <line x1="225" y1="22" x2="237" y2="34" stroke="#ef4444" stroke-width="2"/>
+    <line x1="237" y1="22" x2="225" y2="34" stroke="#ef4444" stroke-width="2"/>
+  </g>
+
+  <!-- Spiral continues -->
+  <text x="180" y="320" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle" font-style="italic">...3 guesses, 0 progress...</text>
+
+  <!-- Time wasted -->
+  <g transform="translate(120, 335)">
+    <rect x="0" y="0" width="120" height="28" rx="14" fill="url(#failGrad)"/>
+    <text x="60" y="18" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Demo failed</text>
+  </g>
+
+  <!-- RIGHT: Evidence-Based -->
+  <text x="600" y="35" font-family="sans-serif" font-size="13" fill="#86efac" text-anchor="middle" font-weight="bold">Evidence-Based Debugging</text>
+
+  <!-- Better prompt bubble -->
+  <g transform="translate(425, 55)">
+    <rect x="0" y="0" width="340" height="55" rx="6" fill="#1f2937" stroke="#22c55e" stroke-width="1"/>
+    <text x="15" y="17" font-family="monospace" font-size="8" fill="#d1d5db">"POST /api/v1/battles → 401"</text>
+    <text x="15" y="32" font-family="monospace" font-size="8" fill="#d1d5db">Body: { "error": "Unauthorized" }</text>
+    <text x="15" y="47" font-family="monospace" font-size="8" fill="#d1d5db">Token issued 2h ago. Expiry: 60min.</text>
+  </g>
+
+  <!-- Three questions -->
+  <g transform="translate(440, 125)">
+    <rect x="0" y="0" width="310" height="100" rx="8" fill="#16213e" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="155" y="22" font-family="sans-serif" font-size="10" fill="#93c5fd" text-anchor="middle" font-weight="bold">Three Questions</text>
+    <line x1="20" y1="30" x2="290" y2="30" stroke="#3b82f6" opacity="0.3" stroke-width="1"/>
+
+    <!-- Question 1 -->
+    <text x="20" y="48" font-family="sans-serif" font-size="9" fill="#86efac">1.</text>
+    <text x="35" y="48" font-family="sans-serif" font-size="9" fill="#e2e8f0">Status code?</text>
+    <text x="220" y="48" font-family="monospace" font-size="9" fill="#fcd34d">401</text>
+
+    <!-- Question 2 -->
+    <text x="20" y="68" font-family="sans-serif" font-size="9" fill="#86efac">2.</text>
+    <text x="35" y="68" font-family="sans-serif" font-size="9" fill="#e2e8f0">Response body?</text>
+    <text x="220" y="68" font-family="monospace" font-size="9" fill="#fcd34d">Unauthorized</text>
+
+    <!-- Question 3 -->
+    <text x="20" y="88" font-family="sans-serif" font-size="9" fill="#86efac">3.</text>
+    <text x="35" y="88" font-family="sans-serif" font-size="9" fill="#e2e8f0">Matches spec?</text>
+    <text x="220" y="88" font-family="monospace" font-size="9" fill="#fcd34d">Token expired</text>
+  </g>
+
+  <!-- Arrow to diagnosis -->
+  <path d="M595 230 L595 250" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="595,255 590,248 600,248" fill="#22c55e"/>
+
+  <!-- AI diagnosis -->
+  <g transform="translate(440, 260)">
+    <rect x="0" y="0" width="310" height="45" rx="6" fill="#1f2937" stroke="#22c55e" stroke-width="2"/>
+    <text x="15" y="18" font-family="sans-serif" font-size="9" fill="#86efac">AI: "Token expired. 60min expiry + 2h old</text>
+    <text x="15" y="34" font-family="sans-serif" font-size="9" fill="#86efac">= invalid. Client needs to refresh."</text>
+    <!-- Checkmark -->
+    <path d="M280 18 L288 28 L300 10" stroke="#22c55e" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- One shot badge -->
+  <g transform="translate(535, 320)">
+    <rect x="0" y="0" width="120" height="28" rx="14" fill="url(#successGrad)"/>
+    <text x="60" y="18" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">One-shot fix</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="400" y="388" font-family="sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Same AI. Same model. The difference is evidence.</text>
+</svg>
