@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Terminal window -->
+  <rect x="40" y="30" width="720" height="340" rx="8" fill="url(#termBg)" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Terminal title bar -->
+  <rect x="40" y="30" width="720" height="32" rx="8" fill="#21262d"/>
+  <rect x="40" y="54" width="720" height="8" fill="#21262d"/>
+  <circle cx="62" cy="46" r="6" fill="#f85149"/>
+  <circle cx="82" cy="46" r="6" fill="#f0883e"/>
+  <circle cx="102" cy="46" r="6" fill="#3fb950"/>
+  <text x="400" y="50" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">seo:audit</text>
+
+  <!-- Terminal output lines -->
+  <!-- Validate section -->
+  <text x="60" y="86" font-family="monospace" font-size="11" fill="#3fb950">PASS</text>
+  <text x="100" y="86" font-family="monospace" font-size="11" fill="#c9d1d9">validate-posts  0 errors, 86 warnings</text>
+
+  <text x="60" y="106" font-family="monospace" font-size="11" fill="#3fb950">PASS</text>
+  <text x="100" y="106" font-family="monospace" font-size="11" fill="#c9d1d9">validate-sitemap  57 URLs verified</text>
+
+  <!-- Links section -->
+  <text x="60" y="136" font-family="monospace" font-size="11" fill="#f0883e">WARN</text>
+  <text x="100" y="136" font-family="monospace" font-size="11" fill="#c9d1d9">internal-links  99 opportunities found</text>
+
+  <text x="80" y="156" font-family="monospace" font-size="10" fill="#8b949e">21 orphan posts (no outbound links)</text>
+  <text x="80" y="172" font-family="monospace" font-size="10" fill="#8b949e">28 unreferenced posts (no inbound links)</text>
+
+  <!-- Describe section -->
+  <text x="60" y="202" font-family="monospace" font-size="11" fill="#f0883e">WARN</text>
+  <text x="100" y="202" font-family="monospace" font-size="11" fill="#c9d1d9">describe  85 descriptions over 160 chars</text>
+
+  <text x="80" y="222" font-family="monospace" font-size="10" fill="#8b949e">...code smell guides, testing strategies</text>
+  <text x="80" y="238" font-family="monospace" font-size="10" fill="#f85149">...We found 34 bugs in one</text>
+  <text x="262" y="238" font-family="monospace" font-size="10" fill="#484f58">| audit. This is what...</text>
+
+  <!-- Suggest-links section -->
+  <text x="60" y="268" font-family="monospace" font-size="11" fill="#58a6ff">INFO</text>
+  <text x="100" y="268" font-family="monospace" font-size="11" fill="#c9d1d9">suggest-links  Top cross-link opportunities:</text>
+
+  <text x="80" y="288" font-family="monospace" font-size="10" fill="#3fb950">Paste:</text>
+  <text x="120" y="288" font-family="monospace" font-size="10" fill="#58a6ff">[Schema-Aware Migrations](/Blog/Post/schema-aware...)</text>
+
+  <text x="80" y="304" font-family="monospace" font-size="10" fill="#3fb950">Paste:</text>
+  <text x="120" y="304" font-family="monospace" font-size="10" fill="#58a6ff">[SEO Demystified](/Blog/Post/seo-demystified)</text>
+
+  <!-- IndexNow notification -->
+  <text x="60" y="334" font-family="monospace" font-size="11" fill="#3fb950">SENT</text>
+  <text x="100" y="334" font-family="monospace" font-size="11" fill="#c9d1d9">IndexNow  3 URLs submitted to Bing, Yandex, Naver</text>
+
+  <!-- Bottom bar / tagline area -->
+  <rect x="0" y="385" width="800" height="65" fill="rgba(0,0,0,0.4)"/>
+
+  <!-- Left side: crossed out -->
+  <text x="200" y="413" font-family="monospace" font-size="14" fill="#f85149" text-anchor="middle" text-decoration="line-through">automate content</text>
+
+  <!-- Divider -->
+  <text x="400" y="413" font-family="monospace" font-size="18" fill="#484f58" text-anchor="middle">/</text>
+
+  <!-- Right side: emphasized -->
+  <text x="600" y="413" font-family="monospace" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="bold">automate everything else</text>
+
+  <text x="400" y="438" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">11 scripts. 3 automation tiers. zero AI-generated content.</text>
+</svg>
