@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Pre-commit hook: validate blog posts before committing
+# Runs only when posts.json or markdown files are staged
+
+echo "Running blog post validation..."
+node LearnedGeek/scripts/seo/validate-posts.mjs --staged-only
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "Commit blocked: fix the errors above before committing."
+  echo "Run 'npm run seo:validate' from LearnedGeek/ for the full report."
+  exit 1
+fi

@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
@@ -27,3 +29,49 @@ jobs:
 
     - name: Test
       run: dotnet test --no-build --configuration Release --verbosity normal
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install npm dependencies
+      working-directory: LearnedGeek
+      run: npm ci
+
+    - name: Validate blog posts
+      run: node LearnedGeek/scripts/seo/validate-posts.mjs
+
+    - name: Validate sitemap freshness
+      run: node LearnedGeek/scripts/seo/validate-sitemap.mjs
+
+  notify-search-engines:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Detect new blog posts
+      id: new-posts
+      run: |
+        NEW_SLUGS=$(git diff HEAD~1 HEAD -- LearnedGeek/Content/posts.json \
+          | grep '^\+.*"slug"' | grep -v '^\+\+\+' \
+          | sed 's/.*"slug": "\([^"]*\)".*/\1/' | tr '\n' ',' | sed 's/,$//')
+        echo "slugs=$NEW_SLUGS" >> $GITHUB_OUTPUT
+        echo "Found new slugs: $NEW_SLUGS"
+
+    - name: Submit new URLs to IndexNow
+      if: steps.new-posts.outputs.slugs != ''
+      run: node LearnedGeek/scripts/seo/submit-urls.mjs --slugs "${{ steps.new-posts.outputs.slugs }}"
+      env:
+        INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
