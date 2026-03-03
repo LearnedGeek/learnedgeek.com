@@ -51,7 +51,9 @@ async function saveLastSubmitDate() {
 }
 
 async function getUrlsToSubmit() {
-  const posts = await loadPosts();
+  // Include scheduled posts — URLs are live immediately, just not listed on the blog index yet.
+  // Submitting early lets search engines crawl and index before the listing date.
+  const posts = await loadPosts({ includeScheduled: true });
 
   if (slugsIdx !== -1) {
     const slugList = args[slugsIdx + 1].split(',').filter(Boolean);

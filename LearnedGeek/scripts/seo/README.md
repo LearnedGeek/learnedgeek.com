@@ -54,7 +54,7 @@ This runs everything in sequence and produces a comprehensive report. Use it mon
 The pre-commit hook runs `seo:validate --staged-only` automatically. It blocks commits with errors (broken links, missing files) but allows warnings (long descriptions).
 
 ### After Pushing to Main
-CI runs validation + sitemap check, then auto-submits new post URLs to IndexNow.
+CI runs validation + sitemap check, then auto-submits new post URLs to IndexNow (including scheduled posts — URLs are live immediately, giving search engines a head start on indexing before the post appears in the blog listing).
 
 ## Automated (hands-off)
 
@@ -74,7 +74,7 @@ On every push or PR to main:
 
 On push to main only:
 4. `notify-search-engines` job diffs posts.json to detect new slugs
-5. Submits new URLs to IndexNow (Bing, Yandex, Naver, Seznam, Yep)
+5. Submits new URLs to IndexNow (Bing, Yandex, Naver, Seznam, Yep) — scheduled posts are submitted immediately since their URLs are live (just not listed on the blog index yet), giving search engines a head start on indexing
 6. Google is NOT notified via IndexNow (they don't participate) — Google discovers new content through the existing sitemap.xml and RSS feed at /feed.xml
 
 **IndexNow key**: stored as `INDEXNOW_KEY` GitHub Actions secret. Key verification file is at `wwwroot/2586b37e-20ec-4e65-9902-3e6320aecbae.txt`.
