@@ -111,4 +111,4 @@ And honestly? That's okay. The writing is the point.
 
 ---
 
-*This post is part of a series on the writing journey. Currently in the middle of Novel90's Spring 2026 cohort, editing a first draft into something publishable—by hand, with minimal AI assistance, and significantly fewer soliloquies about fate.*
+*This post is part of a series on the writing journey. Currently in the middle of Novel90's Spring 2026 cohort, editing a first draft into something publishable—by hand, with minimal AI assistance, and significantly fewer soliloquies about fate. If you want to see what this editing process actually looks like in practice, [The Stones Remember: Proof Day](/Blog/Post/the-stones-remember-proof-day) is the moment it became real.*

@@ -173,3 +173,5 @@ The machines are coming. They're very helpful. You should try them.
 ---
 
 *This post was written by a human who got a little carried away with the Jonathan Swift impression. The AI assistant helped with research, editing, and gently pointing out that "comptroller" has an 'm' in it. No humans were replaced in its production. No AIs were harmed. The future remains unwritten—which is, when you think about it, the point.*
+
+*For a less satirical take on the same topic, [AI Won't Replace Developers, But...](/Blog/Post/ai-wont-replace-developers-but) covers the productivity reality from someone building with AI every day.*

@@ -14,6 +14,7 @@
     "seo:suggest-tags": "node scripts/seo/suggest-tags.mjs",
     "seo:describe": "node scripts/seo/describe.mjs",
     "seo:new": "node scripts/seo/new-post.mjs",
+    "seo:schema": "node scripts/seo/validate-schema.mjs",
     "seo:all": "node scripts/seo/validate-posts.mjs && node scripts/seo/validate-sitemap.mjs && node scripts/seo/internal-links.mjs",
     "seo:audit": "node scripts/seo/validate-posts.mjs && node scripts/seo/validate-sitemap.mjs && node scripts/seo/internal-links.mjs && node scripts/seo/describe.mjs && node scripts/seo/suggest-links.mjs"
   },

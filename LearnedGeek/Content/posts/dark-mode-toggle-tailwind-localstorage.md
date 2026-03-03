@@ -124,6 +124,8 @@ No framework. No library. No build step beyond what Tailwind already requires. I
 
 The toggle on this site uses exactly this pattern. Click the sun/moon icon in the nav bar — that's all there is to it.
 
+If you're newer to Tailwind and wondering how it compares to the utility-class alternatives, [Tailwind vs Bootstrap: The Paradigm Shift That Finally Made Sense](/Blog/Post/tailwind-vs-bootstrap-paradigm-shift) is a good place to start. And if your dynamic class names mysteriously stopped working in JIT mode, [Tailwind's Hidden Gotchas: Dynamic Classes and @layer](/Blog/Post/tailwind-dynamic-classes-layer-gotchas) has the fix.
+
 ---
 
 *Sometimes the best features are the ones that feel like they've always been there. Dark mode should be one of them.*

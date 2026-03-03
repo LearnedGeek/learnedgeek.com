@@ -226,6 +226,6 @@ Same bell. Same subscription model. Just smarter about UI updates.
 
 ---
 
-*This is part of the ELI5 series—technical concepts explained without the jargon. For more on Blazor component communication, see the code in context throughout this post.*
+*This is part of the ELI5 series—technical concepts explained without the jargon. For more on Blazor component communication, see the code in context throughout this post. For another ELI5 deep dive, [ELI5: Why Do Programs Forget to Clean Up After Themselves?](/Blog/Post/eli5-memory-leaks) covers memory leaks with the same no-jargon approach.*
 
 *The key shift: stop thinking about "function pointers" and start thinking about **bells and notifications**. You're not calling methods—you're subscribing to announcements. Once that clicks, you'll see the pattern everywhere.*

@@ -432,6 +432,8 @@ Going line by line took about an hour. Now I can read any GitHub Actions workflo
 
 The YAML is the documentation. Now I can read it.
 
+When things do go wrong — and they will — [Debugging GitHub's Most Unhelpful Error: startup_failure in Reusable Workflows](/Blog/Post/debugging-startup-failure-reusable-workflows) covers the bisection technique for tracking down CI failures that give you nothing to work with. And if you want coverage reporting wired into your pipeline, [Code Coverage Without the Crying: A Practical Guide to Codecov](/Blog/Post/codecov-setup-guide) picks up where this post leaves off.
+
 ---
 
 *Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>*

@@ -223,3 +223,5 @@ But the data is right there in the APK you already downloaded. The tools to read
 (A note on legality: reverse-engineering for personal interoperability and analysis is generally protected under the DMCA's reverse-engineering exemption and similar laws in other jurisdictions. This is data extraction from a local copy for personal use — not redistribution, cheating, or server exploitation. That said, always check the ToS for your specific game.)
 
 Sometimes the best strategy guide is the one you extract yourself.
+
+This project grew out of a longer series — [Reverse Engineering a Mobile Game: Part 1 — What's Inside the Box?](/Blog/Post/reverse-engineering-game-part-1) starts from the very beginning if you want the full picture of how I got from "I wonder how this works" to building an optimizer.

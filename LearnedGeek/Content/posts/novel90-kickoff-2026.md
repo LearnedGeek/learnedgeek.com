@@ -68,4 +68,4 @@ See you on the other side.
 
 ---
 
-*This is the first post in what will probably become a series about the Novel90 journey. Follow along if you want to see how the sausage gets made—or unmade, or burned, or occasionally turned into something edible.*
+*This is the first post in what will probably become a series about the Novel90 journey. Follow along if you want to see how the sausage gets made—or unmade, or burned, or occasionally turned into something edible. For the honest take on using AI as a writing tool along the way, [I Tried Using AI to Write Fiction. Here's What Actually Happened.](/Blog/Post/ai-fiction-writing-honest-review) is worth reading first.*

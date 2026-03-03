@@ -97,3 +97,5 @@ If you're early in your career:
 **Then use every tool available to you.** Use Tailwind. Use ORMs. Use AI. Use them *because* you understand what's happening underneath, not instead of understanding it.
 
 These things are not mutually exclusive. They never were.
+
+If you're curious where Tailwind fits relative to Bootstrap once you do have the fundamentals, [Tailwind vs Bootstrap: The Paradigm Shift That Finally Made Sense](/Blog/Post/tailwind-vs-bootstrap-paradigm-shift) might be the read you're looking for. And for the gotchas that catch even experienced Tailwind users, [Tailwind's Hidden Gotchas: Dynamic Classes and @layer](/Blog/Post/tailwind-dynamic-classes-layer-gotchas) is worth bookmarking.

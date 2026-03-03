@@ -134,3 +134,5 @@ Sometimes the best projects are the ones you build because a problem annoyed you
 ---
 
 *Have you built a Discord bot? Run into the "single instance serving everyone" realization? Found a hosting solution you love? Let me know in the comments - I'm genuinely looking for advice here.*
+
+*If you've hit mysterious bot silence and can't tell if it's your code or Discord's intents, [When Your Discord Bot Stops Hearing: A Debugging Odyssey](/Blog/Post/when-your-discord-bot-stops-hearing) covers the exact failure mode and how to find it. Also worth reading: [Texting My Own AI: Building an SMS Interface to a Custom LLM in an Hour](/Blog/Post/sms-llm-texting-custom-ai) — a different kind of "build a bot to solve your own problem" story.*

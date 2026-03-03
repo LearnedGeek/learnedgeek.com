@@ -564,3 +564,5 @@ To use this configuration:
 7. Adjust `--launch-profile` to match your `launchSettings.json` profiles
 
 The file is version-controlled, so team members get the same task definitions.
+
+If you run into mysterious build failures after setting this up — particularly around file locks during the watch task — [VS Code File Watchers and .NET Build Locks: The Mystery Build Failure](/Blog/Post/vscode-file-watcher-build-locks) covers that exact scenario. And if you want to push this further into full CI/CD, [What Your CI Workflow Actually Does: A Line-by-Line Walkthrough](/Blog/Post/anatomy-of-a-ci-workflow) picks up where local automation leaves off.

@@ -185,3 +185,5 @@ Sometimes the code isn't broken. Sometimes Discord just... stops listening.
 ---
 
 *Have you encountered silent Discord Application failures? I'd love to hear about it—misery loves company in debugging. Drop a comment below and we can commiserate about the hours we'll never get back.*
+
+*If you're building Discord bots in .NET and want to see what one looks like at the feature level, [TLDRkseid: Building a Discord Bot That Summarizes Chaos](/Blog/Post/discord-tldrkseid-ai-summarization-bot) covers the actual implementation — once we got it to listen again.*

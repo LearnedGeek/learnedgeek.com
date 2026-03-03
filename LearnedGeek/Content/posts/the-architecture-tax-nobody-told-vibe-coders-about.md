@@ -181,3 +181,5 @@ The architecture tax always comes due. The only question is whether you pay it o
 ---
 
 *This post was written by a developer who builds with AI every day, and the AI that builds with them. The 34 bugs were real. The audit was real. The fixes were real. We have over 2,000 passing tests and we still found critical issues by just... reading the code.*
+
+*If you've watched an AI confidently iterate on symptoms while the real bug hid in plain sight, [When Your AI Finds the Bug You Told It to Look For](/Blog/Post/when-your-ai-finds-the-bug-you-told-it-to-look-for) is that story.*

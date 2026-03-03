@@ -330,3 +330,5 @@ Payment integration doesn't have to be a leap of faith. With the Stripe CLI, you
 Now you just need customers.
 
 (Real ones. Jenny doesn't count.)
+
+Once your webhook handlers are solid, [Global Exception Handling in ASP.NET Core](/Blog/Post/global-exception-handling-aspnet-core) is the next piece — because when a webhook handler throws in production, you want structured error logging, not a silent 500.

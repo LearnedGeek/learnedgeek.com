@@ -186,3 +186,5 @@ And sometimes, it helps you understand yourself.
 *The code for this project is available on [GitHub](https://github.com/mcarthey/ChatLake). It's a .NET application, but the concepts translate to any language with embedding model access.*
 
 *Next time you're about to ask ChatGPT something, maybe check if past-you already found the answer.*
+
+*Want to understand how those embeddings actually work under the hood? [How AI Assistants Actually Work (The Clever Parrot Explained)](/Blog/Post/how-ai-assistants-actually-work) demystifies the mechanics without the academic jargon.*

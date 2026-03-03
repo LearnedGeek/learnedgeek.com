@@ -48,4 +48,6 @@ Proof day is ship day minus one. And it feels pretty good.
 
 *The Stones Remember* by M.M. McArthey — coming soon.
 
+*If you're curious where this story started, [How Black Ember Began (Or: From Video Game Avatar to Literary Fiction)](/Blog/Post/how-black-ember-began) is the origin story.*
+
 *Back to our regularly scheduled programming (literally) in the next post.*
