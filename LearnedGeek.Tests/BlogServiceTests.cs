@@ -1,6 +1,7 @@
 using LearnedGeek.Models;
 using LearnedGeek.Services;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
 using Moq;
 
 namespace LearnedGeek.Tests;
@@ -14,7 +15,7 @@ public class BlogServiceTests
         var mockEnv = new Mock<IWebHostEnvironment>();
         mockEnv.Setup(e => e.ContentRootPath).Returns(AppContext.BaseDirectory);
 
-        _blogService = new BlogService(mockEnv.Object);
+        _blogService = new BlogService(mockEnv.Object, Mock.Of<ILogger<BlogService>>());
     }
 
     [Fact]
@@ -36,15 +37,15 @@ public class BlogServiceTests
         var posts = (await _blogService.GetAllPostsAsync()).ToList();
 
         // Assert
-        Assert.Equal(Category.Computers, posts[0].Category);
-        Assert.Equal(Category.Woodworking, posts[1].Category);
+        Assert.Equal(Category.Tech, posts[0].Category);
+        Assert.Equal(Category.Personal, posts[1].Category);
     }
 
     [Fact]
     public async Task GetPostsByCategoryAsync_ReturnsOnlyMatchingCategory()
     {
         // Act
-        var posts = (await _blogService.GetPostsByCategoryAsync(Category.Computers)).ToList();
+        var posts = (await _blogService.GetPostsByCategoryAsync(Category.Tech)).ToList();
 
         // Assert
         Assert.Single(posts);
@@ -120,7 +121,7 @@ public class BlogServiceTests
         Assert.Equal("test-post-computers", post.Slug);
         Assert.Equal("Test Post About Computers", post.Title);
         Assert.Equal("A test post in the Computers category.", post.Description);
-        Assert.Equal(Category.Computers, post.Category);
+        Assert.Equal(Category.Tech, post.Category);
         Assert.Equal(new[] { "test", "computers" }, post.Tags);
         Assert.Equal(new DateTime(2026, 1, 1), post.Date);
         Assert.True(post.Featured);
