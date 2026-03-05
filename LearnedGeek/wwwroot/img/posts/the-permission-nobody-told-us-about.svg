@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="gpsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="gapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="battGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="fixGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b21ab"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#grid)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="Arial, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">
+    The Permission Nobody Told Us About
+  </text>
+  <text x="400" y="62" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">
+    Android GPS, Battery Optimization, and 1,435 Missing Seconds
+  </text>
+
+  <!-- Phone with GPS signals (left) -->
+  <g transform="translate(50, 95)">
+    <rect x="0" y="0" width="160" height="240" rx="10" fill="#2a2a4a" stroke="#4a4a6a" stroke-width="2"/>
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">ANDROID DEVICE</text>
+
+    <!-- Phone body -->
+    <rect x="40" y="40" width="80" height="130" rx="10" fill="#1e293b" stroke="#4a4a6a" stroke-width="1"/>
+    <rect x="48" y="50" width="64" height="100" rx="3" fill="#0f172a"/>
+
+    <!-- Map dots on phone screen -->
+    <circle cx="65" cy="70" r="3" fill="#10b981"/>
+    <circle cx="80" cy="85" r="3" fill="#10b981"/>
+    <circle cx="92" cy="100" r="3" fill="#10b981"/>
+    <!-- Gap indicator -->
+    <line x1="92" y1="100" x2="98" y2="130" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+    <circle cx="98" cy="130" r="3" fill="#ef4444"/>
+
+    <!-- GPS signal arcs -->
+    <path d="M80,38 Q80,20 96,20" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.8"/>
+    <path d="M80,38 Q80,12 104,12" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+    <path d="M80,38 Q80,4 112,4" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Labels under phone -->
+    <text x="80" y="195" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">FusedLocation</text>
+    <text x="80" y="210" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">ProviderClient</text>
+    <text x="80" y="228" font-family="monospace" font-size="8" fill="#f59e0b" text-anchor="middle">interval: 30s (requested)</text>
+  </g>
+
+  <!-- Timeline: BEFORE fix (center-top) -->
+  <g transform="translate(240, 95)">
+    <rect x="0" y="0" width="520" height="110" rx="8" fill="#2a2a4a" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="260" y="22" font-family="Arial, sans-serif" font-size="12" fill="#ef4444" text-anchor="middle" font-weight="bold">BEFORE: Drive Test GPS Timeline</text>
+
+    <!-- Timeline axis -->
+    <line x1="20" y1="55" x2="500" y2="55" stroke="#4a4a6a" stroke-width="1"/>
+
+    <!-- Stationary points (dense) -->
+    <circle cx="30" cy="55" r="4" fill="#10b981"/>
+    <circle cx="50" cy="55" r="4" fill="#10b981"/>
+    <circle cx="70" cy="55" r="4" fill="#10b981"/>
+    <circle cx="90" cy="55" r="4" fill="#10b981"/>
+    <text x="60" y="45" font-family="Arial, sans-serif" font-size="8" fill="#10b981" text-anchor="middle">~31s intervals</text>
+    <text x="60" y="75" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Job Site</text>
+
+    <!-- Gap region -->
+    <rect x="120" y="35" width="230" height="40" rx="4" fill="#ef4444" opacity="0.12"/>
+    <line x1="120" y1="55" x2="350" y2="55" stroke="#ef4444" stroke-width="2" stroke-dasharray="8,4"/>
+    <!-- Two lonely dots -->
+    <circle cx="200" cy="55" r="4" fill="#f59e0b" opacity="0.6"/>
+    <circle cx="290" cy="55" r="4" fill="#f59e0b" opacity="0.6"/>
+    <text x="235" y="45" font-family="Arial, sans-serif" font-size="9" fill="#ef4444" text-anchor="middle" font-weight="bold">24-MINUTE GAP</text>
+    <text x="235" y="75" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Commute (1,435 seconds)</text>
+
+    <!-- Arrival points -->
+    <circle cx="370" cy="55" r="4" fill="#10b981"/>
+    <circle cx="390" cy="55" r="4" fill="#10b981"/>
+    <circle cx="410" cy="55" r="4" fill="#10b981"/>
+    <circle cx="430" cy="55" r="4" fill="#10b981"/>
+    <text x="400" y="45" font-family="Arial, sans-serif" font-size="8" fill="#10b981" text-anchor="middle">~31s intervals</text>
+    <text x="400" y="75" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Home</text>
+
+    <!-- Data points summary -->
+    <rect x="450" y="35" width="60" height="40" rx="4" fill="#1e293b"/>
+    <text x="480" y="52" font-family="monospace" font-size="10" fill="#ef4444" text-anchor="middle" font-weight="bold">2 pts</text>
+    <text x="480" y="65" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">in 24 min</text>
+  </g>
+
+  <!-- The culprit: Battery optimization (center) -->
+  <g transform="translate(240, 220)">
+    <rect x="0" y="0" width="250" height="130" rx="8" fill="#2a2a4a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="125" y="22" font-family="Arial, sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle" font-weight="bold">THE ROOT CAUSE</text>
+
+    <!-- Battery icon -->
+    <rect x="20" y="38" width="40" height="70" rx="4" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="30" y="32" width="20" height="6" rx="2" fill="#f59e0b"/>
+    <!-- Partial fill -->
+    <rect x="24" y="68" width="32" height="36" rx="2" fill="url(#battGrad)" opacity="0.7"/>
+    <!-- Doze Z's -->
+    <text x="40" y="58" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" font-weight="bold">z</text>
+    <text x="48" y="52" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="bold">z</text>
+    <text x="56" y="44" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="bold">z</text>
+
+    <!-- Explanation -->
+    <text x="80" y="44" font-family="Arial, sans-serif" font-size="9" fill="#fff">Accelerometer says: STILL</text>
+    <text x="80" y="58" font-family="Arial, sans-serif" font-size="9" fill="#fff">OS throttles GPS to ~9 min</text>
+    <text x="80" y="72" font-family="Arial, sans-serif" font-size="9" fill="#fff">Accuracy filter discards rest</text>
+
+    <!-- Arrow -->
+    <text x="80" y="92" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b" font-weight="bold">Result:</text>
+    <text x="80" y="106" font-family="monospace" font-size="9" fill="#ef4444">30s requested → 541s actual</text>
+    <text x="80" y="120" font-family="monospace" font-size="9" fill="#ef4444">Phone in bag = "stationary"</text>
+  </g>
+
+  <!-- The fix (right) -->
+  <g transform="translate(510, 220)">
+    <rect x="0" y="0" width="250" height="130" rx="8" fill="#2a2a4a" stroke="#10b981" stroke-width="2"/>
+    <text x="125" y="22" font-family="Arial, sans-serif" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">THE FIX</text>
+
+    <!-- Permission shield icon -->
+    <g transform="translate(20, 35)">
+      <path d="M20,0 L40,8 L40,28 Q40,48 20,55 Q0,48 0,28 L0,8 Z" fill="url(#fixGrad)" opacity="0.8"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">!</text>
+    </g>
+
+    <!-- Fix items -->
+    <text x="70" y="44" font-family="monospace" font-size="8" fill="#10b981">REQUEST_IGNORE_BATTERY</text>
+    <text x="70" y="56" font-family="monospace" font-size="8" fill="#10b981">_OPTIMIZATIONS</text>
+
+    <text x="70" y="74" font-family="monospace" font-size="8" fill="#94a3b8">+ SetMaxUpdateDelayMillis</text>
+    <text x="70" y="86" font-family="monospace" font-size="8" fill="#94a3b8">+ SetMinUpdateDistanceMeters(0)</text>
+    <text x="70" y="98" font-family="monospace" font-size="8" fill="#94a3b8">+ WAKE_LOCK (partial)</text>
+
+    <!-- Result -->
+    <rect x="15" y="108" width="220" height="16" rx="3" fill="#1e293b"/>
+    <text x="125" y="120" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle" font-weight="bold">OS must honor your intervals</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(240, 365)">
+    <rect x="0" y="0" width="520" height="60" rx="8" fill="#2a2a4a" stroke="#6b21ab" stroke-width="1.5"/>
+    <text x="260" y="20" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">
+      A foreground service keeps your process alive.
+    </text>
+    <text x="260" y="38" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">
+      A battery exemption keeps your intervals alive.
+    </text>
+    <text x="260" y="52" font-family="Arial, sans-serif" font-size="9" fill="#6b21ab" text-anchor="middle">You need both.</text>
+  </g>
+</svg>

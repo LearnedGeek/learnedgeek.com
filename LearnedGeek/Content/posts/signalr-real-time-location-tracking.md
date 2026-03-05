@@ -467,6 +467,6 @@ The supervisor tracking their crews doesn't care about WebSocket protocol negoti
 
 ---
 
-*This is part of a series on building field service applications with Blazor. See also: [When Your Map Library Doesn't Speak C#](/Blog/Post/leaflet-blazor-javascript-interop) for integrating Leaflet.js with Blazor WASM.*
+*This is part of a series on building field service applications with Blazor. See also: [When Your Map Library Doesn't Speak C#](/Blog/Post/leaflet-blazor-javascript-interop) for integrating Leaflet.js with Blazor WASM, and [The Permission Nobody Told Us About](/Blog/Post/the-permission-nobody-told-us-about) for why the GPS data feeding this hub had a 24-minute gap.*
 
 *The full source for the location hub and client service—including connection status indicators and unit tests—is in the CrewTrack repository.*

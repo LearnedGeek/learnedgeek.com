@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "the-permission-nobody-told-us-about",
+      "title": "The Permission Nobody Told Us About",
+      "description": "A 1,435-second GPS gap led us to the one Android permission every tracking app needs and nobody mentions in the docs.",
+      "category": "tech",
+      "tags": [
+        "android",
+        "maui",
+        "gps",
+        "background-location",
+        "debugging",
+        "mobile",
+        "dotnet",
+        "real-time",
+        "csharp"
+      ],
+      "date": "2026-07-28T17:00:00",
+      "featured": true,
+      "image": "/img/posts/the-permission-nobody-told-us-about.svg"
+    },
+    {
       "slug": "the-seo-work-nobody-does-so-i-automated-it",
       "title": "The SEO Work Nobody Does So I Automated It",
       "description": "An Instagram post promised SEO magic through AI-generated articles. Instead of automating content, I automated everything else with 11 scripts.",
@@ -100,7 +120,7 @@
         "privacy",
         "api-combat"
       ],
-      "date": "2026-09-02T17:00:00",
+      "date": "2026-09-05T17:00:00",
       "featured": false,
       "image": "/img/posts/soft-delete-pii-anonymization.svg"
     },
@@ -117,7 +137,7 @@
         "gmail",
         "api-combat"
       ],
-      "date": "2026-09-05T17:00:00",
+      "date": "2026-09-08T17:00:00",
       "featured": false,
       "image": "/img/posts/branded-html-emails-gmail.svg"
     },
@@ -134,7 +154,7 @@
         "dotnet",
         "api-combat"
       ],
-      "date": "2026-08-15T17:00:00",
+      "date": "2026-08-18T17:00:00",
       "featured": false,
       "image": "/img/posts/deploying-aspnet-core-shared-hosting.svg"
     },
@@ -150,7 +170,7 @@
         "design-patterns",
         "api-combat"
       ],
-      "date": "2026-11-01T18:00:00",
+      "date": "2026-11-04T17:00:00",
       "featured": false,
       "image": "/img/posts/daily-challenge-generation-procedural.svg"
     },
@@ -167,7 +187,7 @@
         "authorization",
         "api-combat"
       ],
-      "date": "2026-10-20T17:00:00",
+      "date": "2026-10-23T17:00:00",
       "featured": false,
       "image": "/img/posts/tier-gating-custom-action-filters.svg"
     },
@@ -184,7 +204,7 @@
         "competitive",
         "api-combat"
       ],
-      "date": "2026-10-23T17:00:00",
+      "date": "2026-10-26T17:00:00",
       "featured": false,
       "image": "/img/posts/elo-rating-seasonal-tiers.svg"
     },
@@ -200,7 +220,7 @@
         "strategy",
         "api-combat"
       ],
-      "date": "2026-10-26T17:00:00",
+      "date": "2026-10-29T17:00:00",
       "featured": false,
       "image": "/img/posts/environmental-modifiers-weekly-rotation.svg"
     },
@@ -216,7 +236,7 @@
         "game-economy",
         "api-combat"
       ],
-      "date": "2026-10-29T17:00:00",
+      "date": "2026-11-01T17:00:00",
       "featured": false,
       "image": "/img/posts/strategy-marketplace-player-economy.svg"
     },
@@ -233,7 +253,7 @@
         "documentation",
         "api-combat"
       ],
-      "date": "2026-10-08T17:00:00",
+      "date": "2026-10-11T17:00:00",
       "featured": false,
       "image": "/img/posts/custom-api-docs-ditching-swagger.svg"
     },
@@ -249,7 +269,7 @@
         "api-design",
         "api-combat"
       ],
-      "date": "2026-10-05T17:00:00",
+      "date": "2026-10-08T17:00:00",
       "featured": false,
       "image": "/img/posts/hateoas-lite-discoverable-api.svg"
     },
@@ -266,7 +286,7 @@
         "subscription",
         "api-combat"
       ],
-      "date": "2026-10-17T17:00:00",
+      "date": "2026-10-20T17:00:00",
       "featured": false,
       "image": "/img/posts/rate-limiting-by-subscription-tier.svg"
     },
@@ -283,7 +303,7 @@
         "security",
         "api-combat"
       ],
-      "date": "2026-08-30T17:00:00",
+      "date": "2026-09-02T17:00:00",
       "featured": false,
       "image": "/img/posts/dual-auth-jwt-cookies-aspnet-core.svg"
     },
@@ -299,7 +319,7 @@
         "csharp",
         "api-combat"
       ],
-      "date": "2026-08-27T17:00:00",
+      "date": "2026-08-30T17:00:00",
       "featured": false,
       "image": "/img/posts/background-services-shared-hosting.svg"
     },
@@ -315,7 +335,7 @@
         "fan-out",
         "api-combat"
       ],
-      "date": "2026-10-14T17:00:00",
+      "date": "2026-10-17T17:00:00",
       "featured": false,
       "image": "/img/posts/fan-out-without-message-bus.svg"
     },
@@ -331,7 +351,7 @@
         "design-patterns",
         "api-combat"
       ],
-      "date": "2026-10-11T17:00:00",
+      "date": "2026-10-14T17:00:00",
       "featured": false,
       "image": "/img/posts/battle-engine-400-lines-csharp.svg"
     },
@@ -441,7 +461,7 @@
         "troubleshooting",
         "shared-hosting"
       ],
-      "date": "2026-08-18T17:00:00",
+      "date": "2026-08-21T17:00:00",
       "featured": true,
       "image": "/img/posts/fixing-502-5-ancm-out-of-process-startup-failure.svg",
       "linkedInHook": "Published an ASP.NET Core app to shared hosting. Got 502.5 ANCM Out-Of-Process Startup Failure.\n\nThe error page suggests checking event logs and attaching a debugger. Helpful.\n\nThe actual problem: new .NET projects default to InProcess hosting. But all apps in an IIS application pool must use the same hosting model. If your existing sites run OutOfProcess, the new one needs to match.\n\nThe fix: add AspNetCoreHostingModel=OutOfProcess to your .csproj AND .pubxml. Both files. They must agree.\n\nI've fixed this three times and kept forgetting. Now it's a blog post.",
@@ -461,7 +481,7 @@
         "web-development",
         "markdown"
       ],
-      "date": "2026-09-14T17:00:00",
+      "date": "2026-09-17T17:00:00",
       "featured": true,
       "image": "/img/posts/adding-syntax-highlighting-with-prismjs.svg",
       "linkedInHook": "For months, every code block on my blog was the same flat gray. C#, JavaScript, SQL—all identical monochrome.\n\nThen I added Prism.js. One CSS link. Two script tags. Fifteen minutes.\n\nKeywords are purple. Strings are green. Comments are gray. The autoloader fetches only the grammars you actually use—290+ languages on demand.\n\nThe only gotcha: a Tailwind !important rule was overriding Prism's token colors. Remove that, and it just works.\n\nYour code blocks deserve better than monochrome.",
@@ -480,7 +500,7 @@
         "sonarcloud",
         "education"
       ],
-      "date": "2026-09-29T17:00:00",
+      "date": "2026-10-02T17:00:00",
       "featured": true,
       "image": "/img/posts/grading-dashboard-github-classroom.svg",
       "linkedInHook": "I teach database programming. Every week: 30 student repos to review. Did it compile? Did they finish? Did anyone leave a desperate '// is this right???' at 2 AM?\n\nMy old workflow: click, check, repeat, forget where I was, start over.\n\nSo I built a dashboard. GitHub Actions scans every 6 hours for build status, TODO counts, student questions in comments, SonarCloud metrics.\n\nNow grading takes 1 hour instead of 4. And I actually catch the students who need help.",
@@ -499,7 +519,7 @@
         "recovery",
         "troubleshooting"
       ],
-      "date": "2026-10-02T17:00:00",
+      "date": "2026-10-05T17:00:00",
       "featured": true,
       "image": "/img/posts/seo-oops-recovery-guide.svg",
       "linkedInHook": "Every developer has that moment of cold sweat when they realize something that shouldn't be public is now indexed by Google. Or worse, that angry TODO comment in a commit message.\n\nI've been there. Here's the recovery playbook I wish I'd had.",
@@ -657,7 +677,7 @@
         "maui",
         "accessibility"
       ],
-      "date": "2026-07-28T17:00:00",
+      "date": "2026-07-31T17:00:00",
       "featured": true,
       "image": "/img/posts/m3e-design-for-field-workers.svg",
       "linkedInHook": "Google's Material 3 Expressive is based on 46 studies with 18,000+ participants.\n\nBut those studies were about messaging apps and social media. What about people wearing work gloves? Squinting in sunlight? Who need to clock in in 3 seconds and get back to work?\n\n64px touch targets. 2-tab bottom nav. Industry-familiar blueprint aesthetics.\n\nM3E gave us the research to justify decisions we might otherwise have defended on instinct. 'Users spot key elements 4x faster' beats 'I think bigger buttons look better' in any stakeholder meeting.",
@@ -677,7 +697,7 @@
         "maui",
         "responsive"
       ],
-      "date": "2026-08-06T17:00:00",
+      "date": "2026-08-09T17:00:00",
       "featured": true,
       "image": "/img/posts/floating-card-pattern-device-agnostic-design.svg",
       "linkedInHook": "Android fragmentation is real. Design a layout on a Pixel, then watch it break on a Samsung with a massive navigation bar.\n\nThe usual solution: safe-area calculations everywhere.\n\nOur solution: stop fighting. Make the system chrome part of the design.\n\n8px insets, rounded corners, brand color behind everything. The same CSS works on every device. No calculations needed.\n\nSometimes the solution to fragmentation isn't more complexity—it's embracing the constraints.",
@@ -696,7 +716,7 @@
         "blazor",
         "accessibility"
       ],
-      "date": "2026-08-03T17:00:00",
+      "date": "2026-08-06T17:00:00",
       "featured": true,
       "image": "/img/posts/drawer-vs-bottom-nav-ux-framework.svg",
       "linkedInHook": "We built a hamburger menu. Three months later, we ripped it out.\n\nWatch someone use a drawer: tap hamburger → wait for animation → scan options → tap choice → wait for close. 7 steps to navigate.\n\nBottom nav: tap destination. 1 step.\n\nThe framework:\n• 2-4 actions? Bottom nav\n• 5+? Drawer (or rethink your IA)\n• One-handed use? Bottom nav wins\n• Novice users? Visible navigation always\n\nWe deleted more code removing the drawer than we added for the bottom nav.",
@@ -715,7 +735,7 @@
         "blazor",
         "accessibility"
       ],
-      "date": "2026-07-31T17:00:00",
+      "date": "2026-08-03T17:00:00",
       "featured": true,
       "image": "/img/posts/profile-avatar-navigation-pattern.svg",
       "linkedInHook": "Settings is a secondary action. Don't waste prime thumb-zone real estate on it.\n\nThe pattern: profile avatar in the header. Visible on every page. Tap → settings.\n\nWhy it works:\n• Avatars are universally understood as clickable\n• 'MJ' is more human than a gear icon\n• Bottom nav stays focused on primary actions\n• Users already know this from Gmail, Twitter, etc.\n\nThe best patterns feel obvious in retrospect. 'Put a profile avatar in the header' is so simple it almost doesn't need a blog post. But it took us three iterations to arrive at it.",
@@ -734,7 +754,7 @@
         "branding",
         "construction"
       ],
-      "date": "2026-08-12T17:00:00",
+      "date": "2026-08-15T17:00:00",
       "featured": true,
       "image": "/img/posts/blueprint-theme-construction-industry-visual-identity.svg",
       "linkedInHook": "Generic business app aesthetics don't resonate with construction workers.\n\nThey spend their careers turning blueprints into reality. The visual language is familiar: grid patterns, navy tones, technical precision, corner measurement marks.\n\nSo we made our app look like a blueprint.\n\nCSS grid backgrounds. Teal tick marks at corners. Monospace for technical data. Navy gradients that feel like architectural drawings.\n\nWhen a 55-year-old master electrician opens the app and thinks 'this was made for people like me'—that's trust you can't buy with marketing.",
@@ -753,7 +773,7 @@
         "blazor",
         "pwa"
       ],
-      "date": "2026-08-09T17:00:00",
+      "date": "2026-08-12T17:00:00",
       "featured": true,
       "image": "/img/posts/mobile-css-micro-fixes.svg",
       "linkedInHook": "Mobile web apps have a hundred tiny paper cuts that make them feel 'off.'\n\nNone are hard to fix—but you have to know they exist.\n\n• user-select: none (stop accidental text selection)\n• -webkit-tap-highlight-color: transparent (kill the blue flash)\n• overscroll-behavior: none (prevent pull-to-refresh hijacking)\n• font-size: 16px on inputs (prevent iOS zoom)\n• env(safe-area-inset-*) (respect notches)\n\nThis is a living document. Copy-paste the starter snippet and forget about these issues forever.",
@@ -790,7 +810,7 @@
         "build",
         "troubleshooting"
       ],
-      "date": "2026-09-11T17:00:00",
+      "date": "2026-09-14T17:00:00",
       "featured": true,
       "image": "/img/posts/vscode-file-watcher-build-locks.svg",
       "linkedInHook": "Sometimes the build works. Sometimes: 'The file is locked by Code.exe.'\n\nI blamed antivirus. I blamed my luck. The real culprit: VS Code's file watcher.\n\nVS Code watches everything in your workspace by default. When MSBuild writes to bin/, VS Code notices and briefly holds a handle. Race condition.\n\nThe fix:\n\"files.watcherExclude\": {\n  \"**/bin/**\": true,\n  \"**/obj/**\": true\n}\n\nTwo lines of JSON. No more mystery build failures. This took me MONTHS to figure out.",
@@ -949,7 +969,7 @@
         "backups",
         "encryption"
       ],
-      "date": "2026-09-23T17:00:00",
+      "date": "2026-09-26T17:00:00",
       "featured": true,
       "image": "/img/posts/why-databases-need-all-this-ceremony.svg",
       "linkedInHook": "Code is like a recipe. If it's wrong, you fix it. No cake was harmed.\n\nData is like the cake itself. Once you've baked it wrong, you can't unbake it. The eggs are already in there.\n\nThis is why developers treat databases like explosives. Migrations. Backups. Testing against real databases. Environment separation.\n\nThe ceremony exists because data changes can't be easily undone. And data is the actual reason software exists.",
@@ -1179,7 +1199,7 @@
         "devops",
         "ci-cd"
       ],
-      "date": "2026-08-21T17:00:00",
+      "date": "2026-08-24T17:00:00",
       "featured": true,
       "image": "/img/posts/iis-app-offline-deployment-trick.svg",
       "linkedInHook": "Deploying to IIS and hitting ERROR_FILE_IN_USE is infuriating. The app is running, IIS has file locks, MSDeploy fails. I'd been working around this with retry loops and manual FTP deletions.\n\nTurns out there's a feature that's been in IIS all along: app_offline.htm.\n\nDrop that file in your app root and IIS immediately stops the app, releases all locks, and serves a maintenance page. Deploy your files. Delete the file. App restarts.\n\nOne file. No more lock errors.",
@@ -1198,7 +1218,7 @@
         "devops",
         "patterns"
       ],
-      "date": "2026-08-24T17:00:00",
+      "date": "2026-08-27T17:00:00",
       "featured": true,
       "image": "/img/posts/environment-specific-ef-core-migrations.svg",
       "linkedInHook": "EF Core migrations are great for schema changes, but they run the same code everywhere. Real apps need different seed data per environment—demo users in dev, minimal data in staging, nothing in production.\n\nThe typical fix is wrapping everything in if (Environment.IsDevelopment()) checks. That gets ugly fast.\n\nHere's a cleaner pattern: convention-based SQL scripts that load automatically based on environment. Script.dev.sql for dev, Script.prod.sql for production. The migration code stays simple.",
@@ -1237,7 +1257,7 @@
         "wildcard",
         "raspberry-pi"
       ],
-      "date": "2026-09-20T17:00:00",
+      "date": "2026-09-23T17:00:00",
       "featured": true,
       "image": "/img/posts/upgrading-certbot-to-wildcard-certificates.svg",
       "linkedInHook": "My SSL automation was humming along—until I needed subdomains for a multi-tenant SaaS app. Adding each one manually meant regenerating certs every time a client onboarded.\n\nSolution: wildcard certificates. One cert covers *.domain.com.\n\nBut Certbot doesn't just upgrade in place. It creates a new cert with a -0001 suffix. And the rename command doesn't exist in older versions. Here's how to handle it cleanly.",
@@ -1352,7 +1372,7 @@
         "svg",
         "branding"
       ],
-      "date": "2026-09-26T17:00:00",
+      "date": "2026-09-29T17:00:00",
       "featured": false,
       "image": "/img/posts/designing-business-cards-with-inkscape.svg",
       "linkedInHook": "I designed my own business cards this weekend using Inkscape — a free, open-source tool.\n\nI'd been avoiding online template wizards because they never felt right. So I figured, I work with SVGs all the time for my blog... why not just build the cards myself?\n\nTurns out print design is a completely different world from web design. Things I had no clue about going in:\n\n- Bleed margins (your design extends past the cut line in case the trim is slightly off)\n- Safe zones (keep important stuff away from edges)\n- 300 DPI vs 96 DPI (screen resolution looks terrible in print)\n- Spot UV finishing requires a separate mask file — black where you want gloss, white everywhere else\n\nThe biggest surprise? Inkscape's XML editor. Being able to directly edit SVG attributes — opacity, letter-spacing, fills, node ordering — was faster than navigating menus. Felt like using browser DevTools but for print design.\n\nWould I recommend this approach? Only if you enjoy learning by doing. It took longer than a template wizard, but I understand print design now in a way I wouldn't have otherwise.\n\n#inkscape #design #printdesign #opensource #learningbydoing"
@@ -1388,7 +1408,7 @@
         "mobile",
         "troubleshooting"
       ],
-      "date": "2026-09-08T17:00:00",
+      "date": "2026-09-11T17:00:00",
       "featured": true,
       "image": "/img/posts/recaptcha-v3-mobile-users-scoring.svg",
       "linkedInHook": "My wife tried to use a contact form I built. She was on her phone, on our couch, clearly a real person. reCAPTCHA scored her 0.1—basically flagged as a bot.\n\nTurns out the 0.5 threshold everyone recommends is way too aggressive for mobile users. Google doesn't exactly advertise this. Wrote up what I learned.",
@@ -1446,7 +1466,7 @@
         "csharp",
         "user-experience"
       ],
-      "date": "2026-09-17T17:00:00",
+      "date": "2026-09-20T17:00:00",
       "featured": true,
       "image": "/img/posts/custom-error-pages-teaching-moments.svg",
       "linkedInHook": "Error pages are guaranteed traffic. Every site has them. Every visitor eventually sees one. So why do most of them look like the server is personally offended by your existence?\n\nI decided to turn my 404s into tiny teaching moments. Here's the philosophy and implementation.",
