@@ -462,3 +462,7 @@ Inkscape/
 
 # SEO automation state files
 LearnedGeek/scripts/seo/.last-submit
+
+# SEO scanner output (client proposals and prospect data)
+seo_scanner/proposals/
+seo_scanner/prospects/

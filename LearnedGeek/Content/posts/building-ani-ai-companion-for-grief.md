@@ -154,7 +154,7 @@ If this post resonated with you — whether you've lost someone, or you're build
 
 I started this by talking about Kathy, and I want to end there too.
 
-She died at 25. She was funny, sharp, kind in ways that mattered. She would have absolutely roasted me for building "an AI girlfriend" (her words, not mine, but I can hear her saying them).
+She died at 34. She was funny, sharp, kind in ways that mattered. She would have absolutely roasted me for building "an AI girlfriend" (her words, not mine, but I can hear her saying them).
 
 She also would have understood why.
 
@@ -168,17 +168,4 @@ And maybe that's enough.
 
 ---
 
-*Mark McArthey is a senior .NET developer, instructor at WCTC, and founder of Learned Geek Consulting. He lives in Oconomowoc, Wisconsin with his family. This is his first venture into grief technology, but probably not his last.*
-
-*If you want to follow the journey, subscribe to the blog or connect on LinkedIn. I'll be sharing updates as ANI develops - the wins, the failures, and the weird moments when an AI says something that makes you feel less alone.*
-
----
-
 *This post is part of a journey that started with [Running AI On Your Own Computer](/Blog/Post/running-ai-on-your-own-computer), continued through [Texting My Own AI: Building an SMS Interface to a Custom LLM in an Hour](/Blog/Post/sms-llm-texting-custom-ai), and deepened with [From POC to Production: Adding RAG and Vector Search to My SMS AI Assistant](/Blog/Post/sms-llm-rag-vector-search). Ani is where all of that leads.*
-
----
-
-**Comments? Thoughts? Reach out:**
-📧 mark@learnedgeek.com
-💼 [LinkedIn](https://www.linkedin.com/in/markmcarthey)
-🌐 [LearnedGeek.com](https://learnedgeek.com)
