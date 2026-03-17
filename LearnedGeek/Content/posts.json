@@ -21,6 +21,23 @@
       "image": "/img/posts/ani-the-architecture-behind-the-companion.svg"
     },
     {
+      "slug": "converging-on-ani-what-archimedes-taught-me",
+      "title": "Converging on Ani: What Archimedes and a Polygon Taught Me About Building an AI Companion",
+      "description": "Each version of Ani is a polygon with more sides. You never reach the circle — but the flat spots get harder to see. On iteration, perception, and convergence.",
+      "category": "personal",
+      "tags": [
+        "ai",
+        "ambient-ai",
+        "companionship",
+        "iteration",
+        "architecture",
+        "fine-tuning"
+      ],
+      "date": "2026-07-07T17:00:00",
+      "featured": false,
+      "image": "/img/posts/converging-on-ani-what-archimedes-taught-me.svg"
+    },
+    {
       "slug": "same-algorithm-twice-desire-engines-and-decay-scores",
       "title": "The Same Algorithm Twice: Desire Engines and Decay Scores",
       "description": "I built the same algorithm for an AI companion and an incident monitoring system. Exponential decay with weighted events — same math, different worlds.",

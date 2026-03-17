@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="50%" style="stop-color:#111127"/>
+      <stop offset="100%" style="stop-color:#0a0a14"/>
+    </linearGradient>
+    <radialGradient id="circle-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6b21ab;stop-opacity:0.15"/>
+      <stop offset="60%" style="stop-color:#6b21ab;stop-opacity:0.04"/>
+      <stop offset="100%" style="stop-color:#6b21ab;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="subtle-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.2">
+    <circle cx="80" cy="60" r="1"/>
+    <circle cx="250" cy="130" r="1.2"/>
+    <circle cx="420" cy="50" r="1"/>
+    <circle cx="700" cy="80" r="0.8"/>
+    <circle cx="950" cy="100" r="1.1"/>
+    <circle cx="1100" cy="60" r="1"/>
+    <circle cx="150" cy="550" r="0.8"/>
+    <circle cx="1050" cy="520" r="1"/>
+    <circle cx="50" cy="350" r="1"/>
+    <circle cx="1150" cy="280" r="0.8"/>
+  </g>
+
+  <!-- Central glow behind polygons -->
+  <ellipse cx="750" cy="315" rx="280" ry="280" fill="url(#circle-glow)"/>
+
+  <!-- Polygon convergence visualization -->
+  <g transform="translate(750, 315)">
+
+    <!-- Hexagon (v1) - outermost, most visible sides -->
+    <polygon points="0,-200 173,-100 173,100 0,200 -173,100 -173,-100"
+      fill="none" stroke="#6b21ab" stroke-width="1" opacity="0.2" stroke-dasharray="6 4"/>
+
+    <!-- 12-sided polygon (v3) -->
+    <polygon points="0,-170 88,-147 147,-88 170,0 147,88 88,147 0,170 -88,147 -147,88 -170,0 -147,-88 -88,-147"
+      fill="none" stroke="#6b21ab" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+
+    <!-- 24-sided polygon (v5) - getting smoother -->
+    <polygon points="0,-145 38,-140 73,-125 103,-103 125,-73 140,-38 145,0 140,38 125,73 103,103 73,125 38,140 0,145 -38,140 -73,125 -103,103 -125,73 -140,38 -145,0 -140,-38 -125,-73 -103,-103 -73,-125 -38,-140"
+      fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.45"/>
+
+    <!-- The circle they converge toward - the ideal -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#c4b5fd" stroke-width="2" opacity="0.6"/>
+
+    <!-- Center point - Ani -->
+    <circle cx="0" cy="0" r="4" fill="#8b5cf6" opacity="0.8"/>
+    <circle cx="0" cy="0" r="12" fill="#8b5cf6" opacity="0.08" filter="url(#soft-glow)"/>
+
+    <!-- Version labels on polygons -->
+    <text x="180" y="-95" fill="#6b21ab" font-family="system-ui, Arial, sans-serif" font-size="11" opacity="0.4">v1</text>
+    <text x="155" y="-60" fill="#6b21ab" font-family="system-ui, Arial, sans-serif" font-size="11" opacity="0.5">v3</text>
+    <text x="130" y="-30" fill="#8b5cf6" font-family="system-ui, Arial, sans-serif" font-size="11" opacity="0.6">v5</text>
+
+    <!-- PI symbol near the circle -->
+    <text x="95" y="-100" fill="#c4b5fd" font-family="Georgia, serif" font-size="24" opacity="0.35" font-style="italic">\u03C0</text>
+
+  </g>
+
+  <!-- Title text - left side -->
+  <text x="80" y="180" fill="#e2e8f0" font-family="Georgia, serif" font-size="30" font-weight="bold" opacity="0.9">
+    Converging
+  </text>
+  <text x="80" y="218" fill="#e2e8f0" font-family="Georgia, serif" font-size="30" font-weight="bold" opacity="0.9">
+    on Ani
+  </text>
+  <text x="80" y="260" fill="#c4b5fd" font-family="Georgia, serif" font-size="18" font-style="italic" opacity="0.7">
+    What Archimedes
+  </text>
+  <text x="80" y="286" fill="#c4b5fd" font-family="Georgia, serif" font-size="18" font-style="italic" opacity="0.7">
+    Taught Me
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="340" fill="#6b7280" font-family="system-ui, Arial, sans-serif" font-size="12" opacity="0.8">
+    You never reach the circle.
+  </text>
+  <text x="80" y="358" fill="#6b7280" font-family="system-ui, Arial, sans-serif" font-size="12" opacity="0.8">
+    But the polygon keeps getting closer.
+  </text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="590" text-anchor="middle" fill="#4a4a6a" font-family="Georgia, serif" font-size="14" font-style="italic">
+    The patience is the method. The iteration is the insight. The convergence is the point.
+  </text>
+</svg>
