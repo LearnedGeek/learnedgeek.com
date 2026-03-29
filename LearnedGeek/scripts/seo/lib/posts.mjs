@@ -42,16 +42,16 @@ export const VALID_CATEGORIES = ['tech', 'writing', 'gaming', 'project', 'person
 
 export const STATIC_SITEMAP_URLS = [
   '/',
-  '/Home/About',
-  '/Home/Work',
-  '/Home/Services',
-  '/Home/Contact',
-  '/Home/Writing',
-  '/Home/Privacy',
-  '/Home/SmsPrivacy',
-  '/Home/SmsTerms',
-  '/Home/SmsAssistant',
-  '/Home/RemoteWorkPolicy',
+  '/about',
+  '/work',
+  '/services',
+  '/contact',
+  '/writing',
+  '/policies/privacy',
+  '/policies/sms-privacy',
+  '/policies/sms-terms',
+  '/sms-assistant',
+  '/policies/remote-work',
   '/Blog'
 ];
 

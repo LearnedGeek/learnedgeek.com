@@ -48,13 +48,44 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/error");
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute("/Home/StatusCode", "?code={0}");
+app.UseStatusCodePagesWithReExecute("/status-code", "?code={0}");
 
 app.UseHttpsRedirection();
+
+// 301 redirects from old /Home/ routes to clean URLs
+app.Use(async (context, next) =>
+{
+    var path = context.Request.Path.Value ?? "";
+    var redirect = path switch
+    {
+        "/Home/About" => "/about",
+        "/Home/Work" => "/work",
+        "/Home/Writing" => "/writing",
+        "/Home/Services" => "/services",
+        "/Home/Contact" => "/contact",
+        "/Home/Privacy" => "/policies/privacy",
+        "/Home/SmsPrivacy" => "/policies/sms-privacy",
+        "/Home/SmsTerms" => "/policies/sms-terms",
+        "/Home/SmsAssistant" => "/sms-assistant",
+        "/Home/RemoteWorkPolicy" => "/policies/remote-work",
+        _ => null
+    };
+
+    if (redirect != null)
+    {
+        var query = context.Request.QueryString.Value ?? "";
+        context.Response.StatusCode = 301;
+        context.Response.Headers.Location = redirect + query;
+        return;
+    }
+
+    await next();
+});
+
 app.UseRouting();
 
 app.UseSession();

@@ -25,57 +25,68 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [Route("/")]
     public IActionResult Index()
     {
         return View();
     }
 
+    [Route("about")]
     public IActionResult About()
     {
         return View();
     }
 
+    [Route("work")]
     public IActionResult Work()
     {
         return View();
     }
 
+    [Route("writing")]
     public IActionResult Writing()
     {
         return View();
     }
 
+    [Route("services")]
     public IActionResult Services()
     {
         return View();
     }
 
+    [Route("policies/privacy")]
     public IActionResult Privacy()
     {
         return View();
     }
 
+    [Route("policies/sms-privacy")]
     public IActionResult SmsPrivacy()
     {
         return View();
     }
 
+    [Route("policies/sms-terms")]
     public IActionResult SmsTerms()
     {
         return View();
     }
 
+    [Route("sms-assistant")]
     public IActionResult SmsAssistant()
     {
         return View();
     }
 
+    [Route("policies/remote-work")]
     public IActionResult RemoteWorkPolicy()
     {
         return View();
     }
 
     [HttpGet]
+    [Route("contact")]
     public IActionResult Contact()
     {
         ViewBag.RecaptchaSiteKey = _recaptchaSettings.SiteKey;
@@ -83,6 +94,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    [Route("contact")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Contact(ContactFormModel model)
     {
@@ -124,12 +136,14 @@ public class HomeController : Controller
         return View(model);
     }
 
+    [Route("error")]
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
+    [Route("status-code")]
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult StatusCode(int? code)
     {
