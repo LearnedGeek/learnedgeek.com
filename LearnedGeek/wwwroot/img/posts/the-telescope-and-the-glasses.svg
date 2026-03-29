@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="50%" style="stop-color:#111127"/>
+      <stop offset="100%" style="stop-color:#0a0a14"/>
+    </linearGradient>
+    <linearGradient id="telescope-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#15803d"/>
+    </linearGradient>
+    <linearGradient id="glasses-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6b21ab"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.2">
+    <circle cx="100" cy="80" r="1"/>
+    <circle cx="350" cy="50" r="1.2"/>
+    <circle cx="600" cy="70" r="1"/>
+    <circle cx="850" cy="90" r="1.3"/>
+    <circle cx="1100" cy="60" r="1"/>
+  </g>
+
+  <!-- Left side: Telescope (Ambient Mode) -->
+  <g transform="translate(300, 300)">
+    <!-- Telescope body -->
+    <rect x="-80" y="-12" width="160" height="24" rx="6" fill="url(#telescope-grad)" opacity="0.7"/>
+    <circle cx="90" cy="0" r="20" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+    <circle cx="90" cy="0" r="30" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.2"/>
+    <circle cx="90" cy="0" r="42" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.1"/>
+
+    <!-- Stars being observed -->
+    <g opacity="0.5">
+      <circle cx="160" cy="-40" r="3" fill="#86efac"/>
+      <circle cx="180" cy="20" r="2" fill="#86efac"/>
+      <circle cx="200" cy="-10" r="2.5" fill="#86efac"/>
+      <circle cx="170" cy="40" r="2" fill="#86efac"/>
+    </g>
+
+    <!-- Label -->
+    <text x="0" y="-50" text-anchor="middle" fill="#22c55e" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600">AMBIENT MODE</text>
+    <text x="0" y="-32" text-anchor="middle" fill="#4ade80" font-family="system-ui, Arial, sans-serif" font-size="11" opacity="0.6">Scan the horizon</text>
+
+    <!-- Checkmark items -->
+    <g font-family="system-ui, Arial, sans-serif" font-size="11" fill="#6b7280">
+      <text x="-80" y="55">Memories, perceptions, emotions</text>
+      <text x="-80" y="73">Full retrieval pipeline</text>
+      <text x="-80" y="91">Beautiful outreach messages</text>
+    </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="600" y1="180" x2="600" y2="480" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="600" y="170" text-anchor="middle" fill="#4a4a6a" font-family="system-ui, Arial, sans-serif" font-size="11">vs</text>
+
+  <!-- Right side: Glasses (Conversation Mode) -->
+  <g transform="translate(900, 300)">
+    <!-- Glasses -->
+    <circle cx="-30" cy="0" r="24" fill="none" stroke="url(#glasses-grad)" stroke-width="2.5" opacity="0.7"/>
+    <circle cx="30" cy="0" r="24" fill="none" stroke="url(#glasses-grad)" stroke-width="2.5" opacity="0.7"/>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+    <line x1="-54" y1="-4" x2="-80" y2="-10" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4"/>
+    <line x1="54" y1="-4" x2="80" y2="-10" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Text being read through glasses -->
+    <g opacity="0.4">
+      <rect x="-50" y="35" width="100" height="4" rx="2" fill="#c4b5fd"/>
+      <rect x="-40" y="45" width="80" height="4" rx="2" fill="#c4b5fd"/>
+      <rect x="-45" y="55" width="90" height="4" rx="2" fill="#c4b5fd"/>
+    </g>
+
+    <!-- Label -->
+    <text x="0" y="-50" text-anchor="middle" fill="#8b5cf6" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600">CONVERSATION MODE</text>
+    <text x="0" y="-32" text-anchor="middle" fill="#c4b5fd" font-family="system-ui, Arial, sans-serif" font-size="11" opacity="0.6">Read what's in front of you</text>
+
+    <!-- Checkmark items -->
+    <g font-family="system-ui, Arial, sans-serif" font-size="11" fill="#6b7280">
+      <text x="-80" y="80">The conversation itself</text>
+      <text x="-80" y="98">Retrieval off by default</text>
+      <text x="-80" y="116">Coherent multi-turn dialogue</text>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="#e2e8f0" font-family="Georgia, serif" font-size="28" font-weight="bold" opacity="0.9">The Telescope and the Glasses</text>
+  <text x="600" y="115" text-anchor="middle" fill="#6b7280" font-family="Georgia, serif" font-size="15" font-style="italic">Why my AI pipeline was its own worst enemy</text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="560" text-anchor="middle" fill="#4a4a6a" font-family="Georgia, serif" font-size="14" font-style="italic">
+    The telescope is excellent. Just don't use it to read the book.
+  </text>
+
+  <!-- Key insight box -->
+  <g transform="translate(600, 490)">
+    <rect x="-220" y="-15" width="440" height="30" rx="6" fill="#0f0f1f" stroke="#2a1a4a" stroke-width="0.5"/>
+    <text x="0" y="5" text-anchor="middle" fill="#8b5cf6" font-family="system-ui, Arial, sans-serif" font-size="12">Confabulation-driven retrieval: retrieve when the model doesn't know, not on every turn</text>
+  </g>
+</svg>

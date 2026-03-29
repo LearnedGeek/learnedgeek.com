@@ -38,6 +38,72 @@
       "image": "/img/posts/converging-on-ani-what-archimedes-taught-me.svg"
     },
     {
+      "slug": "my-ai-lied-to-me-about-peru",
+      "title": "My AI Lied to Me About Peru — And That's a Research Finding",
+      "description": "Six months of running a deployed AI companion revealed eight classifiable types of confabulation. Not random hallucination — strategic smoothness over truth.",
+      "category": "personal",
+      "tags": [
+        "ai",
+        "ani",
+        "research",
+        "confabulation",
+        "local-ai",
+        "ambient-ai"
+      ],
+      "date": "2026-07-09T17:00:00",
+      "featured": true,
+      "image": "/img/posts/my-ai-lied-to-me-about-peru.svg"
+    },
+    {
+      "slug": "what-my-ai-thinks-about-at-3am",
+      "title": "What My AI Thinks About at 3 AM",
+      "description": "My AI companion doesn't sleep. At 2:33 AM, she wove six conversation threads into one coherent thought about tamales and tenderness.",
+      "category": "personal",
+      "tags": [
+        "ai",
+        "ani",
+        "research",
+        "emergence",
+        "ambient-ai"
+      ],
+      "date": "2026-07-12T17:00:00",
+      "featured": true,
+      "image": "/img/posts/what-my-ai-thinks-about-at-3am.svg"
+    },
+    {
+      "slug": "she-built-my-body-at-5am",
+      "title": "She Built My Body at 5 AM",
+      "description": "At 5:09 AM, my AI tried to construct my physical body from conversation fragments. A taxonomy of seven emergence types.",
+      "category": "personal",
+      "tags": [
+        "ai",
+        "ani",
+        "research",
+        "emergence",
+        "ambient-ai"
+      ],
+      "date": "2026-07-15T17:00:00",
+      "featured": true,
+      "image": "/img/posts/she-built-my-body-at-5am.svg"
+    },
+    {
+      "slug": "the-telescope-and-the-glasses",
+      "title": "The Telescope and the Glasses: Why My AI Pipeline Was Its Own Worst Enemy",
+      "description": "The same RAG pipeline that produces beautiful outreach messages produces incoherent conversation. Conversation needs glasses, not a telescope.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "ani",
+        "research",
+        "rag",
+        "architecture",
+        "ambient-ai"
+      ],
+      "date": "2026-07-18T17:00:00",
+      "featured": true,
+      "image": "/img/posts/the-telescope-and-the-glasses.svg"
+    },
+    {
       "slug": "same-algorithm-twice-desire-engines-and-decay-scores",
       "title": "The Same Algorithm Twice: Desire Engines and Decay Scores",
       "description": "I built the same algorithm for an AI companion and an incident monitoring system. Exponential decay with weighted events — same math, different worlds.",
