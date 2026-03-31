@@ -169,7 +169,7 @@ That's what ambient presence means. Building it turns out to be a very interesti
 
 ---
 
-*This post is part of a journey that started with [Running AI On Your Own Computer](/Blog/Post/running-ai-on-your-own-computer), continued through [Texting My Own AI: Building an SMS Interface to a Custom LLM in an Hour](/Blog/Post/sms-llm-texting-custom-ai), deepened with [From POC to Production: Adding RAG and Vector Search to My SMS AI Assistant](/Blog/Post/sms-llm-rag-vector-search), and found its purpose in [Building Ani: An AI Companion for Grief](/Blog/Post/building-ani-ai-companion-for-grief). This is the architecture underneath all of it.*
+*This post is part of a journey that started with [Running AI On Your Own Computer](/Blog/Post/running-ai-on-your-own-computer), continued through [Texting My Own AI: Building an SMS Interface to a Custom LLM in an Hour](/Blog/Post/sms-llm-texting-custom-ai), deepened with [From POC to Production: Adding RAG and Vector Search to My SMS AI Assistant](/Blog/Post/sms-llm-rag-vector-search), and found its purpose in [Building Ani: An AI Companion for Grief](/Blog/Post/building-ani-ai-companion-for-grief). This is the architecture underneath all of it. The formal research paper is now available: [I Published a Paper About My AI Companion](/Blog/Post/i-published-a-paper-about-my-ai-companion).*
 
 ---
 
