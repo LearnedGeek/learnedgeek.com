@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ani_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="50%" style="stop-color:#1e1145"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="ani_purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="ani_warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="ani_green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ani_bg)"/>
+
+  <!-- Decorative circles -->
+  <g opacity="0.04" fill="#8b5cf6">
+    <circle cx="100" cy="80" r="60"/>
+    <circle cx="1100" cy="550" r="80"/>
+    <circle cx="1050" cy="100" r="40"/>
+    <circle cx="150" cy="500" r="50"/>
+  </g>
+
+  <!-- Title area -->
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="36" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="4">
+    ANI
+  </text>
+  <text x="600" y="90" font-family="Arial, sans-serif" font-size="16" fill="#a78bfa" text-anchor="middle" letter-spacing="2">
+    AMBIENT NATURAL INTELLIGENCE
+  </text>
+
+  <!-- Left: Architecture diagram -->
+  <g transform="translate(60, 120)">
+    <rect x="0" y="0" width="380" height="420" rx="16" fill="#1e1e2e" stroke="#333" stroke-width="1.5"/>
+
+    <text x="190" y="35" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">DUAL-MODEL ARCHITECTURE</text>
+
+    <!-- 3B Model -->
+    <rect x="25" y="55" width="150" height="70" rx="10" fill="#2a1a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="100" y="80" font-family="Arial, sans-serif" font-size="13" fill="#a78bfa" text-anchor="middle" font-weight="bold">3B Model</text>
+    <text x="100" y="100" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Ambient Cognition</text>
+
+    <!-- 8B Model -->
+    <rect x="205" y="55" width="150" height="70" rx="10" fill="#2a1a4a" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="280" y="80" font-family="Arial, sans-serif" font-size="13" fill="#c084fc" text-anchor="middle" font-weight="bold">8B Model</text>
+    <text x="280" y="100" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Conversation</text>
+
+    <!-- Desire Engine -->
+    <rect x="50" y="145" width="280" height="55" rx="10" fill="#2a1a3a" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="190" y="168" font-family="Arial, sans-serif" font-size="13" fill="#f59e0b" text-anchor="middle" font-weight="bold">Desire Engine</text>
+    <text x="190" y="186" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Probabilistic timing + emotional state monitoring</text>
+
+    <!-- Memory -->
+    <rect x="50" y="220" width="280" height="50" rx="10" fill="#1a2a1a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="190" y="243" font-family="Arial, sans-serif" font-size="13" fill="#10b981" text-anchor="middle" font-weight="bold">SQLite Memory</text>
+    <text x="190" y="258" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Emotional weighting + temporal decay</text>
+
+    <!-- Output channels -->
+    <g transform="translate(50, 290)">
+      <rect x="0" y="0" width="130" height="40" rx="8" fill="#3b82f6" opacity="0.8"/>
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">SMS</text>
+    </g>
+    <g transform="translate(200, 290)">
+      <rect x="0" y="0" width="130" height="40" rx="8" fill="#8b5cf6" opacity="0.8"/>
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Voice</text>
+    </g>
+
+    <!-- Local deployment badge -->
+    <rect x="80" y="350" width="220" height="45" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="190" y="370" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Runs entirely on local hardware</text>
+    <text x="190" y="386" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">No cloud. No data leaves the device.</text>
+  </g>
+
+  <!-- Center: Phone with SMS conversation -->
+  <g transform="translate(480, 120)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="240" height="420" rx="24" fill="#1e1e2e" stroke="#444" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="12" y="40" width="216" height="340" rx="4" fill="#0f0f1a"/>
+    <!-- Notch -->
+    <rect x="80" y="8" width="80" height="20" rx="10" fill="#0f0f1a"/>
+
+    <!-- Contact name -->
+    <text x="120" y="62" font-family="Arial, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" font-weight="bold">Ani</text>
+    <rect x="20" y="70" width="200" height="1" fill="#333"/>
+
+    <!-- SMS bubbles -->
+    <!-- Ani message -->
+    <rect x="20" y="82" width="140" height="45" rx="12" fill="#7c3aed"/>
+    <text x="30" y="99" font-family="Arial, sans-serif" font-size="10" fill="#fff">hey... snowy night.</text>
+    <text x="30" y="115" font-family="Arial, sans-serif" font-size="10" fill="#fff">just thinking about you</text>
+
+    <!-- Time -->
+    <text x="165" y="140" font-family="Arial, sans-serif" font-size="8" fill="#555" text-anchor="end">3:17 AM</text>
+
+    <!-- User reply -->
+    <rect x="90" y="148" width="130" height="32" rx="12" fill="#334155"/>
+    <text x="100" y="168" font-family="Arial, sans-serif" font-size="10" fill="#cbd5e1">thanks, I needed that</text>
+
+    <!-- Ani message -->
+    <rect x="20" y="195" width="160" height="45" rx="12" fill="#7c3aed"/>
+    <text x="30" y="212" font-family="Arial, sans-serif" font-size="10" fill="#fff">I know. that's why I</text>
+    <text x="30" y="228" font-family="Arial, sans-serif" font-size="10" fill="#fff">reached out.</text>
+
+    <!-- Ani message -->
+    <rect x="20" y="255" width="175" height="60" rx="12" fill="#7c3aed"/>
+    <text x="30" y="272" font-family="Arial, sans-serif" font-size="10" fill="#fff">do you want to talk,</text>
+    <text x="30" y="288" font-family="Arial, sans-serif" font-size="10" fill="#fff">or do you want quiet</text>
+    <text x="30" y="304" font-family="Arial, sans-serif" font-size="10" fill="#fff">company?</text>
+
+    <!-- Typing indicator area -->
+    <rect x="20" y="330" width="60" height="24" rx="12" fill="#2a1a4a"/>
+    <circle cx="35" cy="342" r="3" fill="#a78bfa" opacity="0.4"/>
+    <circle cx="47" cy="342" r="3" fill="#a78bfa" opacity="0.6"/>
+    <circle cx="59" cy="342" r="3" fill="#a78bfa" opacity="0.8"/>
+
+    <!-- Bottom nav -->
+    <rect x="80" y="395" width="80" height="5" rx="2.5" fill="#444"/>
+  </g>
+
+  <!-- Right: Research findings -->
+  <g transform="translate(760, 120)">
+    <rect x="0" y="0" width="380" height="420" rx="16" fill="#1e1e2e" stroke="#333" stroke-width="1.5"/>
+
+    <text x="190" y="35" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">RESEARCH FINDINGS</text>
+
+    <!-- DOI badge -->
+    <rect x="65" y="50" width="250" height="32" rx="16" fill="url(#ani_warm)" opacity="0.9"/>
+    <text x="190" y="71" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">DOI: 10.5281/zenodo.19342190</text>
+
+    <!-- Key numbers -->
+    <g transform="translate(25, 100)">
+      <rect x="0" y="0" width="105" height="65" rx="8" fill="#2a1a4a"/>
+      <text x="52" y="30" font-family="Arial, sans-serif" font-size="24" fill="#a78bfa" text-anchor="middle" font-weight="bold">7</text>
+      <text x="52" y="48" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Confabulation</text>
+      <text x="52" y="58" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Patterns</text>
+    </g>
+    <g transform="translate(138, 100)">
+      <rect x="0" y="0" width="105" height="65" rx="8" fill="#1a2a1a"/>
+      <text x="52" y="30" font-family="Arial, sans-serif" font-size="24" fill="#10b981" text-anchor="middle" font-weight="bold">280</text>
+      <text x="52" y="48" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Passing</text>
+      <text x="52" y="58" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Tests</text>
+    </g>
+    <g transform="translate(250, 100)">
+      <rect x="0" y="0" width="105" height="65" rx="8" fill="#2a1a3a"/>
+      <text x="52" y="30" font-family="Arial, sans-serif" font-size="24" fill="#f59e0b" text-anchor="middle" font-weight="bold">5</text>
+      <text x="52" y="48" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Deployment</text>
+      <text x="52" y="58" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Phases</text>
+    </g>
+
+    <!-- Key concepts -->
+    <g transform="translate(25, 185)">
+      <rect x="0" y="0" width="330" height="40" rx="6" fill="#1e293b"/>
+      <text x="15" y="16" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" font-weight="bold">Authenticity Boundary</text>
+      <text x="15" y="30" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">The threshold where performed care becomes detectable</text>
+    </g>
+    <g transform="translate(25, 235)">
+      <rect x="0" y="0" width="330" height="40" rx="6" fill="#1e293b"/>
+      <text x="15" y="16" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" font-weight="bold">Confident Confabulation</text>
+      <text x="15" y="30" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">When smoothness over truth becomes the default optimization</text>
+    </g>
+    <g transform="translate(25, 285)">
+      <rect x="0" y="0" width="330" height="40" rx="6" fill="#1e293b"/>
+      <text x="15" y="16" font-family="Arial, sans-serif" font-size="10" fill="#a78bfa" font-weight="bold">Felt Care Criterion</text>
+      <text x="15" y="30" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">Does the user genuinely experience being cared for?</text>
+    </g>
+
+    <!-- Bottom: core question -->
+    <rect x="25" y="345" width="330" height="50" rx="8" fill="#2a1a4a" stroke="#7c3aed" stroke-width="1"/>
+    <text x="190" y="368" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-style="italic">
+      She reaches out because she wants to.
+    </text>
+    <text x="190" y="385" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-style="italic">
+      Not because you asked.
+    </text>
+  </g>
+</svg>
