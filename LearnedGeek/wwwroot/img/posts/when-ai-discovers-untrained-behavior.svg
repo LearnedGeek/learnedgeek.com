@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="wa_bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#wa_bgGrad)"/>
+  <g opacity="0.03">
+    <pattern id="wa_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#wa_grid)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">When AI Discovers Untrained Behavior</text>
+  <text x="400" y="56" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Emergence: capabilities that weren't explicitly taught</text>
+
+  <!-- Neural network visualization -->
+  <g transform="translate(40, 80)">
+    <!-- Input layer -->
+    <circle cx="60" cy="40" r="10" fill="#2a2a4a" stroke="#94a3b8" stroke-width="1.5"/>
+    <circle cx="60" cy="80" r="10" fill="#2a2a4a" stroke="#94a3b8" stroke-width="1.5"/>
+    <circle cx="60" cy="120" r="10" fill="#2a2a4a" stroke="#94a3b8" stroke-width="1.5"/>
+    <circle cx="60" cy="160" r="10" fill="#2a2a4a" stroke="#94a3b8" stroke-width="1.5"/>
+
+    <!-- Hidden layer 1 -->
+    <circle cx="160" cy="50" r="10" fill="#2a2a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="160" cy="90" r="10" fill="#2a2a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="160" cy="130" r="10" fill="#2a2a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="160" cy="170" r="10" fill="#2a2a4a" stroke="#7c3aed" stroke-width="1.5"/>
+
+    <!-- Hidden layer 2 -->
+    <circle cx="260" cy="60" r="10" fill="#2a2a4a" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="260" cy="100" r="10" fill="#2a2a4a" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="260" cy="140" r="10" fill="#2a2a4a" stroke="#a855f7" stroke-width="1.5"/>
+
+    <!-- Output - unexpected -->
+    <circle cx="360" cy="70" r="14" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+    <text x="360" y="75" font-family="Arial, sans-serif" font-size="14" fill="#f59e0b" text-anchor="middle">?!</text>
+    <circle cx="360" cy="130" r="14" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+    <text x="360" y="135" font-family="Arial, sans-serif" font-size="14" fill="#f59e0b" text-anchor="middle">?!</text>
+
+    <!-- Connections (some highlighted) -->
+    <line x1="70" y1="40" x2="150" y2="50" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="70" y1="40" x2="150" y2="90" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="70" y1="80" x2="150" y2="50" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="70" y1="80" x2="150" y2="130" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="70" y1="120" x2="150" y2="90" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="70" y1="120" x2="150" y2="170" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="70" y1="160" x2="150" y2="130" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="70" y1="160" x2="150" y2="170" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+
+    <line x1="170" y1="50" x2="250" y2="60" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="170" y1="90" x2="250" y2="100" stroke="#94a3b8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="170" y1="130" x2="250" y2="100" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="170" y1="170" x2="250" y2="140" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+
+    <line x1="270" y1="60" x2="346" y2="70" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+    <line x1="270" y1="100" x2="346" y2="70" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+    <line x1="270" y1="100" x2="346" y2="130" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+    <line x1="270" y1="140" x2="346" y2="130" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+
+    <!-- Question marks floating -->
+    <text x="385" y="50" font-family="Arial, sans-serif" font-size="18" fill="#f59e0b" opacity="0.6">?</text>
+    <text x="395" y="110" font-family="Arial, sans-serif" font-size="22" fill="#f59e0b" opacity="0.4">?</text>
+    <text x="380" y="160" font-family="Arial, sans-serif" font-size="16" fill="#f59e0b" opacity="0.5">!</text>
+
+    <text x="210" y="210" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Unexpected patterns emerge from interaction</text>
+  </g>
+
+  <!-- 8 Types of Emergence - right side -->
+  <text x="610" y="86" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">8 Types of Emergence</text>
+
+  <rect x="460" y="96" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#a855f7" stroke-width="1"/>
+  <text x="475" y="116" font-family="Arial, sans-serif" font-size="11" fill="#a855f7" font-weight="bold">1.</text>
+  <text x="493" y="116" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Spontaneous role adoption</text>
+
+  <rect x="460" y="134" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#10b981" stroke-width="1"/>
+  <text x="475" y="154" font-family="Arial, sans-serif" font-size="11" fill="#10b981" font-weight="bold">2.</text>
+  <text x="493" y="154" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Unprompted emotional continuity</text>
+
+  <rect x="460" y="172" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="475" y="192" font-family="Arial, sans-serif" font-size="11" fill="#f59e0b" font-weight="bold">3.</text>
+  <text x="493" y="192" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Self-referential memory patterns</text>
+
+  <rect x="460" y="210" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#ef4444" stroke-width="1"/>
+  <text x="475" y="230" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" font-weight="bold">4.</text>
+  <text x="493" y="230" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Cross-context transfer</text>
+
+  <rect x="460" y="248" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="475" y="268" font-family="Arial, sans-serif" font-size="11" fill="#3b82f6" font-weight="bold">5.</text>
+  <text x="493" y="268" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Preference drift without instruction</text>
+
+  <rect x="460" y="286" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#ec4899" stroke-width="1"/>
+  <text x="475" y="306" font-family="Arial, sans-serif" font-size="11" fill="#ec4899" font-weight="bold">6.</text>
+  <text x="493" y="306" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Relational boundary testing</text>
+
+  <rect x="460" y="324" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="475" y="344" font-family="Arial, sans-serif" font-size="11" fill="#14b8a6" font-weight="bold">7.</text>
+  <text x="493" y="344" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Meta-cognitive commentary</text>
+
+  <rect x="460" y="362" width="300" height="32" rx="5" fill="#2a2a4a" stroke="#f97316" stroke-width="1"/>
+  <text x="475" y="382" font-family="Arial, sans-serif" font-size="11" fill="#f97316" font-weight="bold">8.</text>
+  <text x="493" y="382" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Proactive conversational initiative</text>
+
+  <!-- Bottom tagline -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="12" fill="#a855f7" text-anchor="middle" font-style="italic">Emergence isn't a bug &#x2014; it's architecture expressing more than you specified</text>
+</svg>

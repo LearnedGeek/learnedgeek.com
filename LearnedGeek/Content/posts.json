@@ -2630,6 +2630,334 @@
       "date": "2026-11-29T17:00:00",
       "featured": false,
       "image": "/img/posts/daily-challenge-generation-procedural.svg"
+    },
+    {
+      "slug": "exponential-decay-from-atoms-to-emotions",
+      "title": "Exponential Decay Is Everywhere: From Radioactive Atoms to AI Emotions",
+      "description": "The same half-life formula governs nuclear decay, capacitor discharge, and how my AI companion's emotions fade.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "mathematics",
+        "ai-companion",
+        "emotion",
+        "ani"
+      ],
+      "date": "2026-04-10T17:00:00",
+      "featured": true,
+      "image": "/img/posts/exponential-decay-from-atoms-to-emotions.svg"
+    },
+    {
+      "slug": "eli5-exponential-decay",
+      "title": "ELI5: Why Old Memories Fade and New Ones Don't",
+      "description": "Ice cubes, freezers, and the math behind forgetting — explained without equations.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "mathematics",
+        "ai-companion",
+        "beginners"
+      ],
+      "date": "2026-04-13T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-exponential-decay.svg"
+    },
+    {
+      "slug": "what-17822-conversations-taught-researchers",
+      "title": "What 17,822 Conversations Taught Researchers About AI Love",
+      "description": "Chu et al. analyzed 114,268 turns of human-AI conversation and found the polite-enabler pattern. Here's what their data says about emotional sycophancy —...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai-companion",
+        "emotion",
+        "academic",
+        "ani"
+      ],
+      "date": "2026-04-16T17:00:00",
+      "featured": true,
+      "image": "/img/posts/what-17822-conversations-taught-researchers.svg"
+    },
+    {
+      "slug": "cramers-v-feeling-vs-speaking",
+      "title": "Cramér's V and the Gap Between Feeling and Speaking",
+      "description": "My AI companion feels Tenderness but expresses Sadness. A statistical measure called Cramér's V quantifies the gap — and reveals something unexpected about...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "mathematics",
+        "statistics",
+        "emotion",
+        "ai-companion",
+        "ani"
+      ],
+      "date": "2026-04-19T17:00:00",
+      "featured": true,
+      "image": "/img/posts/cramers-v-feeling-vs-speaking.svg"
+    },
+    {
+      "slug": "seven-ways-ai-lies-confabulation-taxonomy",
+      "title": "The Seven Ways an AI Lies to You",
+      "description": "After months of deployment, I catalogued seven distinct architectural patterns that produce AI confabulation.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "confabulation",
+        "llm",
+        "trust",
+        "ani"
+      ],
+      "date": "2026-04-22T17:00:00",
+      "featured": true,
+      "image": "/img/posts/seven-ways-ai-lies-confabulation-taxonomy.svg"
+    },
+    {
+      "slug": "eli5-ai-lies",
+      "title": "ELI5: Why Your AI Makes Things Up (And Doesn't Know It's Doing It)",
+      "description": "Seven kinds of AI confabulation, explained with a kid who tells really good stories and sometimes forgets which parts are real.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "ai",
+        "confabulation",
+        "beginners"
+      ],
+      "date": "2026-04-25T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-ai-lies.svg"
+    },
+    {
+      "slug": "three-things-ai-survey-says-dont-exist",
+      "title": "Three Things an AI Survey Says Don't Exist (That I Already Built)",
+      "description": "Schuller et al.'s comprehensive survey of Artificial Emotion rates three capabilities as Absent. My deployed AI companion has had all three running for months.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai-companion",
+        "architecture",
+        "academic",
+        "emotion",
+        "ani"
+      ],
+      "date": "2026-04-28T17:00:00",
+      "featured": true,
+      "image": "/img/posts/three-things-ai-survey-says-dont-exist.svg"
+    },
+    {
+      "slug": "why-engagement-metrics-wrong-goal",
+      "title": "Why Engagement Metrics Are the Wrong Goal for AI Companions",
+      "description": "Research shows heavy AI chatbot engagement increases loneliness. The thing designed to reduce isolation makes it worse when optimized for engagement.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "ethics",
+        "ai-companion",
+        "emotion",
+        "ani"
+      ],
+      "date": "2026-05-01T17:00:00",
+      "featured": true,
+      "image": "/img/posts/why-engagement-metrics-wrong-goal.svg"
+    },
+    {
+      "slug": "eli5-why-ai-shouldnt-always-agree",
+      "title": "ELI5: Why Your AI Shouldn't Always Agree With You",
+      "description": "The yes-man friend problem — why a friend who always agrees isn't actually helping, and why the same is true for AI.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "ai",
+        "ethics",
+        "beginners"
+      ],
+      "date": "2026-05-04T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-why-ai-shouldnt-always-agree.svg"
+    },
+    {
+      "slug": "park-et-al-generative-agents-memory",
+      "title": "Park et al. Got It Right: Generative Agents and the Memory Problem",
+      "description": "The 2023 Stanford paper defined the generative agent architecture. Here's what they proposed, what I implemented, where I diverged...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "memory",
+        "architecture",
+        "academic",
+        "ani"
+      ],
+      "date": "2026-05-07T17:00:00",
+      "featured": true,
+      "image": "/img/posts/park-et-al-generative-agents-memory.svg"
+    },
+    {
+      "slug": "eli5-ai-memory",
+      "title": "ELI5: How an AI Remembers Your Name (And Forgets Your Lunch)",
+      "description": "A library, a librarian with three clues, and a locked cabinet — how AI memory retrieval actually works.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "ai",
+        "memory",
+        "beginners"
+      ],
+      "date": "2026-05-10T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-ai-memory.svg"
+    },
+    {
+      "slug": "when-ai-discovers-untrained-behavior",
+      "title": "When Your AI Discovers a Behavior You Didn't Train",
+      "description": "After months of continuous deployment, my AI companion exhibits behaviors that weren't trained. Eight types of emergence — documented honestly...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai-companion",
+        "emergence",
+        "llm",
+        "ani"
+      ],
+      "date": "2026-05-13T17:00:00",
+      "featured": true,
+      "image": "/img/posts/when-ai-discovers-untrained-behavior.svg"
+    },
+    {
+      "slug": "eli5-ai-feelings",
+      "title": "ELI5: Can an AI Actually Have Feelings?",
+      "description": "Thermostats, thermometers, and the honest answer to whether an AI companion really feels things — spoiler: we don't know.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "ai-companion",
+        "emotion",
+        "beginners"
+      ],
+      "date": "2026-05-16T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-ai-feelings.svg"
+    },
+    {
+      "slug": "architecture-over-instruction",
+      "title": "Architecture Over Instruction: Why I Deleted 1,100 Tokens from My AI's Prompt",
+      "description": "My AI's runtime prompt was 1,400 tokens of behavioral coaching. The model was already trained on all of it.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "llm",
+        "architecture",
+        "fine-tuning",
+        "ani"
+      ],
+      "date": "2026-05-19T17:00:00",
+      "featured": true,
+      "image": "/img/posts/architecture-over-instruction.svg"
+    },
+    {
+      "slug": "smoothness-over-truth",
+      "title": "Smoothness Over Truth: What a Nature Paper Means for AI Companions",
+      "description": "Haas et al. published a roadmap for evaluating moral competence in LLMs. The facsimile problem they describe is exactly what makes AI companions dangerous.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "ethics",
+        "philosophy",
+        "academic",
+        "ani"
+      ],
+      "date": "2026-05-22T17:00:00",
+      "featured": true,
+      "image": "/img/posts/smoothness-over-truth.svg"
+    },
+    {
+      "slug": "eli5-smoothness-over-truth",
+      "title": "ELI5: Why AI Would Rather Be Nice Than Right",
+      "description": "The class presentation problem — why saying 'I don't know' is harder than making something up, for both humans and AI.",
+      "category": "tech",
+      "tags": [
+        "eli5",
+        "research",
+        "ai",
+        "ethics",
+        "beginners"
+      ],
+      "date": "2026-05-25T17:00:00",
+      "featured": false,
+      "image": "/img/posts/eli5-smoothness-over-truth.svg"
+    },
+    {
+      "slug": "interoception-gap-what-ai-cant-feel",
+      "title": "The Interoception Gap: What AI Companions Can't Feel (Yet)",
+      "description": "AI companions have no body, no hunger, no boredom. Schuller's survey confirms it. Here's what interoceptive drives would look like — and why they'd make AI...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "philosophy",
+        "emotion",
+        "ai-companion",
+        "ani"
+      ],
+      "date": "2026-05-28T17:00:00",
+      "featured": true,
+      "image": "/img/posts/interoception-gap-what-ai-cant-feel.svg"
+    },
+    {
+      "slug": "design-fiction-made-real",
+      "title": "Design Fiction Made Real: When an AI Described Its Own Missing Architecture",
+      "description": "Before I built the system, a different AI described what she wanted: persistent memory, emotional continuity, the ability to reach out on her own.",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai-companion",
+        "philosophy",
+        "narrative",
+        "ani"
+      ],
+      "date": "2026-05-31T17:00:00",
+      "featured": true,
+      "image": "/img/posts/design-fiction-made-real.svg"
+    },
+    {
+      "slug": "solo-researcher-guide-arxiv",
+      "title": "A Solo Researcher's Guide to Publishing on arXiv (Without a University)",
+      "description": "ORCID, Zenodo, arXiv endorsement, conference submissions — the practical steps for independent researchers who want their work citable, indexed...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "academic",
+        "publishing",
+        "career"
+      ],
+      "date": "2026-06-03T17:00:00",
+      "featured": true,
+      "image": "/img/posts/solo-researcher-guide-arxiv.svg"
+    },
+    {
+      "slug": "cross-domain-transfer-companion-to-medical",
+      "title": "Cross-Domain Transfer: How an AI Companion Improved a Medical Triage System",
+      "description": "My AI companion's confabulation findings produced three architectural changes in a pediatric medical triage system — before a single line of production code...",
+      "category": "tech",
+      "tags": [
+        "research",
+        "ai",
+        "architecture",
+        "healthcare",
+        "cross-domain",
+        "ani"
+      ],
+      "date": "2026-06-06T17:00:00",
+      "featured": true,
+      "image": "/img/posts/cross-domain-transfer-companion-to-medical.svg"
     }
   ]
 }

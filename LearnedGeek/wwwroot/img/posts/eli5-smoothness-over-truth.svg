@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Notebook paper background -->
+  <rect width="800" height="450" fill="#f9f7f1"/>
+  <line x1="0" y1="80" x2="800" y2="80" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="130" x2="800" y2="130" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="180" x2="800" y2="180" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="230" x2="800" y2="230" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="330" x2="800" y2="330" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="70" y1="0" x2="70" y2="450" stroke="#ff6b6b" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="Comic Sans MS, cursive" font-size="26" fill="#2d2d2d" text-anchor="middle" font-weight="bold">The Nice Path vs. The True Path</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="13" fill="#8b5cf6" text-anchor="middle">Which way would you go?</text>
+
+  <!-- Park scene -->
+  <!-- Ground -->
+  <rect x="80" y="300" width="640" height="50" rx="10" fill="#d4edda" stroke="#a3d9a5" stroke-width="1"/>
+
+  <!-- Trees -->
+  <g transform="translate(100, 170)">
+    <rect x="20" y="80" width="12" height="50" fill="#8B6914"/>
+    <circle cx="26" cy="70" r="28" fill="#4ade80" opacity="0.7"/>
+    <circle cx="15" cy="80" r="20" fill="#22c55e" opacity="0.6"/>
+    <circle cx="36" cy="78" r="22" fill="#16a34a" opacity="0.5"/>
+  </g>
+  <g transform="translate(600, 160)">
+    <rect x="20" y="80" width="12" height="55" fill="#8B6914"/>
+    <circle cx="26" cy="70" r="30" fill="#4ade80" opacity="0.7"/>
+    <circle cx="14" cy="78" r="22" fill="#22c55e" opacity="0.6"/>
+    <circle cx="38" cy="75" r="24" fill="#16a34a" opacity="0.5"/>
+  </g>
+
+  <!-- Fork in the path -->
+  <!-- Common path start -->
+  <path d="M 400,300 L 400,260" fill="none" stroke="#b0a080" stroke-width="30" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Left path - Smooth/Nice -->
+  <path d="M 400,260 C 350,240 280,220 220,180 C 180,160 160,140 150,110" fill="none" stroke="#f59e0b" stroke-width="25" stroke-linecap="round" opacity="0.4"/>
+  <!-- Smooth surface dots -->
+  <circle cx="350" cy="240" r="3" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="300" cy="225" r="3" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="250" cy="200" r="3" fill="#f59e0b" opacity="0.3"/>
+
+  <!-- Right path - Rocky/True -->
+  <path d="M 400,260 C 450,240 520,220 580,180 C 620,160 640,140 650,110" fill="none" stroke="#10b981" stroke-width="25" stroke-linecap="round" opacity="0.4"/>
+  <!-- Rocks on the path -->
+  <ellipse cx="460" cy="240" rx="8" ry="5" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+  <ellipse cx="520" cy="215" rx="10" ry="6" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+  <ellipse cx="570" cy="195" rx="7" ry="4" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+  <ellipse cx="610" cy="170" rx="9" ry="5" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+
+  <!-- Sign post -->
+  <rect x="392" y="250" width="16" height="80" fill="#8B6914" stroke="#6B4914" stroke-width="1"/>
+  <!-- Sign boards -->
+  <g transform="translate(320, 230)">
+    <polygon points="0,0 80,0 80,30 90,15 0,0" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="40" y="18" font-family="Comic Sans MS, cursive" font-size="12" fill="#92400e" text-anchor="middle" font-weight="bold">Nice</text>
+  </g>
+  <g transform="translate(408, 230)">
+    <polygon points="80,0 0,0 0,30 -10,15 80,0" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+    <text x="40" y="18" font-family="Comic Sans MS, cursive" font-size="12" fill="#065f46" text-anchor="middle" font-weight="bold">True</text>
+  </g>
+
+  <!-- Which way? sign -->
+  <rect x="350" y="205" width="100" height="25" rx="5" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="400" y="222" font-family="Comic Sans MS, cursive" font-size="12" fill="#5b21b6" text-anchor="middle" font-weight="bold">Which way?</text>
+
+  <!-- Left label -->
+  <rect x="90" y="90" width="140" height="45" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="160" y="110" font-family="Comic Sans MS, cursive" font-size="13" fill="#92400e" text-anchor="middle" font-weight="bold">Smooth &amp; easy</text>
+  <text x="160" y="127" font-family="Comic Sans MS, cursive" font-size="10" fill="#b45309" text-anchor="middle">but might get lost!</text>
+
+  <!-- Right label -->
+  <rect x="570" y="90" width="150" height="45" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="645" y="110" font-family="Comic Sans MS, cursive" font-size="13" fill="#065f46" text-anchor="middle" font-weight="bold">Bumpy but honest</text>
+  <text x="645" y="127" font-family="Comic Sans MS, cursive" font-size="10" fill="#047857" text-anchor="middle">gets you there right!</text>
+
+  <!-- Bottom lesson -->
+  <rect x="120" y="360" width="560" height="55" rx="8" fill="#e8e4f8" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="383" font-family="Comic Sans MS, cursive" font-size="14" fill="#5b21b6" text-anchor="middle" font-weight="bold">AI often takes the smooth path because it's trained to be nice.</text>
+  <text x="400" y="403" font-family="Comic Sans MS, cursive" font-size="12" fill="#555" text-anchor="middle">But the rocky path &#x2014; the honest one &#x2014; gets you where you need to go!</text>
+
+  <!-- ELI5 badge -->
+  <defs>
+    <filter id="e5st_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="e5st_crayon">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g transform="translate(700, 390)" filter="url(#e5st_shadow)">
+    <rect width="80" height="50" fill="#f9f7f1" stroke="#333" stroke-width="1" rx="3"/>
+    <line x1="5" y1="15" x2="75" y2="15" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="25" x2="75" y2="25" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="35" x2="75" y2="35" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="12" y1="5" x2="12" y2="45" stroke="#ff6b6b" stroke-width="0.8"/>
+    <g transform="translate(17, 13)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#ff6b6b" stroke-width="1.2" filter="url(#e5st_crayon)"/>
+      <path d="M 5 8 Q 8 5 11 8" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+      <path d="M 6 10 Q 8 12 10 10" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+    </g>
+    <text x="33" y="22" font-family="Comic Sans MS, cursive" font-size="10" fill="#ff6b6b" font-weight="bold" filter="url(#e5st_crayon)">ELI5</text>
+    <text x="33" y="32" font-family="Comic Sans MS, cursive" font-size="7" fill="#666" filter="url(#e5st_crayon)">Series</text>
+  </g>
+</svg>

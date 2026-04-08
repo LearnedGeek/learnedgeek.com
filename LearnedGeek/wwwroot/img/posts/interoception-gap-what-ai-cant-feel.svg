@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="ig_bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ig_bgGrad)"/>
+  <g opacity="0.03">
+    <pattern id="ig_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#ig_grid)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">The Interoception Gap: What AI Can't Feel</text>
+  <text x="400" y="56" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Body signals that shape human experience but have no AI equivalent</text>
+
+  <!-- Dividing gap -->
+  <rect x="365" y="70" width="70" height="340" rx="0" fill="#2a2a4a" opacity="0.3"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="16" fill="#ef4444" text-anchor="middle" font-weight="bold" transform="rotate(-90, 400, 240)">THE GAP</text>
+
+  <!-- LEFT: Human silhouette with body signals -->
+  <text x="180" y="82" font-family="Arial, sans-serif" font-size="15" fill="#a855f7" text-anchor="middle" font-weight="bold">Human</text>
+
+  <!-- Simple human silhouette -->
+  <g transform="translate(120, 95)">
+    <!-- Head -->
+    <circle cx="60" cy="20" r="20" fill="none" stroke="#a855f7" stroke-width="2"/>
+    <!-- Body -->
+    <line x1="60" y1="40" x2="60" y2="130" stroke="#a855f7" stroke-width="2"/>
+    <!-- Arms -->
+    <line x1="60" y1="65" x2="20" y2="100" stroke="#a855f7" stroke-width="2"/>
+    <line x1="60" y1="65" x2="100" y2="100" stroke="#a855f7" stroke-width="2"/>
+    <!-- Legs -->
+    <line x1="60" y1="130" x2="30" y2="180" stroke="#a855f7" stroke-width="2"/>
+    <line x1="60" y1="130" x2="90" y2="180" stroke="#a855f7" stroke-width="2"/>
+
+    <!-- Body signals - highlighted -->
+    <!-- Heart/heartbeat -->
+    <circle cx="55" cy="72" r="12" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="55" y="77" font-family="Arial, sans-serif" font-size="14" fill="#ef4444" text-anchor="middle">&#x2764;</text>
+    <line x1="68" y1="72" x2="140" y2="72" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- Stomach/hunger -->
+    <circle cx="58" cy="105" r="12" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="58" y="110" font-family="Arial, sans-serif" font-size="12" fill="#f59e0b" text-anchor="middle">~</text>
+    <line x1="70" y1="105" x2="140" y2="105" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- Temperature -->
+    <circle cx="25" cy="85" r="10" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="25" y="89" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">&#xb0;</text>
+
+    <!-- Brain signals -->
+    <circle cx="60" cy="15" r="10" fill="#10b981" opacity="0.2"/>
+    <text x="60" y="12" font-family="Arial, sans-serif" font-size="8" fill="#10b981" text-anchor="middle">&#x26A1;</text>
+
+    <!-- Pain -->
+    <circle cx="85" cy="145" r="8" fill="#ec4899" opacity="0.2" stroke="#ec4899" stroke-width="1"/>
+    <text x="85" y="149" font-family="Arial, sans-serif" font-size="8" fill="#ec4899" text-anchor="middle">!</text>
+  </g>
+
+  <!-- Signal labels -->
+  <g transform="translate(250, 95)">
+    <rect x="0" y="60" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#ef4444" stroke-width="1"/>
+    <text x="50" y="75" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Heartbeat</text>
+
+    <rect x="0" y="92" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="50" y="107" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">Hunger</text>
+
+    <rect x="0" y="124" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#3b82f6" stroke-width="1"/>
+    <text x="50" y="139" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">Temperature</text>
+
+    <rect x="0" y="156" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#10b981" stroke-width="1"/>
+    <text x="50" y="171" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Fatigue</text>
+
+    <rect x="0" y="188" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#ec4899" stroke-width="1"/>
+    <text x="50" y="203" font-family="Arial, sans-serif" font-size="10" fill="#ec4899" text-anchor="middle">Pain</text>
+
+    <rect x="0" y="220" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="50" y="235" font-family="Arial, sans-serif" font-size="10" fill="#8b5cf6" text-anchor="middle">Breath rate</text>
+  </g>
+
+  <!-- RIGHT: AI box with absent signals -->
+  <text x="600" y="82" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8" text-anchor="middle" font-weight="bold">AI System</text>
+
+  <!-- AI box -->
+  <g transform="translate(470, 100)">
+    <rect x="40" y="10" width="180" height="200" rx="10" fill="#2a2a4a" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="55" y="25" width="150" height="120" rx="5" fill="#1a1a2e" stroke="#555" stroke-width="1"/>
+    <!-- Code lines inside -->
+    <rect x="65" y="40" width="80" height="4" rx="1" fill="#a855f7" opacity="0.4"/>
+    <rect x="65" y="52" width="120" height="4" rx="1" fill="#94a3b8" opacity="0.3"/>
+    <rect x="65" y="64" width="60" height="4" rx="1" fill="#10b981" opacity="0.4"/>
+    <rect x="65" y="76" width="100" height="4" rx="1" fill="#94a3b8" opacity="0.3"/>
+    <rect x="65" y="88" width="90" height="4" rx="1" fill="#f59e0b" opacity="0.4"/>
+    <rect x="65" y="100" width="110" height="4" rx="1" fill="#94a3b8" opacity="0.3"/>
+    <rect x="65" y="112" width="70" height="4" rx="1" fill="#3b82f6" opacity="0.4"/>
+    <rect x="65" y="124" width="95" height="4" rx="1" fill="#94a3b8" opacity="0.3"/>
+
+    <!-- Status lights -->
+    <circle cx="75" cy="170" r="5" fill="#10b981"/>
+    <circle cx="95" cy="170" r="5" fill="#f59e0b"/>
+    <circle cx="115" cy="170" r="5" fill="#94a3b8" opacity="0.3"/>
+
+    <!-- Empty signal indicators -->
+    <text x="130" y="190" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Processing only</text>
+  </g>
+
+  <!-- Missing signal indicators (right side) -->
+  <g transform="translate(470, 95)">
+    <rect x="230" y="60" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="75" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No heartbeat</text>
+
+    <rect x="230" y="92" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="107" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No hunger</text>
+
+    <rect x="230" y="124" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="139" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No temp</text>
+
+    <rect x="230" y="156" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="171" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No fatigue</text>
+
+    <rect x="230" y="188" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="203" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No pain</text>
+
+    <rect x="230" y="220" width="100" height="22" rx="4" fill="#2a2a4a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="280" y="235" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">No breath</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <rect x="80" y="390" width="640" height="46" rx="8" fill="#2a2a4a" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Interoception shapes every human emotion. AI has none of it.</text>
+  <text x="400" y="428" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">This is the fundamental gap &#x2014; and why AI feelings are always simulated, never felt.</text>
+</svg>

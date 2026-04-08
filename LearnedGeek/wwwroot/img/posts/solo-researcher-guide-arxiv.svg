@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="sr_bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <marker id="sr_arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#a855f7"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="url(#sr_bgGrad)"/>
+  <g opacity="0.03">
+    <pattern id="sr_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#sr_grid)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="Arial, sans-serif" font-size="21" fill="#fff" text-anchor="middle" font-weight="bold">Solo Researcher's Guide to arXiv</text>
+  <text x="400" y="56" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Your roadmap from independent research to published preprint</text>
+
+  <!-- Badge: No University Required -->
+  <rect x="560" y="65" width="200" height="28" rx="14" fill="#10b981" opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
+  <text x="660" y="84" font-family="Arial, sans-serif" font-size="12" fill="#10b981" text-anchor="middle" font-weight="bold">No University Required</text>
+
+  <!-- Roadmap steps -->
+  <!-- Connecting line -->
+  <line x1="120" y1="130" x2="120" y2="400" stroke="#a855f7" stroke-width="2" opacity="0.4"/>
+
+  <!-- Step 1: ORCID -->
+  <circle cx="120" cy="130" r="18" fill="#2a2a4a" stroke="#10b981" stroke-width="2"/>
+  <text x="120" y="135" font-family="Arial, sans-serif" font-size="14" fill="#10b981" text-anchor="middle" font-weight="bold">1</text>
+  <rect x="155" y="112" width="580" height="42" rx="8" fill="#2a2a4a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="175" y="132" font-family="Arial, sans-serif" font-size="14" fill="#10b981" font-weight="bold">Get an ORCID iD</text>
+  <text x="175" y="147" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Free researcher identifier. Takes 2 minutes. orcid.org</text>
+  <!-- Checkmark -->
+  <circle cx="700" y="130" r="12" fill="#10b981" opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
+  <path d="M 693,130 L 698,135 L 707,126" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Step 2: Zenodo -->
+  <circle cx="120" cy="195" r="18" fill="#2a2a4a" stroke="#a855f7" stroke-width="2"/>
+  <text x="120" y="200" font-family="Arial, sans-serif" font-size="14" fill="#a855f7" text-anchor="middle" font-weight="bold">2</text>
+  <rect x="155" y="177" width="580" height="42" rx="8" fill="#2a2a4a" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="175" y="197" font-family="Arial, sans-serif" font-size="14" fill="#a855f7" font-weight="bold">Upload to Zenodo</text>
+  <text x="175" y="212" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Get a DOI for your preprint. CC-BY-4.0 license. Permanent citation.</text>
+  <circle cx="700" y="195" r="12" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+  <path d="M 693,195 L 698,200 L 707,191" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Step 3: arXiv endorsement -->
+  <circle cx="120" cy="260" r="18" fill="#2a2a4a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="120" y="265" font-family="Arial, sans-serif" font-size="14" fill="#f59e0b" text-anchor="middle" font-weight="bold">3</text>
+  <rect x="155" y="242" width="580" height="42" rx="8" fill="#2a2a4a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="175" y="262" font-family="Arial, sans-serif" font-size="14" fill="#f59e0b" font-weight="bold">Get arXiv Endorsement</text>
+  <text x="175" y="277" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Need an existing author to endorse you. Network or ask on Twitter/X.</text>
+  <circle cx="700" y="260" r="12" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="700" y="264" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">...</text>
+
+  <!-- Step 4: Conference submission -->
+  <circle cx="120" cy="325" r="18" fill="#2a2a4a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="120" y="330" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle" font-weight="bold">4</text>
+  <rect x="155" y="307" width="580" height="42" rx="8" fill="#2a2a4a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="175" y="327" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6" font-weight="bold">Submit to Conference</text>
+  <text x="175" y="342" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Target workshops first (lower bar), then main tracks. Build credibility.</text>
+  <circle cx="700" y="325" r="12" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="700" y="329" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">...</text>
+
+  <!-- Step 5: Iterate -->
+  <circle cx="120" cy="390" r="18" fill="#2a2a4a" stroke="#ec4899" stroke-width="2"/>
+  <text x="120" y="395" font-family="Arial, sans-serif" font-size="14" fill="#ec4899" text-anchor="middle" font-weight="bold">5</text>
+  <rect x="155" y="372" width="580" height="42" rx="8" fill="#2a2a4a" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="175" y="392" font-family="Arial, sans-serif" font-size="14" fill="#ec4899" font-weight="bold">Iterate &amp; Cite</text>
+  <text x="175" y="407" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Respond to feedback. Update Zenodo version. Build your citation network.</text>
+  <circle cx="700" y="390" r="12" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="700" y="394" font-family="Arial, sans-serif" font-size="10" fill="#ec4899" text-anchor="middle">...</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="12" fill="#a855f7" text-anchor="middle" font-style="italic">The gatekeepers are fewer than you think. The tools are free. Just start.</text>
+</svg>

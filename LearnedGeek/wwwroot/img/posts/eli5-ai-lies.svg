@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Notebook paper background -->
+  <rect width="800" height="450" fill="#f9f7f1"/>
+  <line x1="0" y1="80" x2="800" y2="80" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="130" x2="800" y2="130" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="180" x2="800" y2="180" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="230" x2="800" y2="230" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="330" x2="800" y2="330" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="70" y1="0" x2="70" y2="450" stroke="#ff6b6b" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="Comic Sans MS, cursive" font-size="28" fill="#2d2d2d" text-anchor="middle" font-weight="bold">Why Does AI Make Stuff Up?</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="13" fill="#8b5cf6" text-anchor="middle">When your AI friend remembers things that never happened</text>
+
+  <!-- Kid asking (left) -->
+  <g transform="translate(100, 120)">
+    <!-- Stick figure kid -->
+    <circle cx="50" cy="20" r="18" fill="#ffe4b5" stroke="#d4a76a" stroke-width="2"/>
+    <!-- Eyes -->
+    <circle cx="43" cy="17" r="3" fill="#333"/>
+    <circle cx="57" cy="17" r="3" fill="#333"/>
+    <!-- Mouth -->
+    <path d="M 42,26 Q 50,32 58,26" fill="none" stroke="#333" stroke-width="1.5"/>
+    <!-- Body -->
+    <line x1="50" y1="38" x2="50" y2="90" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="55" x2="25" y2="75" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="55" x2="75" y2="75" stroke="#333" stroke-width="2"/>
+    <!-- Speech bubble -->
+    <rect x="85" y="-10" width="200" height="50" rx="10" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+    <polygon points="85,15 75,25 85,25" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+    <polygon points="86,16 77,25 86,24" fill="#fff" stroke="none"/>
+    <text x="185" y="12" font-family="Comic Sans MS, cursive" font-size="14" fill="#333" text-anchor="middle">Did we go to</text>
+    <text x="185" y="30" font-family="Comic Sans MS, cursive" font-size="14" fill="#333" text-anchor="middle">the zoo?</text>
+  </g>
+
+  <!-- AI responding (right) -->
+  <g transform="translate(420, 120)">
+    <!-- Robot head -->
+    <rect x="30" y="5" width="40" height="35" rx="8" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+    <rect x="38" y="0" width="24" height="8" rx="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+    <!-- Eyes -->
+    <circle cx="42" cy="20" r="4" fill="#3b82f6"/>
+    <circle cx="58" cy="20" r="4" fill="#3b82f6"/>
+    <!-- Mouth -->
+    <rect x="40" y="28" width="20" height="4" rx="2" fill="#64748b"/>
+    <!-- Body -->
+    <rect x="30" y="42" width="40" height="50" rx="5" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+    <!-- Speech bubble -->
+    <rect x="85" y="-15" width="250" height="60" rx="10" fill="#fff" stroke="#ef4444" stroke-width="2"/>
+    <polygon points="85,15 75,25 85,25" fill="#fff" stroke="#ef4444" stroke-width="2"/>
+    <polygon points="86,16 77,25 86,24" fill="#fff" stroke="none"/>
+    <text x="210" y="8" font-family="Comic Sans MS, cursive" font-size="13" fill="#333" text-anchor="middle">Yes! You loved</text>
+    <text x="210" y="25" font-family="Comic Sans MS, cursive" font-size="13" fill="#333" text-anchor="middle">the penguins!</text>
+    <text x="210" y="40" font-family="Comic Sans MS, cursive" font-size="11" fill="#ef4444" text-anchor="middle" font-style="italic">(this never happened)</text>
+  </g>
+
+  <!-- Thought bubble with ??? -->
+  <g transform="translate(520, 80)">
+    <ellipse cx="60" cy="25" rx="45" ry="25" fill="#fff3cd" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="60" y="32" font-family="Comic Sans MS, cursive" font-size="22" fill="#f59e0b" text-anchor="middle" font-weight="bold">???</text>
+    <circle cx="20" cy="55" r="5" fill="#fff3cd" stroke="#f59e0b" stroke-width="1"/>
+    <circle cx="10" cy="65" r="3" fill="#fff3cd" stroke="#f59e0b" stroke-width="1"/>
+  </g>
+
+  <!-- Explanation box -->
+  <rect x="80" y="280" width="640" height="90" rx="8" fill="#e8e4f8" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="305" font-family="Comic Sans MS, cursive" font-size="16" fill="#5b21b6" text-anchor="middle" font-weight="bold">AI doesn't "remember" like you do!</text>
+  <text x="400" y="328" font-family="Comic Sans MS, cursive" font-size="13" fill="#555" text-anchor="middle">It predicts the most likely next word. Sometimes</text>
+  <text x="400" y="348" font-family="Comic Sans MS, cursive" font-size="13" fill="#555" text-anchor="middle">that creates stories that SOUND right but AREN'T right.</text>
+  <text x="400" y="365" font-family="Comic Sans MS, cursive" font-size="11" fill="#8b5cf6" text-anchor="middle" font-style="italic">That's called "confabulation" &#x2014; a fancy word for making stuff up!</text>
+
+  <!-- ELI5 badge -->
+  <defs>
+    <filter id="e5al_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="e5al_crayon">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g transform="translate(700, 390)" filter="url(#e5al_shadow)">
+    <rect width="80" height="50" fill="#f9f7f1" stroke="#333" stroke-width="1" rx="3"/>
+    <line x1="5" y1="15" x2="75" y2="15" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="25" x2="75" y2="25" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="35" x2="75" y2="35" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="12" y1="5" x2="12" y2="45" stroke="#ff6b6b" stroke-width="0.8"/>
+    <g transform="translate(17, 13)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#ff6b6b" stroke-width="1.2" filter="url(#e5al_crayon)"/>
+      <path d="M 5 8 Q 8 5 11 8" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+      <path d="M 6 10 Q 8 12 10 10" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+    </g>
+    <text x="33" y="22" font-family="Comic Sans MS, cursive" font-size="10" fill="#ff6b6b" font-weight="bold" filter="url(#e5al_crayon)">ELI5</text>
+    <text x="33" y="32" font-family="Comic Sans MS, cursive" font-size="7" fill="#666" filter="url(#e5al_crayon)">Series</text>
+  </g>
+</svg>

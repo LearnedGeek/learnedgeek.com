@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Notebook paper background -->
+  <rect width="800" height="450" fill="#f9f7f1"/>
+  <line x1="0" y1="80" x2="800" y2="80" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="130" x2="800" y2="130" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="180" x2="800" y2="180" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="230" x2="800" y2="230" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="330" x2="800" y2="330" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#e0ddd5" stroke-width="1"/>
+  <line x1="70" y1="0" x2="70" y2="450" stroke="#ff6b6b" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="Comic Sans MS, cursive" font-size="28" fill="#2d2d2d" text-anchor="middle" font-weight="bold">How Does AI Remember?</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="13" fill="#8b5cf6" text-anchor="middle">Like a filing cabinet that sorts by importance</text>
+
+  <!-- Filing Cabinet -->
+  <g transform="translate(100, 90)">
+    <!-- Cabinet body -->
+    <rect x="0" y="0" width="200" height="260" rx="5" fill="#b0b0b0" stroke="#888" stroke-width="2"/>
+    <!-- Cabinet top -->
+    <rect x="5" y="5" width="190" height="10" rx="2" fill="#999"/>
+
+    <!-- Drawer 1 - Important (front, bright) -->
+    <rect x="10" y="25" width="180" height="50" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="80" y="45" width="40" height="8" rx="2" fill="#d97706"/>
+    <text x="100" y="42" font-family="Comic Sans MS, cursive" font-size="11" fill="#92400e" text-anchor="middle" font-weight="bold">IMPORTANT!</text>
+    <!-- Star -->
+    <text x="170" y="52" font-family="Comic Sans MS, cursive" font-size="18" fill="#f59e0b">&#x2B50;</text>
+
+    <!-- Drawer 2 - Pretty recent -->
+    <rect x="10" y="85" width="180" height="50" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="80" y="105" width="40" height="8" rx="2" fill="#6366f1"/>
+    <text x="100" y="102" font-family="Comic Sans MS, cursive" font-size="11" fill="#4338ca" text-anchor="middle">Pretty recent</text>
+
+    <!-- Drawer 3 - Old stuff -->
+    <rect x="10" y="145" width="180" height="50" rx="4" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="80" y="165" width="40" height="8" rx="2" fill="#9ca3af"/>
+    <text x="100" y="162" font-family="Comic Sans MS, cursive" font-size="11" fill="#6b7280" text-anchor="middle">Older stuff</text>
+
+    <!-- Drawer 4 - Dusty! -->
+    <rect x="10" y="205" width="180" height="50" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1" opacity="0.7"/>
+    <rect x="80" y="225" width="40" height="8" rx="2" fill="#d1d5db"/>
+    <text x="100" y="222" font-family="Comic Sans MS, cursive" font-size="11" fill="#9ca3af" text-anchor="middle">Dusty!</text>
+    <!-- Dust particles -->
+    <circle cx="30" cy="230" r="2" fill="#d1d5db" opacity="0.5"/>
+    <circle cx="160" cy="215" r="1.5" fill="#d1d5db" opacity="0.5"/>
+    <circle cx="170" cy="240" r="2" fill="#d1d5db" opacity="0.4"/>
+  </g>
+
+  <!-- Arrows and labels (right side) -->
+  <g transform="translate(330, 100)">
+    <!-- Arrow to top drawer -->
+    <line x1="0" y1="30" x2="40" y2="30" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="0,-4 0,64 -10,30" fill="#f59e0b"/>
+    <rect x="50" y="5" width="350" height="50" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="225" y="26" font-family="Comic Sans MS, cursive" font-size="13" fill="#92400e" text-anchor="middle" font-weight="bold">"Your birthday is March 15th"</text>
+    <text x="225" y="44" font-family="Comic Sans MS, cursive" font-size="11" fill="#92400e" text-anchor="middle">Important! Checked often! &#x2B50;</text>
+
+    <!-- Arrow to second drawer -->
+    <rect x="50" y="75" width="350" height="44" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1"/>
+    <text x="225" y="94" font-family="Comic Sans MS, cursive" font-size="12" fill="#4338ca" text-anchor="middle">"We talked about dogs yesterday"</text>
+    <text x="225" y="112" font-family="Comic Sans MS, cursive" font-size="10" fill="#6366f1" text-anchor="middle">Still fresh enough to find</text>
+
+    <!-- Arrow to old stuff -->
+    <rect x="50" y="140" width="350" height="44" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+    <text x="225" y="160" font-family="Comic Sans MS, cursive" font-size="12" fill="#6b7280" text-anchor="middle">"That joke from 2 weeks ago..."</text>
+    <text x="225" y="176" font-family="Comic Sans MS, cursive" font-size="10" fill="#9ca3af" text-anchor="middle">Getting harder to find</text>
+
+    <!-- Dusty -->
+    <rect x="50" y="205" width="350" height="44" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" opacity="0.7"/>
+    <text x="225" y="224" font-family="Comic Sans MS, cursive" font-size="12" fill="#9ca3af" text-anchor="middle">"What did we say in January...?"</text>
+    <text x="225" y="240" font-family="Comic Sans MS, cursive" font-size="10" fill="#d1d5db" text-anchor="middle">Basically forgotten</text>
+  </g>
+
+  <!-- Bottom lesson -->
+  <rect x="100" y="370" width="600" height="55" rx="8" fill="#e8e4f8" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="393" font-family="Comic Sans MS, cursive" font-size="14" fill="#5b21b6" text-anchor="middle" font-weight="bold">AI memory works like YOUR memory!</text>
+  <text x="400" y="413" font-family="Comic Sans MS, cursive" font-size="12" fill="#555" text-anchor="middle">Important things stay up front. Boring things drift to the back.</text>
+
+  <!-- ELI5 badge -->
+  <defs>
+    <filter id="e5am_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="e5am_crayon">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g transform="translate(15, 390)" filter="url(#e5am_shadow)">
+    <rect width="80" height="50" fill="#f9f7f1" stroke="#333" stroke-width="1" rx="3"/>
+    <line x1="5" y1="15" x2="75" y2="15" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="25" x2="75" y2="25" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="5" y1="35" x2="75" y2="35" stroke="#a8d8ff" stroke-width="0.5"/>
+    <line x1="12" y1="5" x2="12" y2="45" stroke="#ff6b6b" stroke-width="0.8"/>
+    <g transform="translate(17, 13)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#ff6b6b" stroke-width="1.2" filter="url(#e5am_crayon)"/>
+      <path d="M 5 8 Q 8 5 11 8" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+      <path d="M 6 10 Q 8 12 10 10" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+    </g>
+    <text x="33" y="22" font-family="Comic Sans MS, cursive" font-size="10" fill="#ff6b6b" font-weight="bold" filter="url(#e5am_crayon)">ELI5</text>
+    <text x="33" y="32" font-family="Comic Sans MS, cursive" font-size="7" fill="#666" filter="url(#e5am_crayon)">Series</text>
+  </g>
+</svg>
