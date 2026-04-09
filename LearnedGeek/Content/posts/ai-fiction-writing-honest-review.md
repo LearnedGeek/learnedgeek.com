@@ -1,5 +1,3 @@
-# I Tried Using AI to Write Fiction. Here's What Actually Happened.
-
 Let me save you some time: ChatGPT will not write your novel for you.
 
 I know. The marketing suggests otherwise. "Generate entire stories!" "AI co-writer!" "Never stare at a blank page again!"

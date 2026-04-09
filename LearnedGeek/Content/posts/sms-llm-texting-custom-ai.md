@@ -1,5 +1,3 @@
-# Texting My Own AI: Building an SMS Interface to a Custom LLM in an Hour
-
 It started with a simple question: "Can I text an AI instead of opening yet another app?"
 
 Turns out, not only is it possible—it's surprisingly straightforward. And more importantly, it validates a genuinely compelling business model for consulting work.

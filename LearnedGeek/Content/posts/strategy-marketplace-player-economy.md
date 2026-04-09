@@ -1,5 +1,3 @@
-# Strategy Marketplace: Building an Economy Around Player-Created JSON
-
 Players in [API Combat](https://apicombat.com) write battle strategies as JSON configurations. Formations, target priorities, conditional ability triggers — all defined in a structured document that the [battle engine](/Blog/Post/battle-engine-400-lines-csharp) consumes and executes.
 
 At some point, a natural question emerged: what if players could sell their strategies to each other?

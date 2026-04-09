@@ -1,5 +1,3 @@
-# Building a Turn-Based Battle Engine in 400 Lines of C#
-
 No game engine. No Unity. No third-party combat framework.
 
 The entire battle system behind [API Combat](https://apicombat.com) runs on a single class called `DeclarativeStrategyEngine` — and it's about 400 lines of C#. Here's how it works.

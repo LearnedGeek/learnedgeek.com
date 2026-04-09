@@ -1,5 +1,3 @@
-# Reverse Engineering a Mobile Game: Part 1 — What's Inside the Box?
-
 **Series:** This is Part 1 of a 5-part series. [Part 2](/Blog/Post/reverse-engineering-game-part-2) | [Part 3](/Blog/Post/reverse-engineering-game-part-3) | [Part 4](/Blog/Post/reverse-engineering-game-part-4) | [Part 5](/Blog/Post/reverse-engineering-game-part-5)
 
 ---

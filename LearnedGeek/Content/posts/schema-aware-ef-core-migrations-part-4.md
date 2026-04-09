@@ -1,5 +1,3 @@
-# The Model Cache Key Factory: Preventing False PendingModelChangesWarning
-
 *Part 4 of the Schema-Aware EF Core Migrations series. Read [Part 1](/Blog/Post/schema-aware-ef-core-migrations), [Part 2](/Blog/Post/schema-aware-ef-core-migrations-part-2), and [Part 3](/Blog/Post/schema-aware-ef-core-migrations-part-3) first.*
 
 We thought we had schema-aware migrations figured out. The SQL generator was rewriting table operations, the history table was per-schema, tests were passing. Then EF Core started complaining about "pending model changes"—even though there weren't any.

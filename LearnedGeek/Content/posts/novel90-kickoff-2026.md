@@ -1,5 +1,3 @@
-# 2025 Was Draft Year. 2026 Is Edit Year. Here's the Plan.
-
 Tonight at 7 PM Central, I'm joining Novel90's Spring 2026 cohort. Ninety days to turn a messy first draft into something publishable.
 
 I almost didn't write this post. It feels like tempting fate—announcing a goal before you've achieved it. But accountability is the whole point. If I'm going to do this thing, I might as well do it publicly.

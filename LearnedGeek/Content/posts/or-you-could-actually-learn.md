@@ -1,7 +1,3 @@
-# "Or You Could Actually Learn CSS"
-
----
-
 ## The Comment
 
 I wrote a post comparing Tailwind to Bootstrap. It got some great discussion on LinkedIn — thoughtful questions, practical concerns, people sharing their own experiences switching between frameworks.

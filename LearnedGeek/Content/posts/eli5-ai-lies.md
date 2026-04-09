@@ -1,5 +1,3 @@
-# ELI5: Why Your AI Makes Things Up (And Doesn't Know It's Doing It)
-
 *You just survived a [deep dive into AI confabulation](/Blog/Post/seven-ways-ai-lies-confabulation-taxonomy) — seven types, detection methods, architectural countermeasures. It was dense.*
 
 *This is the "explain it to your mom" version.*

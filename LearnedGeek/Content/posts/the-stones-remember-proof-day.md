@@ -1,5 +1,3 @@
-# The Stones Remember: Proof Day
-
 There's a moment in every project—software or otherwise—where the thing you've been building becomes *real*.
 
 In software, it's the first time your app runs on someone else's machine. The first production deployment. The first time a stranger uses something you made and it actually works.

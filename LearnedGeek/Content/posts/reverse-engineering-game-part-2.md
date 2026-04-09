@@ -1,5 +1,3 @@
-# Reverse Engineering a Mobile Game: Part 2 — Eavesdropping on the Conversation
-
 **Series:** Part 2 of a 5-part series. [Part 1](/Blog/Post/reverse-engineering-game-part-1) | [Part 3](/Blog/Post/reverse-engineering-game-part-3) | [Part 4](/Blog/Post/reverse-engineering-game-part-4) | [Part 5](/Blog/Post/reverse-engineering-game-part-5)
 
 ---

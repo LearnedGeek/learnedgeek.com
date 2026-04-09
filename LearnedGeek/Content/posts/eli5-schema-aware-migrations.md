@@ -1,5 +1,3 @@
-# ELI5: Why Your Database Needs Colored Folders
-
 *You just survived a [5-part deep dive](/Blog/Post/schema-aware-ef-core-migrations) into schema-aware EF Core migrations. Custom SQL generators. Cache key factories. Migration history tables. Design-time vs runtime mental models. It was a lot.*
 
 *This is the "explain it to your mom" version.*

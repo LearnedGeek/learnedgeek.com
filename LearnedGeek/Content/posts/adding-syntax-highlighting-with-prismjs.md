@@ -1,5 +1,3 @@
-# Adding Syntax Highlighting to a Blog (The Easy Way)
-
 For months, the code blocks on this blog looked like this: white text on a dark background. Monochrome. Functional. Boring.
 
 Every code snippet—C#, JavaScript, SQL, HTML—rendered in the same flat color. It worked, but it felt like reading a novel printed entirely in Courier.

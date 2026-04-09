@@ -1,5 +1,3 @@
-# Environmental Modifiers: Rotating the Meta Weekly Without Patching
-
 Every Monday at midnight UTC, the rules of combat in [API Combat](https://apicombat.com) change. No deploy. No code update. No patch notes to download. The game reads a different modifier from the database, and suddenly Mages hit harder, or healing is doubled, or everyone's armor is thicker.
 
 This is how you keep a strategy game fresh without shipping code.

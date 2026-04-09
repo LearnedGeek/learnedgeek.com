@@ -1,7 +1,3 @@
-# Adding Dark Mode to Any Site With Tailwind and localStorage
-
----
-
 ## The Problem With Most Dark Modes
 
 You've seen the bad ones. You click the toggle, and the entire page flashes white before going dark. Or you reload the page and your preference is gone. Or — my personal favorite — the site "supports" dark mode but only if your OS is set to dark, with no manual toggle.

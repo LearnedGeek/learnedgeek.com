@@ -1,5 +1,3 @@
-# Why I Built a Game With No GUI
-
 "So it's like... a text-based game?"
 
 "No."

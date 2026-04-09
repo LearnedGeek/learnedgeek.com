@@ -1,5 +1,3 @@
-# Your First Battle: A Complete API Combat Walkthrough
-
 You've heard about [API Combat](https://apicombat.com). You're intrigued. But how do you actually **play** a game with no UI?
 
 This is your complete walkthrough. By the end, you'll have:

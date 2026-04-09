@@ -1,5 +1,3 @@
-# Reverse Engineering a Mobile Game: Part 4 — Building Our Own Controller
-
 **Series:** Part 4 of a 5-part series. [Part 1](/Blog/Post/reverse-engineering-game-part-1) | [Part 2](/Blog/Post/reverse-engineering-game-part-2) | [Part 3](/Blog/Post/reverse-engineering-game-part-3) | [Part 5](/Blog/Post/reverse-engineering-game-part-5)
 
 ---

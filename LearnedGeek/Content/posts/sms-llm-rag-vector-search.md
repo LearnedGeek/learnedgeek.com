@@ -1,5 +1,3 @@
-# From POC to Production: Adding RAG and Vector Search to My SMS AI Assistant
-
 *Part 2 of the SMS AI series. [Read Part 1: Texting My Own AI](/Blog/Post/sms-llm-texting-custom-ai) first.*
 
 I built an SMS-to-LLM integration. Text a question, get an AI-powered answer. 40 lines of code.

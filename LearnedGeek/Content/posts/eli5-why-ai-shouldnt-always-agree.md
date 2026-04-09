@@ -1,5 +1,3 @@
-# ELI5: Why Your AI Shouldn't Always Agree With You
-
 *You just survived a [deep dive into engagement metrics](/Blog/Post/why-engagement-metrics-wrong-goal) — sycophancy research, Fang et al., the loneliness paradox. Heavy stuff.*
 
 *This is the "explain it to your mom" version.*

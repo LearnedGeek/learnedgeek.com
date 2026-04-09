@@ -1,5 +1,3 @@
-# Thread-Safe Synchronization with SemaphoreSlim
-
 I had a sync bug that only happened on Mondays.
 
 The app would resume from background, check for pending items, and start a sync. Simultaneously, the network recovery handler would detect connectivity and start a sync. Two syncs running at once. Data corruption. Angry phone calls.

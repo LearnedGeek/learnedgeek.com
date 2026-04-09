@@ -1,5 +1,3 @@
-# Global Exception Handling in ASP.NET Core
-
 The API endpoint threw a `NullReferenceException`. The client got back an HTML error page with a full stack trace.
 
 In production.

@@ -1,7 +1,3 @@
-# The Memory Leak That Survived the Fix: Entity Framework, Factories, and `ContinueWith`
-
----
-
 *I fixed the HTTP disposal leaks. Deployed. Watched the profiler. Memory dropped 70%. Victory.*
 
 *Then the 499s came back.*

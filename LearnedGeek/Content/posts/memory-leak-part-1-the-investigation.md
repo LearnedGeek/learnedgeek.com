@@ -1,7 +1,3 @@
-# The Two-Year Memory Leak: How I Found Five Missing `using` Statements
-
----
-
 ## The Problem That Wouldn't Die
 
 Our high-volume API started throwing timeout errors under load. Not always. Just when traffic spiked above 100 requests per second.

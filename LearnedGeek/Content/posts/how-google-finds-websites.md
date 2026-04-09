@@ -1,5 +1,3 @@
-# How Google Finds Websites (Search Engines Explained)
-
 You type something into Google. In a fraction of a second, you get a list of websites. But how? The internet has billions of pages. How does Google know they exist? How does it decide which ones to show first?
 
 The answer involves robot spiders, giant indexes, and a lot of math. But you don't need to be a programmer to understand it. This is search engines explained for everyone.

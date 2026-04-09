@@ -1,5 +1,3 @@
-# Converging on Ani: What Archimedes and a Polygon Taught Me About Building an AI Companion
-
 There's a moment in the history of mathematics that I keep coming back to lately.
 
 Archimedes wanted to calculate PI. He didn't have calculus. He didn't have computers. What he had was a polygon and an insight: if you keep adding sides, a polygon converges on a circle. A hexagon is a rough approximation. A 96-sided polygon is much closer. You never actually *reach* the circle — but you can get close enough that the remaining error stops mattering.

@@ -1,5 +1,3 @@
-# Branded HTML Emails That Actually Look Good in Gmail
-
 Gmail strips your `<style>` tags and overrides your link colors. Here's how we build branded HTML emails for [API Combat](https://apicombat.com) that survive every client.
 
 ## The Problem: Email Clients Hate You

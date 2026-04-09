@@ -1,5 +1,3 @@
-# ELI5: Why Old Memories Fade and New Ones Don't
-
 *You just survived a [deep dive into exponential decay](/Blog/Post/exponential-decay-from-atoms-to-emotions) — half-lives, decay constants, radioactive atoms, emotional contributions. It was a lot of math.*
 
 *This is the "explain it to your mom" version.*

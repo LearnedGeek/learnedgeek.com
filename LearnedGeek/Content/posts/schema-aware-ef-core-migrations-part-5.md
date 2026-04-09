@@ -1,5 +1,3 @@
-# The Design-Time vs Runtime Mental Model
-
 *Part 5 of the Schema-Aware EF Core Migrations series. This post provides the conceptual foundation that makes Parts 1-4 click.*
 
 After four blog posts and countless hours debugging, I finally understand why EF Core schema handling is so confusing: it's actually *two separate systems* that happen to share some code. Once you see them as distinct, everything else falls into place.

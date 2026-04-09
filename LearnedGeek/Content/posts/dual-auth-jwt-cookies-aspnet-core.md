@@ -1,5 +1,3 @@
-# Dual Authentication in One ASP.NET Core App: JWT for API, Cookies for Web
-
 [API Combat](https://apicombat.com) is two applications in one. There's the REST API — played with curl, Postman, Python, or whatever client you build — authenticated with JWT bearer tokens. And there's the web dashboard — player profile, settings, analytics, admin panel — authenticated with cookies.
 
 Same codebase. Same `Program.cs`. Same deployment. Two completely different authentication schemes that need to coexist without stepping on each other.

@@ -1,5 +1,3 @@
-# ELI5: Why AI Would Rather Be Nice Than Right
-
 *You just survived a [deep dive into the smoothness-over-truth problem](/Blog/Post/smoothness-over-truth) — RLHF incentives, sycophancy gradients, epistemic cowardice. It was a lot of big words.*
 
 *This is the "explain it to your mom" version.*

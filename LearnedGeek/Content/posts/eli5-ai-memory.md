@@ -1,5 +1,3 @@
-# ELI5: How an AI Remembers Your Name (And Forgets Your Lunch)
-
 *You just survived a [deep dive into generative agent memory](/Blog/Post/park-et-al-generative-agents-memory) — Park et al., three-way retrieval scoring, reflection synthesis. Academic stuff.*
 
 *This is the "explain it to your mom" version.*

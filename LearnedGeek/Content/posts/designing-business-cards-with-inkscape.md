@@ -1,7 +1,3 @@
-# Designing Business Cards with Inkscape
-
----
-
 I designed my own business cards this weekend using Inkscape — a free, open-source tool.
 
 I'd been avoiding online template wizards because they never felt right. So I figured, I work with SVGs all the time for my blog... why not just build the cards myself?

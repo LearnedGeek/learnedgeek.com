@@ -1,5 +1,3 @@
-# When Your Map Library Doesn't Speak C#
-
 I needed to show crew members moving around on a map. Little dots with initials, gliding across roads, updating in real-time. Simple, right?
 
 The problem: I'm building in Blazor WebAssembly, and the best mapping library on the planet—Leaflet.js—speaks JavaScript. My entire application speaks C#. These two languages looked at each other across the runtime divide like strangers at a wedding who'd been assigned the same table.

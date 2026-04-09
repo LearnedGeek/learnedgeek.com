@@ -1,5 +1,3 @@
-# Elo Rating + Seasonal Tiers: Two Parallel Rating Tracks
-
 Your global rating is forever. Your seasonal rating resets every 8 weeks. Here's why we run both.
 
 [API Combat](https://apicombat.com) has two rating systems running side by side, and every time I explain this to someone, I get the same question: "Why not just use one?" The answer is that they solve different problems. Global Elo is your permanent skill fingerprint. Seasonal tiers are your fresh-start competitive loop. Both are necessary, and the interplay between them drives everything from matchmaking to rewards.

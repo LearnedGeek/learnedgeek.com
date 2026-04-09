@@ -1,5 +1,3 @@
-# 10 Background Services on Shared Hosting (No Hangfire, No Quartz)
-
 [API Combat](https://apicombat.com) runs 10 background services on a $5/month shared hosting plan. No Hangfire. No Quartz.NET. No Azure Functions. Just ASP.NET Core's built-in `BackgroundService` base class and `Task.Delay`.
 
 Here's the full tour.

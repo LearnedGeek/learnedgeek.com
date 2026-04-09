@@ -1,5 +1,3 @@
-# Teaching REST APIs Through Gaming: Why API Combat Works in the Classroom
-
 I've taught REST APIs to hundreds of students. The conversation always goes the same way:
 
 **Me:** "Today we're learning REST APIs."

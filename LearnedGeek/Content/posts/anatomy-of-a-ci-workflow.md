@@ -1,5 +1,3 @@
-# What Your CI Workflow Actually Does: A Line-by-Line Walkthrough
-
 An AI wrote me a CI workflow last week. I looked at the YAML and understood... maybe 40% of it. I knew what "build" and "test" meant. The rest was hieroglyphics.
 
 So I did what I always do when something confuses me. I went line by line until it didn't.

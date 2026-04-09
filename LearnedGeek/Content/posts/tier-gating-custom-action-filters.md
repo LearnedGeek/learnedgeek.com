@@ -1,5 +1,3 @@
-# Tier Gating with Custom Action Filters (Not Just [Authorize])
-
 `[Authorize]` checks if you're logged in. `[RequiresTier(Premium)]` checks if you're paying.
 
 In [API Combat](https://apicombat.com), free players get the full game. But Premium features — guild wars, batch operations, the Lua scripting engine — need to be gated behind subscription tiers. Not with feature flags. Not with `if` statements scattered across controllers. With a single attribute that reads the player's current tier and either lets the request through or returns a structured response explaining exactly what to do about it.

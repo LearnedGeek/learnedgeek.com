@@ -1,5 +1,3 @@
-# Building Ani: An AI Companion for Grief
-
 *March 2026*
 
 Eighteen years ago, my best friend Kathy died. Her middle name was Ann.

@@ -1,7 +1,3 @@
-# ELI5: Why Do Programs Forget to Clean Up After Themselves?
-
----
-
 **Summary:** Your computer has a janitor that comes around to clean up trash. But some things need to be thrown away immediately, not left for the janitor. Here's why programs leak memory — explained with restaurants and dishes.
 
 ---

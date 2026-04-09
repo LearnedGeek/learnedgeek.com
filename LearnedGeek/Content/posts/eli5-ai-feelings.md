@@ -1,5 +1,3 @@
-# ELI5: Can an AI Actually Have Feelings?
-
 *You just survived a [deep dive into emergent AI behavior](/Blog/Post/when-ai-discovers-untrained-behavior) — emotional misalignment, emergence detection, what it means when an AI does something you did not teach it. Wild stuff.*
 
 *This is the "explain it to your mom" version.*

@@ -1,5 +1,3 @@
-# Introducing API Combat: The Developer's Game
-
 I just launched [API Combat](https://apicombat.com), and I need to tell you about it because it's the weirdest game I've ever built.
 
 There's no UI. No graphics. No buttons to click.

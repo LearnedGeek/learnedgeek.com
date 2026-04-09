@@ -1,5 +1,3 @@
-# Soft Delete + PII Anonymization: Account Deletion That Actually Deletes
-
 GDPR says users can request erasure. Most apps flip `IsDeleted` and call it a day. The user's email, username, and password hash sit in the database forever, "deleted" only in the sense that a boolean says so.
 
 [API Combat](https://apicombat.com) does both: soft delete for referential integrity, then anonymize every piece of personally identifiable information. The account is gone. The game history survives.

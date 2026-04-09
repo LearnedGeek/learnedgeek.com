@@ -1,7 +1,3 @@
-# IDisposable: What I Misunderstood for 30 Years
-
----
-
 *"Objects don't dispose themselves when they go out of scope. I believed they did. For three decades."*
 
 ## The Misconception

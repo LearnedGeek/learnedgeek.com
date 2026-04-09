@@ -1,5 +1,3 @@
-# The MigrationsHistoryTable Bug That Silently Broke Everything
-
 *Part 2 of the Schema-Aware EF Core Migrations series. [Read Part 1](/Blog/Post/schema-aware-ef-core-migrations) first.*
 
 Three months after implementing schema-aware migrations, we hit a bug that cost us two days of debugging. The migrations ran successfully. CI was green. But the staging site couldn't log in.

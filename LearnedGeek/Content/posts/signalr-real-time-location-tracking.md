@@ -1,5 +1,3 @@
-# Making SignalR Connections That Don't Give Up
-
 There's a moment in every real-time application where you watch a supervisor refresh the page for the fifth time because the map stopped updating, and you realize: WebSockets are great until they aren't.
 
 I was building crew location tracking for field workers. The concept was simple—phones send GPS coordinates, supervisors see dots moving on a map. The reality was messier: crews drive through dead zones, tunnels eat signals, and cell towers apparently take coffee breaks. Every time a WebSocket died, my users were back to refreshing.

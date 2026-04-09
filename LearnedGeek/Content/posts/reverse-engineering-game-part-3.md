@@ -1,5 +1,3 @@
-# Reverse Engineering a Mobile Game: Part 3 — Learning to Speak Binary
-
 **Series:** Part 3 of a 5-part series. [Part 1](/Blog/Post/reverse-engineering-game-part-1) | [Part 2](/Blog/Post/reverse-engineering-game-part-2) | [Part 4](/Blog/Post/reverse-engineering-game-part-4) | [Part 5](/Blog/Post/reverse-engineering-game-part-5)
 
 ---

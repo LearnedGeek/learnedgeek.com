@@ -1,7 +1,3 @@
-# ELI5: How Do People Figure Out What Apps Are Doing?
-
----
-
 ## The Pizza Box Analogy
 
 Imagine you order a pizza. It arrives in a sealed box. You can eat the pizza — that's what it's for. But what if you wanted to know the recipe?

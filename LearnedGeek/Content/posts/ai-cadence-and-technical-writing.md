@@ -1,7 +1,3 @@
-# The AI Cadence Problem (And Why I'm Okay With It)
-
----
-
 Someone posted this on LinkedIn the other day, and it's been rattling around in my head ever since:
 
 > "Everyone claims that the em dash and the 'it's not this, it's that' are the dead giveaways that something was written by ChatGPT. They're wrong. The real tell is the cadence."

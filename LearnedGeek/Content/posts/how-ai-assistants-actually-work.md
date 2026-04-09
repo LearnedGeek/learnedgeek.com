@@ -1,5 +1,3 @@
-# How AI Assistants Actually Work (The Clever Parrot Explained)
-
 You type a question into ChatGPT. A few seconds later, it responds with something that sounds intelligent, helpful, even creative. Where does that answer come from? Is it thinking? Is it searching the internet? Is it pulling from a database of pre-written responses?
 
 The reality is stranger—and more interesting—than any of those.

@@ -1,5 +1,3 @@
-# I Built a Robot to Grade My Students (Kind Of)
-
 I teach database programming at a technical college. Every week, students push code to GitHub Classroom repositories. Every week, I need to answer the same questions: Did they finish? Did it compile? Did anyone leave me a desperate `// is this right???` comment at 2 AM that I should probably address?
 
 For the first semester, my workflow looked like this:

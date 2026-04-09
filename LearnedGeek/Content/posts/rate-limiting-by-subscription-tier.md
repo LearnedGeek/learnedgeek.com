@@ -1,5 +1,3 @@
-# Hand-Rolling Rate Limiting by Subscription Tier (And Why We Skipped the Built-In Middleware)
-
 ASP.NET 8 shipped `AddRateLimiter()`. It's a perfectly good rate limiting middleware. I wrote my own anyway.
 
 Not because the built-in is bad. Because [API Combat](https://apicombat.com) has a specific requirement that doesn't fit neatly into the provided abstractions: rate limits that vary by subscription tier, read directly from JWT claims, with structured JSON error responses that tell developers exactly what happened and what to do about it.

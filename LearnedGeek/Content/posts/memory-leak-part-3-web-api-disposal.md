@@ -1,7 +1,3 @@
-# Web API's Hidden Disposal Trap: `HttpResponseMessage` vs `IHttpActionResult`
-
----
-
 *Returning the "wrong" type from your Web API controllers is probably leaking memory right now.*
 
 ## The Silent Killer

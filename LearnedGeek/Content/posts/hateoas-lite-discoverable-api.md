@@ -1,5 +1,3 @@
-# HATEOAS-Lite: Making a REST API Actually Discoverable
-
 Every API response in [API Combat](https://apicombat.com) includes a `_links` object that tells you what to do next. Not because the REST purists say we should. Because it makes the game playable without reading the docs.
 
 ## The Problem With Static URLs

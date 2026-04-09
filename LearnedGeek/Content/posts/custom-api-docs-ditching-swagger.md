@@ -1,5 +1,3 @@
-# Custom API Docs: Why We Ditched Swagger UI for Razor Pages
-
 Swagger UI is great for CRUD APIs. You get auto-generated docs, a try-it-out button, and schema visualization — all from your OpenAPI spec with zero custom code.
 
 For [API Combat](https://apicombat.com) — a game with 100+ endpoints, difficulty ratings, game tips, and an onboarding flow — we needed something Swagger UI was never designed to do. So we built our own docs renderer using Razor Pages and the same OpenAPI spec Swagger would consume.

@@ -1,7 +1,3 @@
-# Fixing HTTP 502.5 — ANCM Out-Of-Process Startup Failure
-
----
-
 ## The Error That Keeps Coming Back
 
 You publish your ASP.NET Core app to shared hosting, hit the URL, and get this:

@@ -1,5 +1,3 @@
-# How HTTPS Keeps You Safe (The Lock Icon Explained)
-
 You've seen the little padlock icon in your browser's address bar. You might have noticed some websites start with "https://" while sketchy ones sometimes don't. Your browser might even warn you about "insecure" connections.
 
 But what does any of it actually mean? What's being locked? Safe from what?

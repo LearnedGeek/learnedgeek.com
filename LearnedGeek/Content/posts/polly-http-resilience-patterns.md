@@ -1,5 +1,3 @@
-# HTTP Resilience with Polly: Retry and Circuit Breaker Patterns
-
 The mobile app worked great on WiFi. Then a user drove through a tunnel.
 
 The sync button showed "syncing" for 30 seconds. Then an error. They tapped it again. Another 30 seconds. More errors. By the time they emerged from the tunnel, they'd queued up a dozen retry attempts that all fired simultaneously.

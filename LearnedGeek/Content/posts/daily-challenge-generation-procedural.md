@@ -1,5 +1,3 @@
-# Daily Challenge Generation: Procedural Content from Typed Generators
-
 Every day at midnight, every active player gets 3 new challenges. No designer hand-placed them — they're generated from typed C# classes.
 
 This is one of those systems that sounds like it should be complicated. Rule engines, DSLs, configuration databases, expression parsers. But [API Combat](https://apicombat.com) generates all of its daily challenges with a handful of small generator classes, a JSON column, and an integer. Here's how.

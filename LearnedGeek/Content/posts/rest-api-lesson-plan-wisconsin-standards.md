@@ -1,5 +1,3 @@
-# 5-Week REST API Curriculum: A Standards-Aligned Lesson Plan for Educators
-
 You just read [Teaching REST APIs Through Gaming](/Blog/Post/teaching-rest-apis-through-gaming) and thought, *"That sounds great, but how do I actually use this in my classroom?"*
 
 Here's the answer: a complete, standards-aligned lesson plan with an assessment rubric you can hand to your department chair today.

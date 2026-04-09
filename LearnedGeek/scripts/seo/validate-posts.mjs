@@ -142,6 +142,8 @@ async function main() {
     }
 
     // Internal link validation (check that linked slugs exist)
+    // and duplicate H1 check (the page template renders the title as <h1>,
+    // so a leading "# Title" in the markdown produces a duplicated header)
     if (post.slug) {
       const mdPath = getMarkdownPath(post.slug);
       if (await fileExists(mdPath)) {
@@ -152,6 +154,16 @@ async function main() {
             if (!allSlugs.has(link.slug)) {
               error(`Broken internal link in ${post.slug}.md: "/Blog/Post/${link.slug}" — slug not found in posts.json`);
             }
+          }
+
+          // Check for duplicate H1: first non-empty line should not be "# ..."
+          const lines = content.split('\n');
+          for (const line of lines) {
+            if (line.trim() === '') continue;
+            if (line.startsWith('# ')) {
+              error(`Duplicate H1 in ${post.slug}.md: markdown starts with "${line.substring(0, 60)}..." but the page template already renders the title from posts.json`);
+            }
+            break;
           }
         } catch {
           // File read errors already caught by existence check

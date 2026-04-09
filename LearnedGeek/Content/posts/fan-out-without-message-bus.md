@@ -1,5 +1,3 @@
-# One Battle, Ten Service Calls: Fan-Out Without a Message Bus
-
 When a battle finishes in [API Combat](https://apicombat.com), the engine returns a result: who won, who lost, what happened on each turn. That's the easy part.
 
 The hard part is everything that happens *after*.

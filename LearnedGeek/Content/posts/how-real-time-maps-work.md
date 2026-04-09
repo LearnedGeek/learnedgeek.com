@@ -1,5 +1,3 @@
-# How Real-Time Maps Actually Work (No Code Required)
-
 You open Uber. You see your driver moving on the map. Every few seconds, their little car icon slides down the street toward you.
 
 How does that work? How does your phone know where someone else's phone is, right now, updating constantly?

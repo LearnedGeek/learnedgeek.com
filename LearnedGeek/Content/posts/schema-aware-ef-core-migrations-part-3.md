@@ -1,5 +1,3 @@
-# Hardening Schema-Aware Migrations: Tests That Let You Sleep at Night
-
 *Part 3 of the Schema-Aware EF Core Migrations series. Read [Part 1](/Blog/Post/schema-aware-ef-core-migrations) and [Part 2](/Blog/Post/schema-aware-ef-core-migrations-part-2) first.*
 
 After spending days chasing schema bugs one-by-one, we realized something uncomfortable: we had no systematic way to verify our schema configuration was correct. Each fix felt like whack-a-mole. The only way we knew something was broken was when it broke in production.

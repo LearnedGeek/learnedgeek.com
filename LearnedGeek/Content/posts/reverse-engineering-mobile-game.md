@@ -1,7 +1,3 @@
-# I Reverse-Engineered a Mobile Game to Build a Better Team
-
----
-
 ## The Problem With Guessing
 
 I've been playing a mobile hero collector — one of those idle RPGs where you collect heroes, level them up, and build teams. It's the usual formula. And like every game in this genre, it gives you almost no information about what actually works.
