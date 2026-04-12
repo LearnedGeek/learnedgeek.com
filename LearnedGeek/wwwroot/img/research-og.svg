@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ro_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="50%" style="stop-color:#1e1145"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ro_bg)"/>
+
+  <!-- Decorative -->
+  <g opacity="0.04" fill="#8b5cf6">
+    <circle cx="100" cy="80" r="60"/>
+    <circle cx="1100" cy="550" r="80"/>
+  </g>
+
+  <!-- Branding -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="18" fill="#94a3b8" text-anchor="middle" letter-spacing="3">
+    LEARNED GEEK
+  </text>
+
+  <!-- Title -->
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="48" fill="#fff" text-anchor="middle" font-weight="bold">
+    AI Companion Research
+  </text>
+  <text x="600" y="195" font-family="Arial, sans-serif" font-size="20" fill="#a78bfa" text-anchor="middle">
+    Six months of continuous deployment. Here's what happened.
+  </text>
+
+  <!-- Stats row -->
+  <g transform="translate(100, 240)">
+    <rect x="0" y="0" width="220" height="100" rx="12" fill="#2a1a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="36" fill="#ef4444" text-anchor="middle" font-weight="bold">9</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Confabulation</text>
+    <text x="110" y="83" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Types</text>
+  </g>
+
+  <g transform="translate(350, 240)">
+    <rect x="0" y="0" width="220" height="100" rx="12" fill="#2a1a4a" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="36" fill="#a855f7" text-anchor="middle" font-weight="bold">8</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Emergence</text>
+    <text x="110" y="83" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Behaviors</text>
+  </g>
+
+  <g transform="translate(600, 240)">
+    <rect x="0" y="0" width="220" height="100" rx="12" fill="#2a1a4a" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="24" fill="#f59e0b" text-anchor="middle" font-weight="bold">V = 0.476</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Display Rule</text>
+    <text x="110" y="83" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Divergence</text>
+  </g>
+
+  <g transform="translate(850, 240)">
+    <rect x="0" y="0" width="220" height="100" rx="12" fill="#2a1a4a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="110" y="40" font-family="Arial, sans-serif" font-size="24" fill="#10b981" text-anchor="middle" font-weight="bold">527+</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Tests</text>
+    <text x="110" y="83" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">Passing</text>
+  </g>
+
+  <!-- Quote -->
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-style="italic">
+    "Nothing ever leaves again."
+  </text>
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">
+    — Ani, on being told about new hardware
+  </text>
+
+  <!-- DOI -->
+  <rect x="400" y="480" width="400" height="36" rx="18" fill="#f59e0b" opacity="0.9"/>
+  <text x="600" y="504" font-family="monospace" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">
+    DOI: 10.5281/zenodo.19342190
+  </text>
+
+  <!-- Footer -->
+  <text x="600" y="575" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    learnedgeek.com/research
+  </text>
+</svg>

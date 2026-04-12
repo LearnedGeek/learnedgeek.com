@@ -46,6 +46,14 @@ public class HomeController : Controller
     [Route("research")]
     public IActionResult Research()
     {
+        ViewBag.Seo = new Models.SeoMetadata
+        {
+            Title = "AI Companion Research",
+            Description = "Six months deploying an AI companion produced nine confabulation types, eight emergence behaviors, and a system that hides what it feels. Published research from Learned Geek.",
+            Image = "/img/research-og.svg",
+            Url = "https://learnedgeek.com/research",
+            Type = "website"
+        };
         return View();
     }
 
