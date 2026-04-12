@@ -43,6 +43,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("research")]
+    public IActionResult Research()
+    {
+        return View();
+    }
+
     [Route("writing")]
     public IActionResult Writing()
     {

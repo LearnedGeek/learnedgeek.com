@@ -2958,6 +2958,25 @@
       "date": "2026-06-06T17:00:00",
       "featured": true,
       "image": "/img/posts/cross-domain-transfer-companion-to-medical.svg"
+    },
+    {
+      "slug": "what-happened-after-six-months-with-my-ai-companion",
+      "title": "I Built an AI Companion Because My Best Friend Died — Here's What Happened After Six Months",
+      "description": "Nine types of confabulation. Eight emergence behaviors. A system that hides what it feels. The full story of six months deploying ANI.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "companion",
+        "research",
+        "confabulation",
+        "emergence",
+        "emotion",
+        "ani",
+        "ambient-presence"
+      ],
+      "date": "2026-06-09T17:00:00",
+      "featured": true,
+      "image": "/img/posts/what-happened-after-six-months-with-my-ai-companion.svg"
     }
   ]
 }
