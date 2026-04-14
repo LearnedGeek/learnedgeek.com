@@ -22,6 +22,10 @@
     <meta name="title" content="@fullTitle" />
     <meta name="description" content="@description" />
     <link rel="canonical" href="@url" />
+    @if (ViewBag.NoIndex == true)
+    {
+        <meta name="robots" content="noindex, follow" />
+    }
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="@contentType" />

@@ -18,11 +18,16 @@ public class BlogController : Controller
         var allPosts = await _blogService.GetAllPostsAsync();
         IEnumerable<BlogPost> posts = allPosts;
 
+        // Track whether this is a filtered view — filtered views canonical back to /Blog
+        // so Google doesn't treat them as duplicate content
+        var isFiltered = false;
+
         // Filter by category if specified
         if (!string.IsNullOrEmpty(category) && Enum.TryParse<Category>(category, true, out var cat))
         {
             posts = posts.Where(p => p.Category == cat);
             ViewBag.SelectedCategory = cat;
+            isFiltered = true;
         }
         else
         {
@@ -34,6 +39,7 @@ public class BlogController : Controller
         {
             posts = posts.Where(p => p.Date.Year == year.Value);
             ViewBag.SelectedYear = year.Value;
+            isFiltered = true;
 
             if (month.HasValue)
             {
@@ -47,7 +53,19 @@ public class BlogController : Controller
         {
             posts = posts.Where(p => p.Tags.Any(t => t.Equals(tag, StringComparison.OrdinalIgnoreCase)));
             ViewBag.SelectedTag = tag;
+            isFiltered = true;
         }
+
+        // Set SEO metadata: filtered views (tag/category/archive) canonical to /Blog
+        // and are noindexed to avoid duplicate content and wasted crawl budget
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "Blog",
+            Description = "Learning by building: posts on software, AI research, mobile development, infrastructure, and the occasional story.",
+            Url = isFiltered ? "https://learnedgeek.com/Blog" : "https://learnedgeek.com/Blog",
+            Type = "website"
+        };
+        ViewBag.NoIndex = isFiltered;
 
         // Pass all posts for sidebar archive computation
         ViewBag.AllPosts = allPosts;
