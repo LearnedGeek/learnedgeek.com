@@ -44,6 +44,7 @@ export const STATIC_SITEMAP_URLS = [
   '/',
   '/about',
   '/work',
+  '/research',
   '/services',
   '/contact',
   '/writing',

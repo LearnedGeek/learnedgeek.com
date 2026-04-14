@@ -28,18 +28,39 @@ public class HomeController : Controller
     [Route("/")]
     public IActionResult Index()
     {
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "Learned Geek",
+            Description = "Mark McArthey — software engineer, AI researcher, and writer. Building systems across .NET, mobile, AI companions, and infrastructure. Learning by building.",
+            Url = "https://learnedgeek.com/",
+            Type = "website"
+        };
         return View();
     }
 
     [Route("about")]
     public IActionResult About()
     {
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "About",
+            Description = "The Learned Geek philosophy: clarity over cleverness, depth over breadth, practice over theory. Learning is an ongoing state, not a past tense.",
+            Url = "https://learnedgeek.com/about",
+            Type = "website"
+        };
         return View();
     }
 
     [Route("work")]
     public IActionResult Work()
     {
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "Work",
+            Description = "Software projects and systems from Learned Geek: ANI AI companion, API Combat game, CrewTrack field service platform, TXT-GEEK SMS assistant, and more.",
+            Url = "https://learnedgeek.com/work",
+            Type = "website"
+        };
         return View();
     }
 
@@ -49,7 +70,7 @@ public class HomeController : Controller
         ViewBag.Seo = new Models.SeoMetadata
         {
             Title = "AI Companion Research",
-            Description = "Six months deploying an AI companion produced nine confabulation types, eight emergence behaviors, and a system that hides what it feels. Published research from Learned Geek.",
+            Description = "Six months deploying an AI companion produced nine confabulation types, eight emergence behaviors, and a system that hides what it feels.",
             Image = "/img/research-og.svg",
             Url = "https://learnedgeek.com/research",
             Type = "website"
@@ -60,12 +81,26 @@ public class HomeController : Controller
     [Route("writing")]
     public IActionResult Writing()
     {
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "Writing",
+            Description = "Fiction and worldbuilding from MM McArthey. The Stones Remember — literary dark fantasy set in rural Ireland. Novels, short stories, and campaign settings.",
+            Url = "https://learnedgeek.com/writing",
+            Type = "website"
+        };
         return View();
     }
 
     [Route("services")]
     public IActionResult Services()
     {
+        ViewBag.Seo = new SeoMetadata
+        {
+            Title = "Services",
+            Description = "Consulting from Learned Geek: software development, systems architecture, AI integration, and technical education across .NET and mobile.",
+            Url = "https://learnedgeek.com/services",
+            Type = "website"
+        };
         return View();
     }
 

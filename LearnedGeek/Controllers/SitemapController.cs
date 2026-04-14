@@ -27,6 +27,7 @@ public class SitemapController : Controller
                 CreateUrlElement(ns, $"{baseUrl}/", "weekly", "1.0"),
                 CreateUrlElement(ns, $"{baseUrl}/about", "monthly", "0.8"),
                 CreateUrlElement(ns, $"{baseUrl}/work", "monthly", "0.8"),
+                CreateUrlElement(ns, $"{baseUrl}/research", "weekly", "0.9"),
                 CreateUrlElement(ns, $"{baseUrl}/services", "monthly", "0.8"),
                 CreateUrlElement(ns, $"{baseUrl}/contact", "monthly", "0.6"),
                 CreateUrlElement(ns, $"{baseUrl}/writing", "monthly", "0.7"),
