@@ -99,6 +99,62 @@
         </script>
     }
 
+    <!-- LocalBusiness: bridges website to Google Business Profile -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "LocalBusiness",
+        "@@id": "https://learnedgeek.com/#business",
+        "name": "Learned Geek LLC",
+        "alternateName": "Learned Geek",
+        "url": "https://learnedgeek.com",
+        "logo": "https://learnedgeek.com/img/learned-geek-logo.png",
+        "image": "https://learnedgeek.com/img/learned-geek-logo.png",
+        "telephone": "+1-262-496-8978",
+        "email": "markm@learnedgeek.com",
+        "description": "Software development studio building custom applications for small businesses and organizations. Full-stack web development, SaaS products, mobile applications, AI integration, and systems architecture.",
+        "founder": {
+            "@@type": "Person",
+            "name": "Mark McArthey"
+        },
+        "foundingDate": "2013-04",
+        "priceRange": "$$",
+        "areaServed": [
+            { "@@type": "State", "name": "Wisconsin" },
+            { "@@type": "City", "name": "Hartland, WI" },
+            { "@@type": "City", "name": "Waukesha, WI" },
+            { "@@type": "City", "name": "Delafield, WI" },
+            { "@@type": "City", "name": "Okauchee Lake, WI" },
+            { "@@type": "City", "name": "Oconomowoc, WI" }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            }
+        ],
+        "knowsAbout": [
+            "Software Development",
+            "Web Development",
+            "Mobile Applications",
+            "SaaS",
+            "Systems Architecture",
+            "AI Integration",
+            "Technical Education",
+            ".NET Development",
+            "ASP.NET Core",
+            "Blazor"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/learnedgeek/",
+            "https://orcid.org/0009-0000-0122-5015"
+        ]
+    }
+    </script>
+
+
     <script>
         // Prevent flash of wrong theme on page load
         // Only use dark mode if user explicitly chose it (ignore system preference)
