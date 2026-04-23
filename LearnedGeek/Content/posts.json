@@ -1,6 +1,27 @@
 {
   "posts": [
     {
+      "slug": "claude-recall-agent-memory-for-claude-code",
+      "title": "I Re-Proposed the Exact Fix My Own Session Archive Said No To",
+      "description": "Claude proposed a fix I had rejected three days earlier. The reasoning was on disk, but out of context. So I built claude-recall to close the gap.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "claude-code",
+        "open-source",
+        "python",
+        "sqlite",
+        "dotnet",
+        "embeddings",
+        "memory",
+        "tools",
+        "ollama"
+      ],
+      "date": "2026-04-23T17:00:00",
+      "featured": true,
+      "image": "/img/posts/claude-recall-agent-memory-for-claude-code.svg"
+    },
+    {
       "slug": "the-seo-work-nobody-does-so-i-automated-it",
       "title": "The SEO Work Nobody Does So I Automated It",
       "description": "An Instagram post promised SEO magic through AI-generated articles. Instead of automating content, I automated everything else with 11 scripts.",

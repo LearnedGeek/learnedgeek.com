@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="cr_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="cr_amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="cr_purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="cr_green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#cr_bg)"/>
+  <g opacity="0.03">
+    <pattern id="cr_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#cr_grid)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="Arial, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">
+    claude-recall
+  </text>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    Agent Memory for Claude Code
+  </text>
+
+  <!-- User prompt (left) -->
+  <g transform="translate(30, 100)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="#2a2a4a" stroke="#4a4a6a" stroke-width="1.5"/>
+    <text x="75" y="22" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="bold">USER PROMPT</text>
+    <text x="75" y="42" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle">"Fix the cosine</text>
+    <text x="75" y="55" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle">similarity bug"</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(185, 130)">
+    <line x1="0" y1="5" x2="25" y2="5" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="28,1 28,9 35,5" fill="#94a3b8"/>
+  </g>
+
+  <!-- Hook (NativeAOT binary) -->
+  <g transform="translate(225, 100)">
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#2a1a3a" stroke="url(#cr_amber)" stroke-width="2"/>
+    <text x="80" y="22" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle" font-weight="bold">HOOK</text>
+    <text x="80" y="42" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle">UserPromptSubmit</text>
+    <text x="80" y="57" font-family="monospace" font-size="8" fill="#94a3b8" text-anchor="middle">NativeAOT ~80ms</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(390, 130)">
+    <line x1="0" y1="5" x2="25" y2="5" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="28,1 28,9 35,5" fill="#94a3b8"/>
+  </g>
+
+  <!-- Search pipeline -->
+  <g transform="translate(430, 90)">
+    <rect x="0" y="0" width="185" height="90" rx="8" fill="#2a2a4a" stroke="url(#cr_purple)" stroke-width="2"/>
+    <text x="92" y="20" font-family="Arial, sans-serif" font-size="10" fill="#a855f7" text-anchor="middle" font-weight="bold">SEARCH PIPELINE</text>
+
+    <!-- FTS5 row -->
+    <rect x="10" y="28" width="165" height="24" rx="4" fill="#1e293b"/>
+    <text x="92" y="44" font-family="monospace" font-size="9" fill="#10b981" text-anchor="middle">SQLite FTS5 (keywords)</text>
+
+    <!-- Embeddings row -->
+    <rect x="10" y="56" width="165" height="24" rx="4" fill="#1e293b"/>
+    <text x="92" y="72" font-family="monospace" font-size="9" fill="#a855f7" text-anchor="middle">Ollama rerank (semantic)</text>
+  </g>
+
+  <!-- Arrow down -->
+  <g transform="translate(515, 185)">
+    <line x1="5" y1="0" x2="5" y2="20" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="1,22 9,22 5,29" fill="#94a3b8"/>
+  </g>
+
+  <!-- Archive / disk -->
+  <g transform="translate(420, 220)">
+    <rect x="0" y="0" width="205" height="85" rx="8" fill="#2a2a4a" stroke="#4a4a6a" stroke-width="1.5"/>
+    <text x="102" y="20" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="bold">SESSION ARCHIVE</text>
+    <text x="102" y="36" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">~/.claude/projects/&lt;slug&gt;/</text>
+
+    <!-- JSONL files stack -->
+    <g transform="translate(20, 46)">
+      <rect x="0" y="0" width="164" height="10" rx="1" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+      <text x="5" y="7.5" font-family="monospace" font-size="6" fill="#64748b">session-a1b2c3.jsonl</text>
+    </g>
+    <g transform="translate(20, 58)">
+      <rect x="0" y="0" width="164" height="10" rx="1" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+      <text x="5" y="7.5" font-family="monospace" font-size="6" fill="#64748b">session-d4e5f6.jsonl</text>
+    </g>
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="164" height="10" rx="1" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+      <text x="5" y="7.5" font-family="monospace" font-size="6" fill="#f59e0b">session-apr20.jsonl ★</text>
+    </g>
+  </g>
+
+  <!-- Return arrow (curved, archive back to hook / context injection) -->
+  <path d="M 420 260 Q 250 260 305 180" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="302,184 308,176 310,184" fill="#10b981"/>
+  <text x="300" y="235" font-family="Arial, sans-serif" font-size="9" fill="#10b981">ranked matches</text>
+
+  <!-- Claude with injected context (bottom left) -->
+  <g transform="translate(30, 220)">
+    <rect x="0" y="0" width="355" height="85" rx="8" fill="#2a2a4a" stroke="url(#cr_green)" stroke-width="2"/>
+    <text x="177" y="22" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">CLAUDE + ADDITIONAL CONTEXT</text>
+
+    <!-- Quote box -->
+    <rect x="15" y="32" width="325" height="40" rx="4" fill="#1e293b"/>
+    <text x="25" y="47" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" font-style="italic">"On April 20, you rejected this fix because cosine</text>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8" font-style="italic">similarity measures topical overlap, not verbatim parroting."</text>
+  </g>
+
+  <!-- Bottom insight bar -->
+  <g transform="translate(30, 325)">
+    <rect x="0" y="0" width="740" height="60" rx="8" fill="#2a2a4a" stroke="#6b21ab" stroke-width="1.5"/>
+    <text x="370" y="22" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">
+      The agent is already writing structured session data to disk.
+    </text>
+    <text x="370" y="40" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">
+      The agent just isn't reading its own archive.
+    </text>
+    <text x="370" y="54" font-family="Arial, sans-serif" font-size="9" fill="#6b21ab" text-anchor="middle">MIT-licensed · github.com/LearnedGeek/claude-recall</text>
+  </g>
+
+  <!-- Stats row bottom -->
+  <g transform="translate(30, 400)">
+    <text x="0" y="15" font-family="monospace" font-size="10" fill="#94a3b8">25k messages</text>
+    <text x="130" y="15" font-family="monospace" font-size="10" fill="#94a3b8">20 projects</text>
+    <text x="250" y="15" font-family="monospace" font-size="10" fill="#94a3b8">~80ms rerank</text>
+    <text x="400" y="15" font-family="monospace" font-size="10" fill="#10b981">read-only archive</text>
+    <text x="570" y="15" font-family="monospace" font-size="10" fill="#10b981">graceful degradation</text>
+  </g>
+</svg>
