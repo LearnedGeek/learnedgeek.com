@@ -1,16 +1,17 @@
-On April 20, I was debugging an issue with a Claude Code instance and landed on a principle I phrased this way: "cosine similarity measures topical overlap; parroting is verbatim phrase reuse; those are different signals." We decided not to patch at the reply layer.
+Every Claude Code session is written to disk. So is every Copilot CLI session, every Cursor session, every agentic coding tool I use.
 
-Three days later, different Claude instance, same bug came back. I asked for a fix. Claude proposed, almost word for word, the exact cosine-similarity guard I had rejected three days earlier. The reasoning existed on disk. The active instance just couldn't see it.
+The agent doesn't read its own archive.
 
-I said "search the history before we move on anything." Then I built the tool that does that automatically.
+That gap matters more than I realized. Last week I worked through a subtle cosine-similarity bug with one Claude instance. We landed on a specific principle and rejected a specific fix. Three days later a different Claude instance surfaced the same bug. I asked for a fix. Claude proposed, almost word for word, the exact solution I had rejected.
 
-claude-recall: SQLite FTS5 plus optional semantic rerank over the Claude Code session archive, wired as a UserPromptSubmit hook. On every prompt, the hook retrieves ranked prior-session context and injects it. About 80 ms per prompt on my machine. 25,000 messages indexed across 20 projects.
+The rejection was on disk. The active instance just had no mechanism to reach it.
 
-Inspired directly by Microsoft's auto-memory post for Copilot CLI. Different agent, same insight: the archive is already on disk, the agent just isn't reading it.
+What strikes me is this isn't a Claude-specific problem. Every agentic tool has the same shape: structured session data in some format, no native way for the agent to query that archive back into the active context. Microsoft's team built auto-memory for Copilot CLI to close that gap on their side. I ended up building claude-recall to close it for Claude Code.
 
-v0.4, MIT, beta. If you use Claude Code on anything with history, try it. File issues when it breaks.
+Same shape, different agents. The archive is already the source of truth. The agent just isn't reading it.
 
-Repo: https://github.com/LearnedGeek/claude-recall
-Full story: https://learnedgeek.com/Blog/Post/claude-recall-agent-memory-for-claude-code
+If you use Claude Code and want to try what I built: github.com/LearnedGeek/claude-recall
 
-#ClaudeCode #DeveloperTools #OpenSource #AI #Productivity
+Posted a longer writeup on the blog if you want more context: learnedgeek.com/Blog/Post/claude-recall-agent-memory-for-claude-code
+
+The more interesting question is what happens when agents can query their own history by default. Nobody has enough data on that yet.
