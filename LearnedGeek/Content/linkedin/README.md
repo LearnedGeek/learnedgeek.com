@@ -28,3 +28,9 @@ These are deployment findings posted as they happen — not announcements, not c
 | 08-cross-domain-transfer.md | cross-domain-transfer-companion-to-medical | scheduled Jun 6, 2026 | — |
 | 09-trust-my-body-over-my-mind.md | interoception-gap-what-ai-cant-feel | scheduled May 28, 2026 | — |
 | 10-engagement-trap.md | why-engagement-metrics-wrong-goal | scheduled May 1, 2026 | — |
+
+## Standalone Drafts (non-ANI projects)
+
+| LinkedIn Draft | Companion Blog Post | Blog Status | LinkedIn Posted |
+|---|---|---|---|
+| claude-recall-memory-gap.md | claude-recall-agent-memory-for-claude-code | published Apr 23, 2026 | — |
