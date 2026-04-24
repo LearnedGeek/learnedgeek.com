@@ -33,4 +33,4 @@ These are deployment findings posted as they happen — not announcements, not c
 
 | LinkedIn Draft | Companion Blog Post | Blog Status | LinkedIn Posted |
 |---|---|---|---|
-| claude-recall-memory-gap.md | claude-recall-agent-memory-for-claude-code | published Apr 23, 2026 | — |
+| claude-recall-memory-gap.md | claude-recall-agent-memory-for-claude-code | published Apr 23, 2026 | **Apr 23, 2026** |
