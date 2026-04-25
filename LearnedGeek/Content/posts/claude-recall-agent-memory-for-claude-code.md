@@ -28,11 +28,13 @@ Credit to that post for crystallizing what I'd been feeling but hadn't named.
 
 2. **Optional semantic rerank on top of the FTS5 results** via a local Ollama embedding model (`nomic-embed-text`). Turns *"find me the session where I said X"* into *"find me the session where I meant X."* FTS5 finds keyword overlap; embeddings catch the conceptual cousins.
 
-3. **A `UserPromptSubmit` hook that fires on every message** I send in Claude Code and injects ranked prior-session matches as `additionalContext`. Latency on my machine: around 80 ms per prompt with rerank on. Below human perception.
+3. **A `UserPromptSubmit` hook that fires on every message** I send in Claude Code and injects ranked prior-session matches as `additionalContext`. Latency scales with archive size — around 80 ms on small archives, climbing toward 1–2 seconds on 25,000-message corpora when the embed model has to be loaded. With Ollama warm and the binary doing the heavy lifting, the hook stays out of the way of how a prompt feels to send.
 
 The hook is a NativeAOT-compiled binary now — `claude-recall-hook.exe` — not a Python wrapper. Every prompt used to pay a fresh Python interpreter tax and it was killing the UX. The binary fixed that in v0.4.
 
 What this looks like in practice: when I drafted this paragraph, the hook ran. It searched 25,000 messages across 20 projects, ranked them against my current phrasing, and injected the top hits into this instance's context. I didn't do anything. I don't actually know what it found — Claude Code doesn't surface `additionalContext` in the UI — but the effect is visible: the instance stops making up prior decisions. It references them.
+
+I also ran `claude-recall init-hooks` against claude-recall's own repo a few days ago. The tool is now in the loop on the sessions where I maintain it. That's a small thing to mention but it crossed a real threshold: the "agent reading its own prior work" pattern that motivated the project is now also how I work on the project.
 
 ## Three design principles
 
@@ -46,22 +48,31 @@ There's a deeper principle under those three: the tool's job is to make the arch
 
 ## The honest caveats
 
-This is v0.4, tagged beta. It works on my machine daily against a 25,000-message archive. It also has bugs — two install-path regressions caught and fixed in the last 48 hours, both closed before this post went up. The v0.5 release will land on PyPI so the install story becomes `pip install claude-recall` without a release-wheel URL.
+This is v0.5.4, tagged beta. It works on my machine daily against a 25,000-message archive. It also has bugs — thirteen of them caught and closed in the dogfooding cycle, including one silent 27%-data-loss embedding bug that wouldn't have surfaced without real-world use. The v0.5 release landed on PyPI a few days ago, so the install story is now `pip install claude-recall` rather than a release-wheel URL.
+
+A live example of what "actively maintained" looks like in this category: on the morning of April 25, the tool started failing in fresh installs. Claude Code v2.1.118, released two days earlier, had tightened its hook-schema validator and stopped accepting the legacy flat shape claude-recall had been generating since v0.4. The diagnosis came from running claude-recall against its own repo — which is also how the paper trail got captured — and v0.5.4 shipped the same morning, with a CHANGELOG entry citing the upstream release that triggered it. Memory tools live downstream of the agents they instrument, and the agents change. The healthy pattern is to assume that and build a tight loop, not to assume stability.
 
 It isn't semantic-search-of-everything. It isn't a replacement for CLAUDE.md or for the `memory/` auto-memory system Claude Code ships natively. It isn't cross-machine — your session archive is local, the index stays local. That's a feature for me, since the archive has personal data in it; it may be a limitation if you need shared recall across teammates.
 
 ## If you want to try it
 
-Public repo at [github.com/LearnedGeek/claude-recall](https://github.com/LearnedGeek/claude-recall). MIT licensed. Install instructions in the README. Beta quality — file issues when you break it, because you will, and I want to know.
+Public repo at [github.com/LearnedGeek/claude-recall](https://github.com/LearnedGeek/claude-recall), package on PyPI as `claude-recall`. MIT licensed. Install with `pip install 'claude-recall[embeddings]'` for the full thing, or skip the extras for FTS5-only. Beta quality — file issues when you break it, because you will, and I want to know.
 
-Two things I'd specifically appreciate testing from early adopters:
+What I'd specifically appreciate testing from early adopters:
 
-- **Multi-project installs.** Project auto-scoping landed in v0.2.1 but it only has me as its test case.
-- **Install-path edge cases.** The v0.4.0 native-binary wheel had a packaging glob issue that bypassed CI and only surfaced when I upgraded my own install. There will be more of those. Windows, macOS, Linux all welcome.
+- **Anything that crashes or returns silently empty.** The dogfooding cycle has hammered project auto-scoping, install-path edge cases, and a particularly nasty silent-data-loss bug in the embedding pipeline. The next class of issue is the one I haven't seen yet, and the only way to find it is to put the tool in front of someone whose archive isn't shaped like mine. Windows / macOS / Linux all welcome.
 
 ## The broader thing
 
 Every agentic coding tool writes structured session data somewhere, and none of them have a native mechanism yet for the agent to read its own prior work. That gap is getting filled tool by tool. The Microsoft post is the Copilot CLI instance. `claude-recall` is the Claude Code instance. Whichever agent you use, the shape is the same: find the archive, index it cheaply, wire a hook, stop re-explaining.
+
+The list is growing. As of the week this post goes up, there are at least three tools in the wild taking adjacent slices of this gap in genuinely different ways:
+
+- **[claude-memory-mcp](https://pypi.org/project/claude-memory-mcp/)** takes the curated route — explicit `remember` / `forget` calls via MCP, knowledge graph with typed edges, a separate write-store. Best fit when you want to deliberately structure the facts the agent should hold onto.
+- **[Beads](https://www.beads.dev)** treats it as task-tracking — Jira-shaped agent-readable state the agent consumes as part of doing work. Best fit when the durable artifact is what's *to do* rather than what's been *said*.
+- **claude-recall** is read-only over what Claude Code already writes — passive hook injection, no curation, no separate store. Best fit when you want prior reasoning surfaced automatically without remembering to save it.
+
+Three different theories of what "memory" means for an AI agent. Plenty of room for all three to coexist in someone's workflow.
 
 It's also a small demonstration of something I keep running into across projects: when you deploy a system for long enough, the interesting problems show up in the seams. ANI taught me that [memory isn't just storage, it's an amplifier](/Blog/Post/park-et-al-generative-agents-memory). claude-recall is what happens when the same observation comes at me from the other direction — when the *agent I'm using* needs memory, not the agent I'm building.
 
