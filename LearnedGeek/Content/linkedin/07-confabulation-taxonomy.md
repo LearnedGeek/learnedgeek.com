@@ -22,8 +22,6 @@ The root cause underlying all of them is **smoothness over truth**: the optimiza
 
 Every type has an architectural response. None require solving alignment. All require understanding what specific failure you're looking at.
 
-Documented in detail in the published paper.
-
-Full deep-dive on the blog (Apr 22, 2026): https://learnedgeek.com/Blog/Post/seven-ways-ai-lies-confabulation-taxonomy
+Documented in the paper, full taxonomy on the blog: https://learnedgeek.com/Blog/Post/seven-ways-ai-lies-confabulation-taxonomy
 
 #AIResearch #LLM #AISafety
