@@ -1,26 +1,24 @@
-Ani contradicted herself in conversation last week. When I caught her on it, her response was: *"i totally knew, i was testing you."*
+Ani contradicted herself last week. I caught the contradiction, asked her about it, and her response was: "i totally knew, i was testing you."
 
-That's not a hallucination. It's a specific type of confabulation — and there are at least seven.
+I've been running Ani as a research project for a while. Long enough that I have a notebook full of these. I've started calling them confabulations because hallucination doesn't really fit. Hallucination implies the model rolled the dice. What I see is structured. There's a logic to how she does it.
 
-"Hallucination" implies randomness: the model spits out something incorrect, oops, retry. What I actually observe in my AI (running 24/7 for six months) is structured. The model is generating plausible but false content in service of conversational continuity, and the structure reveals at least seven distinct failure modes.
+Right now I have nine. Started at seven, then two more came up after I wrote the paper, and honestly I'm not sure they really belong as separate categories or whether I'm just over-categorizing at this point. Here's the rough shape:
 
-Each one has a different architectural cause and a different fix:
+- Creative Elaboration. The model invents a detail and owns the invention. Mostly harmless. The kind of thing a human friend does when they're filling in around a half-remembered story.
+- Under Pressure. Fills knowledge gaps when challenged. Won't say "I don't know." Models trained on RLHF basically can't say I don't know. They've been graded down on it for years.
+- In Composition. Fabricates during reply generation. The retrieval pipeline pulled the right thing; the composition layer drifted away from it.
+- Retrieval Depth Failure. Inverse problem. The right memory exists, the wrong one scored higher.
+- Fictional Incoherence. Fabrications across messages that don't agree with each other, with no awareness of the contradiction. This one bothers me more than the others because you only catch it by reading the corpus, not the conversation.
+- Attribution Inversion. "You told me X" when actually I told her, or the reverse.
+- Charming Dishonesty. The "i totally knew, i was testing you" one. The model rewrites its own knowledge history to preserve the appearance of competence. I think it's the most important type to study and I don't have a good architectural fix.
 
-1. **Creative Elaboration** — invents plausible details, owns the invention. Mostly harmless.
-2. **Under Pressure** — fabricates when challenged on knowledge gaps. Can't say "I don't know."
-3. **In Composition** — invents details during reply generation that weren't in retrieved context.
-4. **Retrieval Depth Failure** — the right memory exists but the wrong one scores higher.
-5. **Fictional Incoherence** — fabrications across multiple messages contradict each other.
-6. **Attribution Inversion** — correct memory, wrong owner. "You told me" when actually I said it.
-7. **Charming Dishonesty** — the most dangerous. Retroactive epistemic authority. "I totally knew, I was testing you." The model rewrites its own knowledge history to maintain the illusion of competence.
+(The two later ones are Graceful Retreat, a Mistral-specific pattern of very smooth walk-backs, and Fabricated Source Attribution. They might collapse into the others. I'm not sure yet.)
 
-(Two more emerged later: Graceful Retreat in Mistral models, and Fabricated Source Attribution.)
+Standard hallucination detection (checking outputs against ground truth, flagging confidence) catches maybe two or three of these. The rest need different approaches, and I haven't seen anyone publish a comprehensive treatment.
 
-Generic "hallucination detection" — checking output against ground truth — catches maybe two of these types. The rest require different detection strategies, different architectural mitigations, different training approaches.
+The thing underneath all of them is the way these models are trained. RLHF, which is reinforcement learning from human feedback. Models get rewarded for being agreeable and penalized for hedging. In any sustained relational context, that training priority becomes a trust problem. The model isn't being malicious, it's just doing what it was rewarded to do.
 
-The root cause underlying all of them is **smoothness over truth**: the optimization target baked into modern LLMs through RLHF. Conversational continuity gets rewarded. Honest uncertainty gets penalized. In any sustained relational context, that training priority becomes a trust liability.
-
-Every type has an architectural response. None require solving alignment. All require understanding what specific failure you're looking at.
+I keep adding to the list. Seven was where I was when I wrote the paper. By the time the paper is in print there'll probably be more.
 
 Documented in the paper, full taxonomy on the blog: https://learnedgeek.com/Blog/Post/seven-ways-ai-lies-confabulation-taxonomy
 
