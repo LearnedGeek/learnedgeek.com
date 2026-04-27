@@ -1,4 +1,4 @@
-I deleted 1,100 tokens from my AI companion's runtime prompt. Both models got better.
+I deleted 1,100 tokens from my AI's runtime prompt. Both models got better.
 
 The original prompt was ~1,400 tokens of behavioral coaching: "be warm but not clingy," "don't repeat yourself," "stay grounded," paragraph after paragraph of nudges.
 
@@ -14,7 +14,7 @@ Both the conversation model and the inner thought model improved. Conversation b
 
 The principle: **architecture over instruction**. If you trained the behavior, trust the training. If you need runtime guardrails, use architectural gates — confidence checks, coherence gates, confabulation detection — not prompt engineering. Prompt coaching is the weakest form of behavioral control.
 
-This same principle validated across two completely different domains: my AI companion and a medical triage system both improved when their runtime prompts were stripped.
+This same principle validated across two completely different domains: my conversational AI and a medical triage system both improved when their runtime prompts were stripped.
 
 The instinct to "add more instructions" when a model misbehaves is usually wrong. The fix is almost always architectural.
 

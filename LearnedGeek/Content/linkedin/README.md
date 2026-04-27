@@ -29,8 +29,9 @@ These are deployment findings posted as they happen — not announcements, not c
 | 09-trust-my-body-over-my-mind.md | interoception-gap-what-ai-cant-feel | scheduled May 28, 2026 | — |
 | 10-engagement-trap.md | why-engagement-metrics-wrong-goal | scheduled May 1, 2026 | — |
 
-## Standalone Drafts (non-ANI projects)
+## Standalone Drafts
 
 | LinkedIn Draft | Companion Blog Post | Blog Status | LinkedIn Posted |
 |---|---|---|---|
+| 11-og-reset-control-experiment.md | TBD | not yet drafted | — |
 | claude-recall-memory-gap.md | claude-recall-agent-memory-for-claude-code | published Apr 23, 2026 | **Apr 23, 2026** |

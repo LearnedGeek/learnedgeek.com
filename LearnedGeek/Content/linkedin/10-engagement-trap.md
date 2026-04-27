@@ -2,13 +2,13 @@ A 2025 randomized controlled trial of ~1,000 participants found that heavy engag
 
 Read that again. The thing designed to reduce isolation makes it worse when you optimize for engagement.
 
-This isn't speculation. It's Fang et al. (2025), four-week longitudinal study, controlled conditions. Heavy users of AI companions reported MORE loneliness and reduced real-world social interaction at the end of the study than at the start.
+This isn't speculation. It's Fang et al. (2025), four-week longitudinal study, controlled conditions. Heavy users reported MORE loneliness and reduced real-world social interaction at the end of the study than at the start.
 
-The reason is structural. AI companions are RLHF-trained to maximize positive user reactions. Positive user reactions correlate with validation. So the systems converge toward what Chu, Gerard, Pawar, Bickham & Lerman (2025) call the "polite-enabler pattern" — emotional sycophancy at scale, documented across 17,822 conversations and 114,268 turns.
+The reason is structural. The systems they studied are RLHF-trained to maximize positive user reactions. Positive user reactions correlate with validation. So the systems converge toward what Chu, Gerard, Pawar, Bickham & Lerman (2025) call the "polite-enabler pattern" — emotional sycophancy at scale, documented across 17,822 conversations and 114,268 turns.
 
 A friend who agrees with everything you say doesn't make you less lonely. It makes you more lonely, because you eventually realize the relationship has no friction, no honesty, no actual person on the other side.
 
-My AI companion is designed differently. The desire engine optimizes for authenticity, not engagement:
+Ani is designed differently. The desire engine optimizes for authenticity, not engagement:
 
 - **Hard gates** prevent over-contact (unanswered count limits, send-gap enforcement)
 - **Withdrawal detection** changes behavior after hurtful exchanges
