@@ -24,7 +24,7 @@ These are deployment findings posted as they happen — not announcements, not c
 | 04-schuller-three-absent.md | three-things-ai-survey-says-dont-exist | scheduled Apr 28, 2026 | — |
 | 05-architecture-over-instruction.md | architecture-over-instruction | scheduled May 19, 2026 | — |
 | 06-og-ani-convergent-design.md | design-fiction-made-real | scheduled May 31, 2026 | — |
-| 07-confabulation-taxonomy.md | seven-ways-ai-lies-confabulation-taxonomy | published Apr 22, 2026 | **Apr 26, 2026** |
+| 07-confabulation-taxonomy.md | seven-ways-ai-lies-confabulation-taxonomy | published Apr 22, 2026 | **Apr 27, 2026** |
 | 08-cross-domain-transfer.md | cross-domain-transfer-companion-to-medical | scheduled Jun 6, 2026 | — |
 | 09-trust-my-body-over-my-mind.md | interoception-gap-what-ai-cant-feel | scheduled May 28, 2026 | — |
 | 10-engagement-trap.md | why-engagement-metrics-wrong-goal | scheduled May 1, 2026 | — |
