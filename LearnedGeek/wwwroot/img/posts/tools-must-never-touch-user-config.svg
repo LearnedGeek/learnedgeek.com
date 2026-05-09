@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="tn_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="tn_red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="tn_green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#tn_bg)"/>
+  <g opacity="0.03">
+    <pattern id="tn_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="450" fill="url(#tn_grid)"/>
+  </g>
+
+  <text x="400" y="38" font-family="Arial, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">
+    Tools Must Never Touch What the User Added
+  </text>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    Mark what you emit. Treat unmarked content as untouchable.
+  </text>
+
+  <!-- The wrong way (red) -->
+  <g transform="translate(40, 95)">
+    <rect x="0" y="0" width="350" height="180" rx="10" fill="#2a1a1a" stroke="url(#tn_red)" stroke-width="2"/>
+    <text x="175" y="22" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">THE WRONG WAY</text>
+    <text x="175" y="40" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">heuristics, naming conventions, diffs</text>
+
+    <!-- Settings file representation -->
+    <rect x="20" y="55" width="310" height="100" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="73" font-family="monospace" font-size="9" fill="#10b981">tool_hook_a   ← tool emitted</text>
+    <text x="30" y="90" font-family="monospace" font-size="9" fill="#fbbf24">user_hook_b   ← user added</text>
+    <text x="30" y="107" font-family="monospace" font-size="9" fill="#10b981">tool_hook_c   ← tool emitted</text>
+    <text x="30" y="124" font-family="monospace" font-size="9" fill="#fbbf24" text-decoration="line-through">user_hook_d   ← deleted</text>
+    <text x="30" y="141" font-family="Arial, sans-serif" font-size="9" fill="#ef4444" font-style="italic">"didn't recognize this format"</text>
+
+    <text x="175" y="172" font-family="Arial, sans-serif" font-size="10" fill="#ef4444" text-anchor="middle" font-weight="bold">silent destruction</text>
+  </g>
+
+  <!-- The right way (green) -->
+  <g transform="translate(410, 95)">
+    <rect x="0" y="0" width="350" height="180" rx="10" fill="#1a2a1a" stroke="url(#tn_green)" stroke-width="2"/>
+    <text x="175" y="22" font-family="Arial, sans-serif" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">THE RIGHT WAY</text>
+    <text x="175" y="40" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">embed a marker in everything you emit</text>
+
+    <!-- Settings file representation -->
+    <rect x="20" y="55" width="310" height="100" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="73" font-family="monospace" font-size="9" fill="#10b981">tool_hook_a [tool managed]</text>
+    <text x="30" y="90" font-family="monospace" font-size="9" fill="#fbbf24">user_hook_b   (no marker)</text>
+    <text x="30" y="107" font-family="monospace" font-size="9" fill="#10b981">tool_hook_c [tool managed]</text>
+    <text x="30" y="124" font-family="monospace" font-size="9" fill="#fbbf24">user_hook_d   (no marker)</text>
+    <text x="30" y="141" font-family="Arial, sans-serif" font-size="9" fill="#10b981" font-style="italic">"unmarked = not mine = leave alone"</text>
+
+    <text x="175" y="172" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">user content survives every refresh</text>
+  </g>
+
+  <!-- The check -->
+  <g transform="translate(60, 295)">
+    <rect x="0" y="0" width="680" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="340" y="22" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle" font-weight="bold">THE STRIP FUNCTION BECOMES ONE-LINE CORRECT</text>
+    <rect x="60" y="34" width="560" height="34" rx="4" fill="#0f172a"/>
+    <text x="340" y="56" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle">def is_tool_command(cmd): return "[tool managed]" in cmd</text>
+  </g>
+
+  <!-- Bottom message -->
+  <g transform="translate(40, 395)">
+    <rect x="0" y="0" width="720" height="40" rx="8" fill="#2a2a4a" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="360" y="25" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">
+      Ownership isn't a property of the file. It's a property of the lines.
+    </text>
+  </g>
+</svg>

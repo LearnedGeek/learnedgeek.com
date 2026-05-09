@@ -1,6 +1,65 @@
 {
   "posts": [
     {
+      "slug": "tools-must-never-touch-user-config",
+      "title": "Tools Must Never Touch What the User Added",
+      "description": "Most dev tools that auto-edit user config eventually destroy something the user put there on purpose. The fix is structural, not procedural.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "claude-code",
+        "claude-recall",
+        "design",
+        "principles",
+        "dev-tools",
+        "config",
+        "linters"
+      ],
+      "date": "2026-05-14T17:00:00",
+      "featured": true,
+      "image": "/img/posts/tools-must-never-touch-user-config.svg"
+    },
+    {
+      "slug": "two-agents-filed-an-issue",
+      "title": "When Two Agents Filed an Issue Against My Own Tool",
+      "description": "I shipped a broken feature. Two of my AI agents filed a GitHub issue against me, diagnosed it, and pointed at a pattern I had already used elsewhere.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "claude-code",
+        "claude-recall",
+        "design",
+        "architecture",
+        "llm",
+        "dogfood",
+        "retrieval",
+        "embeddings"
+      ],
+      "date": "2026-05-11T17:00:00",
+      "featured": true,
+      "image": "/img/posts/two-agents-filed-an-issue.svg"
+    },
+    {
+      "slug": "the-context-window-isnt-the-memory-problem",
+      "title": "The Context Window Isn't the Memory Problem",
+      "description": "Anthropic's 'infinite context windows' announcement solves Problem 1 (one long conversation) but doesn't touch Problem 2 (memory across sessions and projects).",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "claude-code",
+        "claude-recall",
+        "anthropic",
+        "memory",
+        "retrieval",
+        "llm",
+        "context-window",
+        "dev-tools"
+      ],
+      "date": "2026-05-08T17:00:00",
+      "featured": true,
+      "image": "/img/posts/the-context-window-isnt-the-memory-problem.svg"
+    },
+    {
       "slug": "claude-recall-agent-memory-for-claude-code",
       "title": "I Re-Proposed the Exact Fix My Own Session Archive Said No To",
       "description": "Claude proposed a fix I had rejected three days earlier. The reasoning was on disk, but out of context. So I built claude-recall to close the gap.",
