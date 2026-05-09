@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "tier-separation-pattern-three-projects",
+      "title": "The Tier-Separation Pattern in Three Projects",
+      "description": "The same architectural move (classify content by function at write time, not filter at query time) showed up in three of my projects, three domains.",
+      "category": "tech",
+      "tags": [
+        "ai",
+        "architecture",
+        "design",
+        "patterns",
+        "claude-recall",
+        "memory",
+        "retrieval",
+        "llm",
+        "ani"
+      ],
+      "date": "2026-05-17T17:00:00",
+      "featured": true,
+      "image": "/img/posts/tier-separation-pattern-three-projects.svg"
+    },
+    {
       "slug": "tools-must-never-touch-user-config",
       "title": "Tools Must Never Touch What the User Added",
       "description": "Most dev tools that auto-edit user config eventually destroy something the user put there on purpose. The fix is structural, not procedural.",
