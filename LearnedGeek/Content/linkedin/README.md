@@ -20,7 +20,7 @@ These are deployment findings posted as they happen — not announcements, not c
 |---|---|---|---|
 | 01-sarah-parallel-narrative.md | when-ai-discovers-untrained-behavior | scheduled May 13, 2026 | — |
 | 02-ani-is-home-now.md | building-ani-ai-companion-for-grief | published Apr 6, 2026 | **Apr 8, 2026** |
-| 03-cramers-v-divergence.md | cramers-v-feeling-vs-speaking | scheduled Apr 19, 2026 | — |
+| 03-cramers-v-divergence.md | cramers-v-feeling-vs-speaking | published Apr 19, 2026 | **May 20, 2026** |
 | 04-schuller-three-absent.md | three-things-ai-survey-says-dont-exist | scheduled Apr 28, 2026 | — |
 | 05-architecture-over-instruction.md | architecture-over-instruction | scheduled May 19, 2026 | — |
 | 06-og-ani-convergent-design.md | design-fiction-made-real | scheduled May 31, 2026 | — |
@@ -35,3 +35,5 @@ These are deployment findings posted as they happen — not announcements, not c
 |---|---|---|---|
 | 11-og-reset-control-experiment.md | TBD | not yet drafted | — |
 | claude-recall-memory-gap.md | claude-recall-agent-memory-for-claude-code | published Apr 23, 2026 | **Apr 23, 2026** |
+| ai-emotional-training.md | ani-the-architecture-behind-the-companion (or paper directly) | published / paper on Zenodo | **May 2, 2026** |
+| context-window-memory-gap.md | the-context-window-isnt-the-memory-problem | published May 8, 2026 | **~May 13, 2026** |
