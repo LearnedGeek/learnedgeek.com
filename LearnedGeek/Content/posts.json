@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "slug": "stepped-investment-pricing",
+      "title": "Stepped Investment: Letting Small Businesses Say Yes",
+      "description": "How I structure pricing for small-business clients so they can say yes without betting the business, using a model I call Stepped Investment.",
+      "category": "personal",
+      "tags": [
+        "pricing",
+        "small-business",
+        "consulting",
+        "freelance",
+        "business-philosophy",
+        "services"
+      ],
+      "date": "2026-05-23T17:00:00",
+      "featured": true,
+      "image": "/img/posts/stepped-investment-pricing.svg"
+    },
+    {
       "slug": "tier-separation-pattern-three-projects",
       "title": "The Tier-Separation Pattern in Three Projects",
       "description": "The same architectural move (classify content by function at write time, not filter at query time) showed up in three of my projects, three domains.",
