@@ -139,6 +139,11 @@ jobs:
              mkdir -p "$STAGING"
              cd "$STAGING"
              tar -xf -
+             # Service runs as www-data; the SSH user (root) extracts as
+             # root by default, leaving the new directory unwritable by
+             # www-data. Set ownership before the swap so the service can
+             # create App_Data and write DataProtection keys.
+             chown -R www-data:www-data "$STAGING"
              systemctl stop learnedgeek
              if [ -d "$ACTIVE" ]; then
                rm -rf "$PREV"
