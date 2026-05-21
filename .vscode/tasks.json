@@ -31,7 +31,26 @@
             "problemMatcher": []
         },
         {
-            "label": "Publish to SmarterASP",
+            "label": "Publish to Hetzner",
+            "detail": "Build CSS, dotnet publish for linux-x64, tar-stream to VPS, restart service.",
+            "type": "shell",
+            "command": "pwsh",
+            "args": [
+                "-NoProfile",
+                "-File",
+                "${workspaceFolder}/.vscode/publish-hetzner.ps1"
+            ],
+            "dependsOn": ["Build CSS"],
+            "problemMatcher": "$msCompile",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": "build"
+        },
+        {
+            "label": "[DEPRECATED] Publish to SmarterASP",
+            "detail": "Legacy SmarterASP deploy. Hetzner is the new prod target. Kept for emergency rollback only.",
             "type": "shell",
             "command": "dotnet",
             "args": [
@@ -48,8 +67,7 @@
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
-            },
-            "group": "build"
+            }
         },
         {
             "label": "Build",

@@ -9,21 +9,21 @@
             <!-- Brand -->
             <div class="space-y-4">
                 <div class="flex items-center gap-3">
-                    <img src="~/img/learned-geek-logo.png" alt="Learned Geek" class="h-8 w-8 invert" />
+                    <img src="~/img/learned-geek-logo.png" alt="Learned Geek" class="h-8 w-8 invert aspect-square object-contain" />
                     <span class="font-semibold text-white tracking-tight">
                         Learned Geek
                     </span>
                 </div>
-                <p class="text-sm text-neutral-500 leading-relaxed max-w-xs">
+                <p class="text-sm text-neutral-400 leading-relaxed max-w-xs">
                     Learning by building. Solving problems across disciplines.
                 </p>
             </div>
 
             <!-- Navigation -->
             <div class="space-y-4">
-                <h4 class="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
+                <h2 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">
                     Navigation
-                </h4>
+                </h2>
                 <nav class="flex flex-col gap-2">
                     @foreach (var navItem in navItems)
                     {
@@ -38,9 +38,9 @@
 
             <!-- Contact (obfuscated to prevent scraping) -->
             <div class="space-y-4">
-                <h4 class="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
+                <h2 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">
                     Get in Touch
-                </h4>
+                </h2>
                 <a id="footer-email" href="#"
                    data-user="hello" data-domain="learnedgeek.com"
                    class="text-sm text-neutral-400 hover:text-white transition-colors block">
@@ -50,15 +50,15 @@
         </div>
 
         <div class="mt-16 pt-8 border-t border-neutral-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <p class="text-xs text-neutral-600">
+            <p class="text-xs text-neutral-400">
                 &copy; @currentYear Learned Geek LLC. All rights reserved.
             </p>
             <div class="flex items-center gap-4">
-                <span class="text-xs text-neutral-700">
-                    Hosted by <a href="https://www.SmarterASP.NET/index?r=101589948" target="_blank" rel="noopener" class="hover:text-neutral-500 transition-colors">SmarterASP.NET</a>
+                <span class="text-xs text-neutral-400">
+                    Hosted on learnedgeek-host
                 </span>
                 <a asp-controller="Home" asp-action="Privacy"
-                   class="text-xs text-neutral-600 hover:text-neutral-400 transition-colors">
+                   class="text-xs text-neutral-400 hover:text-neutral-300 transition-colors">
                     Privacy Policy
                 </a>
             </div>
