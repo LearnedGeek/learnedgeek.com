@@ -152,8 +152,11 @@ jobs:
 #    systemctl commands with `sudo`. Smaller blast radius if the SSH
 #    key ever leaks.
 #
-# 2) Slack / email notification on deploy failure or success — easy add
-#    with `slackapi/slack-github-action` or similar.
+# 2) Microsoft Teams notification on deploy failure or success.
+#    Create an Incoming Webhook in the target Teams channel (Connectors
+#    → Incoming Webhook → Create), store the URL as a GitHub secret
+#    `TEAMS_WEBHOOK_URL`, then POST an Adaptive Card from a final
+#    `if: always()` step using curl. No third-party action needed.
 #
 # 3) Tag-gated deploys: only deploy on git tags matching `v*` rather than
 #    every push to main. Useful when releases become more deliberate.
