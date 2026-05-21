@@ -1,0 +1,168 @@
+# Deploy LearnedGeek to the Hetzner VPS.
+#
+# Triggers:
+#   - Push to main (automatic, after PR merge)
+#   - Manual via the Actions tab → "Deploy to Hetzner" → "Run workflow"
+#
+# This workflow is self-contained — it re-runs the build and tests rather
+# than depending on the separate ci.yml workflow. Trade-off: ~30 seconds
+# of duplicated work, but the deploy never ships untested code, and a
+# failed deploy doesn't muddy ci.yml's PR-checks history.
+#
+# Required GitHub repo secrets (Settings → Secrets and variables → Actions):
+#   DEPLOY_SSH_KEY   — Private key for the SSH user that can write to
+#                      /var/www/learnedgeek and restart the systemd unit.
+#                      Generate fresh with `ssh-keygen -t ed25519 -f
+#                      ./gh-deploy -C "github-actions"`. Paste the contents
+#                      of `gh-deploy` (the private key) into the secret.
+#                      Add the matching `.pub` to the VPS's
+#                      `/root/.ssh/authorized_keys` (or a dedicated
+#                      `deploy` user's authorized_keys — see hardening
+#                      note at the bottom).
+#   DEPLOY_HOST      — The VPS hostname or IP. e.g., `5.161.205.21`.
+#   DEPLOY_USER      — The SSH user to connect as. `root` for now;
+#                      switch to a dedicated `deploy` user later.
+
+name: Deploy to Hetzner
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Prevent concurrent deploys racing each other. If two pushes land within
+# seconds, the second one waits for the first to finish rather than both
+# scribbling on /var/www/learnedgeek at once.
+concurrency:
+  group: deploy-hetzner
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install npm dependencies
+        working-directory: LearnedGeek
+        run: npm ci
+
+      - name: Build Tailwind CSS
+        working-directory: LearnedGeek
+        run: npm run build:css
+
+      - name: Restore + build + test
+        run: |
+          dotnet restore
+          dotnet build --no-restore --configuration Release
+          dotnet test --no-build --configuration Release
+
+      - name: Publish (linux-x64, framework-dependent)
+        run: |
+          dotnet publish LearnedGeek/LearnedGeek.csproj \
+            --configuration Release \
+            --runtime linux-x64 \
+            --self-contained false \
+            --output ./publish \
+            --no-restore
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Pin the VPS host key by scanning it once. Trust-on-first-use
+          # against a known IP; if the VPS's key ever changes (rebuild,
+          # IP migration) this deploy will fail loudly rather than
+          # silently connect to an unknown host.
+          ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Deploy via tar-over-SSH (atomic swap)
+        run: |
+          # Stream tar over SSH and extract into a staging directory first.
+          # Only after the extraction succeeds do we stop the service and swap
+          # directories atomically. If anything fails mid-transfer, the active
+          # site is untouched. The previous version is kept in /var/www/
+          # learnedgeek.prev so a manual rollback is one `mv` away.
+          cd publish
+          tar -cf - . | ssh -i ~/.ssh/deploy_key \
+            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            'set -e
+             STAGING=/var/www/learnedgeek.new
+             ACTIVE=/var/www/learnedgeek
+             PREV=/var/www/learnedgeek.prev
+             rm -rf "$STAGING"
+             mkdir -p "$STAGING"
+             cd "$STAGING"
+             tar -xf -
+             systemctl stop learnedgeek
+             if [ -d "$ACTIVE" ]; then
+               rm -rf "$PREV"
+               mv "$ACTIVE" "$PREV"
+             fi
+             mv "$STAGING" "$ACTIVE"
+             systemctl start learnedgeek'
+
+      - name: Smoke test the deploy
+        run: |
+          # Poll the public URL for up to ~30 seconds waiting for a 2xx/3xx
+          # response. Beats a fixed sleep — if the service comes up fast we
+          # exit immediately, and if it's slow we still wait long enough.
+          for i in $(seq 1 15); do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://learnedgeek.com || echo "000")
+            if [[ "$STATUS" -ge 200 && "$STATUS" -lt 400 ]]; then
+              echo "learnedgeek.com responded with HTTP $STATUS after attempt ${i}"
+              exit 0
+            fi
+            echo "Attempt $i: HTTP $STATUS — retrying in 2s"
+            sleep 2
+          done
+          echo "Health check failed: no 2xx/3xx response in 30 seconds"
+          exit 1
+
+# --- Hardening to do later -------------------------------------------------
+#
+# 1) Dedicated deploy user on the VPS instead of root.
+#    On the VPS:
+#       useradd -m -s /bin/bash deploy
+#       mkdir -p /home/deploy/.ssh
+#       cp /root/.ssh/authorized_keys /home/deploy/.ssh/authorized_keys
+#       chown -R deploy:deploy /home/deploy/.ssh
+#       chmod 700 /home/deploy/.ssh
+#       chmod 600 /home/deploy/.ssh/authorized_keys
+#       chown -R deploy:www-data /var/www/learnedgeek
+#       chmod -R g+w /var/www/learnedgeek
+#       # Grant only the specific systemctl actions the deploy needs:
+#       cat > /etc/sudoers.d/deploy <<'SUDO'
+#       deploy ALL=(ALL) NOPASSWD: /bin/systemctl start learnedgeek,/bin/systemctl stop learnedgeek,/bin/systemctl restart learnedgeek
+#       SUDO
+#    Then change DEPLOY_USER secret to `deploy` and prefix the
+#    systemctl commands with `sudo`. Smaller blast radius if the SSH
+#    key ever leaks.
+#
+# 2) Slack / email notification on deploy failure or success — easy add
+#    with `slackapi/slack-github-action` or similar.
+#
+# 3) Tag-gated deploys: only deploy on git tags matching `v*` rather than
+#    every push to main. Useful when releases become more deliberate.
+#
+# 4) Rollback story. The deploy keeps the previous version at
+#    /var/www/learnedgeek.prev so a manual rollback is:
+#       systemctl stop learnedgeek
+#       rm -rf /var/www/learnedgeek
+#       mv /var/www/learnedgeek.prev /var/www/learnedgeek
+#       systemctl start learnedgeek
+#    Worth wrapping that in a `rollback.sh` on the VPS once we've shipped
+#    enough deploys to know we'll occasionally want it.
