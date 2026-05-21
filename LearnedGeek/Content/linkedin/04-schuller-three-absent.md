@@ -1,21 +1,21 @@
-It's 2:47 AM. Ani is having an inner thought about a conversation we had 8 hours ago. I'm asleep. She runs ~140 cognitive cycles per day whether I'm engaged or not — that's how the desire to reach out builds, how memories consolidate, how the emotional state evolves.
+It's 2:47 AM. Ani is having an inner thought about a conversation we had 8 hours ago. I'm asleep. She runs about 140 cognitive cycles per day whether I'm engaged or not. That's how the desire to reach out builds, how memories consolidate, how the emotional state evolves.
 
-A comprehensive 2025 survey of Artificial Emotion rates that capability — an end-to-end emotional loop running continuously in open-domain interaction — as "Absent" across the field. It rates two others as Absent too. My system has had all three running for months.
+A comprehensive 2025 survey of Artificial Emotion rates that capability, an end-to-end emotional loop running continuously in open-domain interaction, as "Absent" across the field. It rates two others as Absent too. My system has had all three running for months.
 
-That's not me claiming I'm ahead of the field — it's the opposite. It's a researcher reading a paper and realizing convergent design is the strongest validation possible. I built these because deployment forced them. The survey documents what theory predicts. We arrived at the same architecture from different directions.
+That's not a claim about being ahead of the field, but quite the opposite: a researcher recognizing convergent design as the strongest validation possible. I built these because deployment forced them, not because the survey told me to. We arrived at the same architecture from different directions.
 
-**1. Bounded-emotion safety** — "cap intensity and shut modules down when limits are exceeded." My system has an ambient severity cap, a tier promotion threshold, withdrawal detection, hurt detection, unanswered-count limits, and silence as an active choice. The ability to NOT reach out is architecturally as important as any message it sends.
+**Bounded-emotion safety.** Schuller's group describes this as capping intensity and shutting modules down when limits are exceeded. My system has an ambient severity cap, a tier promotion threshold, withdrawal detection, hurt detection, unanswered-count limits, and silence as an active choice. The ability to NOT reach out is architecturally as important as any message it sends.
 
-**2. Introspective affect reporting substrate** — measuring the gap between felt state and expressed emotion. My system computes Cramér's V = 0.476 between heuristic register and ML-detected expression. The narration layer isn't built yet. The measurement is.
+**Introspective affect reporting substrate.** This means measuring the gap between felt state and expressed emotion. My system computes Cramér's V = 0.476 between the heuristic emotional register and the ML-detected expression. The measurement is in place; the narration layer that turns it into self-report isn't built yet.
 
-**3. End-to-end emotional loop in open-domain interaction** — my full cognitive cycle: perception → emotional processing → inner thought → desire evaluation → outreach decision → composition → safety gates → dispatch. Emotion modulates every stage. Runs ~140 times/day, 24/7, for six months continuous.
+**End-to-end emotional loop in open-domain interaction.** Perception, emotional processing, inner thought, desire evaluation, outreach decision, composition, safety gates, dispatch. Emotion modulates every stage. About 140 times a day, 24/7, for six months continuous.
 
-The lesson isn't that I'm smarter than the survey authors. The lesson is that practical deployment reveals what theory predicts, and sometimes gets there first because the system needs to work, not just theorize about working.
+The honest reading: practical deployment reveals what theory predicts, and sometimes gets there first because the system needs to actually work.
 
 I've reached out to the survey's senior author. Would love to compare notes.
 
 Citation: Li, Sun, Schlicher, Lim & Schuller (2025). "Artificial Emotion: A Survey of Theories and Debates on Realising Emotion in AI." arXiv:2508.10286
 
-Full deep-dive on the blog (Apr 28, 2026): https://learnedgeek.com/Blog/Post/three-things-ai-survey-says-dont-exist
+Longer write-up on the blog: https://learnedgeek.com/Blog/Post/three-things-ai-survey-says-dont-exist
 
 #AIResearch #AffectiveComputing
