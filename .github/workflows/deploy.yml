@@ -71,12 +71,15 @@ jobs:
 
       - name: Publish (linux-x64, framework-dependent)
         run: |
+          # Note: no --no-restore here. The earlier "Restore + build + test"
+          # step restores without a RID, but publish needs linux-x64-specific
+          # assets. Letting publish run its own restore is the simplest fix
+          # for the NETSDK1047 error on .NET 10.
           dotnet publish LearnedGeek/LearnedGeek.csproj \
             --configuration Release \
             --runtime linux-x64 \
             --self-contained false \
-            --output ./publish \
-            --no-restore
+            --output ./publish
 
       - name: Configure SSH
         run: |
