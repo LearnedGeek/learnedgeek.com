@@ -13,12 +13,12 @@
 #   DEPLOY_SSH_KEY   — Private key for the SSH user that can write to
 #                      /var/www/learnedgeek and restart the systemd unit.
 #                      Generate fresh with `ssh-keygen -t ed25519 -f
-#                      ./gh-deploy -C "github-actions"`. Paste the contents
-#                      of `gh-deploy` (the private key) into the secret.
-#                      Add the matching `.pub` to the VPS's
-#                      `/root/.ssh/authorized_keys` (or a dedicated
-#                      `deploy` user's authorized_keys — see hardening
-#                      note at the bottom).
+#                      ./gh-deploy-learnedgeek -C "github-actions-learnedgeek"`.
+#                      Paste the contents of `gh-deploy-learnedgeek` (the
+#                      private key) into the secret. Add the matching `.pub`
+#                      to the VPS's `/root/.ssh/authorized_keys` (or a
+#                      dedicated `deploy` user's authorized_keys — see
+#                      hardening note at the bottom).
 #   DEPLOY_HOST      — The VPS hostname or IP. e.g., `5.161.205.21`.
 #   DEPLOY_USER      — The SSH user to connect as. `root` for now;
 #                      switch to a dedicated `deploy` user later.
