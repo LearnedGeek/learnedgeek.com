@@ -1,0 +1,40 @@
+{
+  "_README": "Committed shape of appsettings.Production.json. Non-sensitive values are hardcoded; sensitive values are ${VAR} placeholders that get substituted at deploy time. The deploy.yml workflow runs envsubst on this file to produce the real appsettings.Production.json from GitHub Secrets. For LOCAL deploys via the VS Code Publish task, maintain a gitignored appsettings.Production.json by hand (initially copied from this template with real values filled in).",
+
+  "EmailSettings": {
+    "SenderEmail": "markm@learnedgeek.com",
+    "Username": "markm@learnedgeek.com",
+    "Password": "${SMTP_PASSWORD}"
+  },
+
+  "Recaptcha": {
+    "SiteKey": "6LeOWkEsAAAAAOB6JV-8mfhcDUjkPxo5p4ZvHxc-",
+    "SecretKey": "${RECAPTCHA_SECRET_KEY}"
+  },
+
+  "LinkedIn": {
+    "ClientId": "866if30t1b3hmn",
+    "ClientSecret": "${LINKEDIN_CLIENT_SECRET}",
+    "RedirectUri": "https://learnedgeek.com/admin/linkedin/callback",
+    "AccessToken": "${LINKEDIN_ACCESS_TOKEN}",
+    "MemberId": "Oh4DfPJOMK"
+  },
+
+  "Admin": {
+    "Password": "${ADMIN_PASSWORD}",
+    "AllowedIPs": []
+  },
+
+  "Anthropic": {
+    "ApiKey": "${ANTHROPIC_API_KEY}"
+  },
+
+  "Instagram": {
+    "AppId": "1196947979215044",
+    "AppSecret": "${INSTAGRAM_APP_SECRET}",
+    "RedirectUri": "https://learnedgeek.com/admin/instagram/callback",
+    "AccessToken": "${INSTAGRAM_ACCESS_TOKEN}",
+    "InstagramAccountId": "17841480022886124",
+    "TokenExpiresAt": "${INSTAGRAM_TOKEN_EXPIRES_AT}"
+  }
+}

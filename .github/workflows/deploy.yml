@@ -81,6 +81,35 @@ jobs:
             --self-contained false \
             --output ./publish
 
+      - name: Render appsettings.Production.json from template + secrets
+        # Substitutes ${VAR} placeholders in the committed template with
+        # values from GitHub Secrets, writing the resulting file directly
+        # into the publish output so it ships in the tar stream below.
+        # The committed template has no real secret values; the rendered
+        # file exists only on the runner for the duration of this job.
+        env:
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
+          LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INSTAGRAM_APP_SECRET: ${{ secrets.INSTAGRAM_APP_SECRET }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_TOKEN_EXPIRES_AT: ${{ secrets.INSTAGRAM_TOKEN_EXPIRES_AT }}
+        run: |
+          # Restrict envsubst to the explicit variable list so any other
+          # ${...} pattern in the template is left literal — defensive
+          # against future copy-paste mistakes.
+          VARS='${SMTP_PASSWORD} ${RECAPTCHA_SECRET_KEY} ${LINKEDIN_CLIENT_SECRET} ${LINKEDIN_ACCESS_TOKEN} ${ADMIN_PASSWORD} ${ANTHROPIC_API_KEY} ${INSTAGRAM_APP_SECRET} ${INSTAGRAM_ACCESS_TOKEN} ${INSTAGRAM_TOKEN_EXPIRES_AT}'
+          envsubst "$VARS" \
+            < LearnedGeek/appsettings.Production.json.template \
+            > publish/appsettings.Production.json
+          # Sanity check: file must be valid JSON. Catches secrets with
+          # characters that break JSON escaping (quote, backslash) before
+          # we ship a broken config.
+          python3 -m json.tool publish/appsettings.Production.json > /dev/null
+
       - name: Configure SSH
         run: |
           mkdir -p ~/.ssh
