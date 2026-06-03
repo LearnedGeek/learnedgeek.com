@@ -144,6 +144,14 @@ jobs:
              # www-data. Set ownership before the swap so the service can
              # create App_Data and write DataProtection keys.
              chown -R www-data:www-data "$STAGING"
+             # Link the persistent byco.json (updated out-of-band via
+             # scp from the dashboard tool, see upload-byco-hetzner.ps1)
+             # into the staged wwwroot. Without this symlink the atomic
+             # swap clobbers byco.json on every deploy. The persistent
+             # file lives at /var/lib/learnedgeek-data/ and survives
+             # deploys; the symlink is recreated on each deploy so it
+             # always points at the right target after a swap.
+             ln -sf /var/lib/learnedgeek-data/byco.json "$STAGING/wwwroot/byco.json"
              systemctl stop learnedgeek
              if [ -d "$ACTIVE" ]; then
                rm -rf "$PREV"
