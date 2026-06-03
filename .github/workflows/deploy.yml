@@ -144,14 +144,6 @@ jobs:
              # www-data. Set ownership before the swap so the service can
              # create App_Data and write DataProtection keys.
              chown -R www-data:www-data "$STAGING"
-             # Link the persistent byco.json (updated out-of-band via
-             # scp from the dashboard tool, see upload-byco-hetzner.ps1)
-             # into the staged wwwroot. Without this symlink the atomic
-             # swap clobbers byco.json on every deploy. The persistent
-             # file lives at /var/lib/learnedgeek-data/ and survives
-             # deploys; the symlink is recreated on each deploy so it
-             # always points at the right target after a swap.
-             ln -sf /var/lib/learnedgeek-data/byco.json "$STAGING/wwwroot/byco.json"
              systemctl stop learnedgeek
              if [ -d "$ACTIVE" ]; then
                rm -rf "$PREV"
@@ -177,6 +169,18 @@ jobs:
           echo "Health check failed: no 2xx/3xx response in 30 seconds"
           exit 1
 
+# --- Notes ----------------------------------------------------------------
+#
+# byco.json is not part of this deploy. It is client status data updated
+# out-of-band by upload-byco-hetzner.ps1 (in the learnedgeek-business
+# repo) writing to /var/lib/learnedgeek-data/byco.json on the VPS. Caddy
+# serves /byco.json directly from that directory via a `handle` block in
+# the Caddyfile, bypassing Kestrel entirely. Do NOT reintroduce a symlink
+# from wwwroot to the data path: ASP.NET Core's static file middleware
+# uses the symlink's own stat size (path-string length) for Content-
+# Length while reading content from the target file, producing truncated
+# responses. Caddy doesn't have this bug.
+#
 # --- Hardening to do later -------------------------------------------------
 #
 # 1) Dedicated deploy user on the VPS instead of root.
