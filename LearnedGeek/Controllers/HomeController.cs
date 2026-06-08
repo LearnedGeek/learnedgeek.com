@@ -116,6 +116,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("policies/crewtrack-privacy")]
+    public IActionResult CrewTrackPrivacy()
+    {
+        return View();
+    }
+
     [Route("policies/sms-terms")]
     public IActionResult SmsTerms()
     {
